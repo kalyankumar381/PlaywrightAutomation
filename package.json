@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "allure-playwright": "^3.0.0-beta.10",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "install": "^0.13.0",
+    "jsonpath": "^1.1.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.8.0",
+    "oracledb": "^6.6.0",
+    "pdfjs-dist-es5": "^2.13.216",
+    "playwright": "^1.45.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@reportportal/agent-js-playwright": "^5.1.9",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.1.0",
+    "exceljs": "^4.4.0",
+    "ortoni-report": "^2.0.1"
+  },
+  "scripts": {}
+}

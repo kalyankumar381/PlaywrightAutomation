@@ -1,0 +1,156 @@
+{
+  "config": {
+    "configFile": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/playwright.config.ts",
+    "rootDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/ortoni-report/dist/ortoni-report.js",
+        {
+          "logo": "./logo.png",
+          "filename": "index.html",
+          "authorName": "Kalyan Kumar",
+          "base64Image": false,
+          "preferredTheme": "light",
+          "projectName": "Playwright Demo",
+          "testType": "Smoke"
+        }
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/allure-playwright/dist/cjs/index.js",
+        null
+      ],
+      [
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/@reportportal/agent-js-playwright/build/index.js",
+        {
+          "endpoint": "https://demo.reportportal.io/api/v1",
+          "apiKey": "kk_rkewjqvfSBST14rkRywuqwLMFR_tK0iqv_P-0lP0SheuKzH1wKr9HnvlbuMEPko8",
+          "project": "default_personal",
+          "launch": "Yapse-Api Automation",
+          "description": "My awesome launch",
+          "attributes": [
+            {
+              "key": "attributeKey",
+              "value": "attrbiuteValue"
+            },
+            {
+              "key": "System",
+              "value": "ypmys011"
+            }
+          ],
+          "mode": "DEFAULT"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.3",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "testCasesWithCm.spec.ts",
+      "file": "testCasesWithCm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login to the apploication",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 18202,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-08-29T05:35:45.501Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/testCasesWithCm-Login-to-the-apploication-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "57bf2438760ffd6189d7-791094aa2de061a856bc",
+          "file": "testCasesWithCm.spec.ts",
+          "line": 22,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-08-29T05:35:45.108Z",
+    "duration": 18904.938,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

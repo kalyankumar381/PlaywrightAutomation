@@ -1,0 +1,8 @@
+401
+{
+  error: {
+    name: 'AuthenticationError',
+    message: 'Unauthorized',
+    value: 'invalid_token'
+  }
+}

@@ -1,0 +1,7 @@
+Kalyan status code is ***************** - >200
+{"code":200,"status":"OK","data":"Internal Organization address updated successfully."}
+{
+  code: 200,
+  status: 'OK',
+  data: 'Internal Organization address updated successfully.'
+}

@@ -1,0 +1,8 @@
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    message: 'API Level Policy applied successfully and any other association has been reset.'
+  }
+}
