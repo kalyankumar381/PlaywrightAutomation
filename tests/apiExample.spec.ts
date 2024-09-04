@@ -2,6 +2,7 @@ import { expect } from 'playwright/test';
 import {test} from '../src/test-base'; 
 import {APIUtils} from '../utils/APIUtis'
 import {ReportingApi} from '@reportportal/agent-js-playwright';
+const dataset = JSON.parse(JSON.stringify(require('../data/analytics.json')));
 
 const baseUrl:string="https://api.testing.yappes-enterprise.com";
 const header:any={

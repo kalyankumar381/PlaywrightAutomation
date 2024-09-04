@@ -1,6 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import { OrtoniReportConfig } from 'ortoni-report';
 import os from 'os';
+import {ReportPortalAgent} from './src/rp-agents';
+import { Constants } from './src/constants';
 
 /**
  * Read environment variables from file.
@@ -21,27 +23,32 @@ const reportConfig : OrtoniReportConfig={
 }
 
 const _reportPortalConfig={
-  endpoint: "https://demo.reportportal.io/api/v1",
+  // endpoint: "https://demo.reportportal.io/api/v1",  
+  // apiKey: Constants.GLOBAL_RP_TOKEN,  
+  // project: "default_personal",  
+  // launch: "Yapse-Api Automation",  
+  // description: "My awesome launch",
+  // attributes: Constants.getRpTags(),
   
-  apiKey: "y_XfJlAQCPRW27CPeNLW74j4PPjyHGJhJ25urcktKCA7yEB0OQI2c1Zxqu3aNQb72q",
+
+  token: Constants.GLOBAL_RP_TOKEN,
+  endpoint: Constants.GLOBAL_RP_ENDPOINT,
+  project: Constants.GLOBAL_PROJECT,
+  launch: Constants.GLOBAL_SUITE_NAME,
+  attributes: Constants.getRpTags(),
+  description: Constants.GLOBAL_SUITE_DESC,
   
-  project: "default_personal",
-  
-  launch: "Yapse-Api Automation",
-  
-  description: "My awesome launch",
-  
-  attributes: [  
-      {  
-        key: "attributeKey",    
-        value: "attrbiuteValue",  
-      },  
-      {  
-        key:"System",
-        value: os.hostname(),
-      },
-    ],
-        mode: 'DEFAULT',
+  // attributes: [  
+  //     {  
+  //       key: "attributeKey",    
+  //       value: "attrbiuteValue",  
+  //     },  
+  //     {  
+  //       key:"System",
+  //       value: os.hostname(),
+  //     },
+  //   ],
+  mode: 'DEFAULT',
 }
 
 /**
@@ -56,16 +63,14 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  // workers: process.env.CI ? 1 : 1,
-  // timeout:1*3*1000,
-  // expect:{
-  //   timeout:5000
-  // },
+  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   // reporter: [['ortoni-report', reportConfig],['dot']],
-  reporter:process.env.CI ? [['junit',{outputFile:"results.xml"}],['@reportportal/agent-js-playwright', _reportPortalConfig]]: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
-            ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig]],
+  reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+            ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig],['./src/custom-report.ts']],
+  // reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+  // ['allure-playwright'],['@reportportal/agent-js-playwright', ReportPortalAgent.reporter()]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -73,7 +78,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
-    headless:process.env.CI ? true:false,
+    headless:false,
     screenshot:'on',
     viewport:null,
     launchOptions:{

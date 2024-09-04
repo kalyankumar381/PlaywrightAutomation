@@ -1,0 +1,53 @@
+{
+    "APIAnalyticsPOST" : [{
+        "endPoint":"/api/content/apis/API-9ACE4F99/analytics?metric=api",
+        "statusCode":"200",
+        "requestbody":{
+            "duration": {
+            "limit": 48,
+            "period": "hours"
+            }
+        }
+    }, {
+        "endPoint":"/api/content/apis/API-9ACE4F99/analytics?metric=api",
+        "statusCode":"400",
+        "requestbody":{         
+            "kk": {
+            "limit": "yy",
+            "period": "hours"
+            }        
+        }
+    }],
+    "GetAggreatedAPIusagemetrics":{
+        "metricType":"cumulative",
+	    "metricLevel":"user",
+	    "duration":{
+            "limit":"90",
+            "period":"days"
+	    }
+    },"getcumulativemetricsforerrorcode":{
+        "duration":{"limit":90,"period":"days"},
+        "organizationId": "ORG-75BEE1C4",
+        "errorSeries":400
+    },
+    "GetTraffic-Metric":{
+        "dashboardType": "analytics", 
+        "kpis": [ "traffic-metric" ],
+        "timePeriod": {
+            "startDate": "2021-06-01", 
+            "endDate": "2021-06-30"
+        }
+    },  
+    "GetTraffic-Status-Metric":{
+        "dashboardType": "analytics", 
+        "kpis": [ "traffic-status-metric" ],
+        "timePeriod": {
+            "startDate": "2021-06-01", 
+            "endDate": "2021-06-30"
+        }
+    },
+    "GetExistingApisforMetrices":{
+       
+    }
+
+}

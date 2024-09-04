@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/playwright.config.ts",
-    "rootDir": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/tests",
+    "configFile": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/playwright.config.ts",
+    "rootDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -16,7 +16,7 @@
     "preserveOutput": "always",
     "reporter": [
       [
-        "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/node_modules/ortoni-report/dist/ortoni-report.js",
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/ortoni-report/dist/ortoni-report.js",
         {
           "logo": "./logo.png",
           "filename": "index.html",
@@ -44,29 +44,49 @@
         }
       ],
       [
-        "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/node_modules/allure-playwright/dist/cjs/index.js",
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/allure-playwright/dist/cjs/index.js",
         null
       ],
       [
-        "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/node_modules/@reportportal/agent-js-playwright/build/index.js",
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/node_modules/@reportportal/agent-js-playwright/build/index.js",
         {
+          "token": "y_XfJlAQCPRW27CPeNLW74j4PPjyHGJhJ25urcktKCA7yEB0OQI2c1Zxqu3aNQb72q",
           "endpoint": "https://demo.reportportal.io/api/v1",
-          "apiKey": "y_XfJlAQCPRW27CPeNLW74j4PPjyHGJhJ25urcktKCA7yEB0OQI2c1Zxqu3aNQb72q",
           "project": "default_personal",
-          "launch": "Yapse-Api Automation",
-          "description": "My awesome launch",
+          "launch": "default_personal",
           "attributes": [
             {
-              "key": "attributeKey",
-              "value": "attrbiuteValue"
+              "key": "k1",
+              "value": "v1"
+            },
+            {
+              "key": "k2",
+              "value": "v2"
+            },
+            {
+              "key": "k3",
+              "value": "v3"
+            },
+            {
+              "key": "UserName",
+              "value": "sachin-singh"
             },
             {
               "key": "System",
               "value": "ypmys011"
+            },
+            {
+              "key": "Framework",
+              "value": "Playwright"
             }
           ],
+          "description": "default_personal tests",
           "mode": "DEFAULT"
         }
+      ],
+      [
+        "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/custom-report.ts",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -76,13 +96,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results",
+        "outputDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/tests",
+        "testDir": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -98,13 +118,13 @@
   },
   "suites": [
     {
-      "title": "testCasesWithCm.spec.ts",
-      "file": "testCasesWithCm.spec.ts",
+      "title": "analytics.spec.ts",
+      "file": "analytics.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login to the apploication",
+          "title": "POST from re-usable method -  - iteration - 1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -118,59 +138,33 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 19383,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-04T10:00:25.956Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Login-to-the-apploication-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57bf2438760ffd6189d7-791094aa2de061a856bc",
-          "file": "testCasesWithCm.spec.ts",
-          "line": 24,
-          "column": 5
-        },
-        {
-          "title": "Createed Mock API -  kalyan1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 14944,
+                  "duration": 786,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan11725444056085\n"
+                      "text": "{ duration: { limit: \u001b[33m48\u001b[39m, period: \u001b[32m'hours'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: { totalNoTransactions: [], totalNoUsers: \u001b[33m0\u001b[39m }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T10:00:45.702Z",
+                  "startTime": "2024-09-04T10:23:05.583Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Createed-Mock-API---kalyan1-chromium/test-finished-1.png"
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-POST-from-re-usable-method-----iteration---1-chromium/test-finished-1.png"
                     }
                   ]
                 }
@@ -178,691 +172,13 @@
               "status": "expected"
             }
           ],
-          "id": "57bf2438760ffd6189d7-329956e9ced78f250ec0",
-          "file": "testCasesWithCm.spec.ts",
-          "line": 41,
-          "column": 9
+          "id": "634c82c6846b68aa8d60-f2908c02ddc0f1f38539",
+          "file": "analytics.spec.ts",
+          "line": 18,
+          "column": 13
         },
         {
-          "title": "Check the grid and delete",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 15179,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Row 1 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 1, Column 1: kalyan11725444056085\n"
-                    },
-                    {
-                      "text": "Row 1, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 1, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 1, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 1, Column 5: a few seconds ago\n"
-                    },
-                    {
-                      "text": "Row 1, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 2 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 2, Column 1: kalyan11725443991849\n"
-                    },
-                    {
-                      "text": "Row 2, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 2, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 2, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 2, Column 5: a minute ago\n"
-                    },
-                    {
-                      "text": "Row 2, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 3 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 3, Column 1: kalyan11725443935785\n"
-                    },
-                    {
-                      "text": "Row 3, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 3, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 3, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 3, Column 5: 2 minutes ago\n"
-                    },
-                    {
-                      "text": "Row 3, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 4 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 4, Column 1: kalyan2\n"
-                    },
-                    {
-                      "text": "Row 4, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 4, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 4, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 4, Column 5: 12 minutes ago\n"
-                    },
-                    {
-                      "text": "Row 4, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 5 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 5, Column 1: adadada\n"
-                    },
-                    {
-                      "text": "Row 5, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 5, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 5, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 5, Column 5: 13 minutes ago\n"
-                    },
-                    {
-                      "text": "Row 5, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 6 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 6, Column 1: kalyan1\n"
-                    },
-                    {
-                      "text": "Row 6, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 6, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 6, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 6, Column 5: 28 minutes ago\n"
-                    },
-                    {
-                      "text": "Row 6, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 7 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 7, Column 1: kalyan5\n"
-                    },
-                    {
-                      "text": "Row 7, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 7, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 7, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 7, Column 5: 29 minutes ago\n"
-                    },
-                    {
-                      "text": "Row 7, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 8 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 8, Column 1: fsd\n"
-                    },
-                    {
-                      "text": "Row 8, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 8, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 8, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 8, Column 5: 2 hours ago\n"
-                    },
-                    {
-                      "text": "Row 8, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 9 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 9, Column 1: endpointcheck125\n"
-                    },
-                    {
-                      "text": "Row 9, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 9, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 9, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 9, Column 5: 2 hours ago\n"
-                    },
-                    {
-                      "text": "Row 9, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 10 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 10, Column 1: chanduyy\n"
-                    },
-                    {
-                      "text": "Row 10, Column 2: v 0.1.0\n"
-                    },
-                    {
-                      "text": "Row 10, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 10, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 10, Column 5: 3 hours ago\n"
-                    },
-                    {
-                      "text": "Row 10, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 11 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 11, Column 1: putmethod\n"
-                    },
-                    {
-                      "text": "Row 11, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 11, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 11, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 11, Column 5: 5 hours ago\n"
-                    },
-                    {
-                      "text": "Row 11, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 12 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 12, Column 1: gateway\n"
-                    },
-                    {
-                      "text": "Row 12, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 12, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 12, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 12, Column 5: a day ago\n"
-                    },
-                    {
-                      "text": "Row 12, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 13 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 13, Column 1: tcheckKK\n"
-                    },
-                    {
-                      "text": "Row 13, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 13, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 13, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 13, Column 5: 02/09/2024\n"
-                    },
-                    {
-                      "text": "Row 13, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 14 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 14, Column 1: AUD API01\n"
-                    },
-                    {
-                      "text": "Row 14, Column 2: v 1.1.0+1 more\n"
-                    },
-                    {
-                      "text": "Row 14, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 14, Column 4: published\n"
-                    },
-                    {
-                      "text": "Row 14, Column 5: 29/08/2024\n"
-                    },
-                    {
-                      "text": "Row 14, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 15 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 15, Column 1: gggtrettt\n"
-                    },
-                    {
-                      "text": "Row 15, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 15, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 15, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 15, Column 5: 29/08/2024\n"
-                    },
-                    {
-                      "text": "Row 15, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 16 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 16, Column 1: rrr\n"
-                    },
-                    {
-                      "text": "Row 16, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 16, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 16, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 16, Column 5: 29/08/2024\n"
-                    },
-                    {
-                      "text": "Row 16, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 17 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 17, Column 1: hvhgvhv\n"
-                    },
-                    {
-                      "text": "Row 17, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 17, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 17, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 17, Column 5: 28/08/2024\n"
-                    },
-                    {
-                      "text": "Row 17, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 18 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 18, Column 1: token testing12\n"
-                    },
-                    {
-                      "text": "Row 18, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 18, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 18, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 18, Column 5: 28/08/2024\n"
-                    },
-                    {
-                      "text": "Row 18, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 19 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 19, Column 1: CH API01\n"
-                    },
-                    {
-                      "text": "Row 19, Column 2: v 1.1.0+1 more\n"
-                    },
-                    {
-                      "text": "Row 19, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 19, Column 4: published\n"
-                    },
-                    {
-                      "text": "Row 19, Column 5: 28/08/2024\n"
-                    },
-                    {
-                      "text": "Row 19, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 20 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 20, Column 1: endpointpolicy\n"
-                    },
-                    {
-                      "text": "Row 20, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 20, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 20, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 20, Column 5: 28/08/2024\n"
-                    },
-                    {
-                      "text": "Row 20, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 21 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 21, Column 1: SA API01\n"
-                    },
-                    {
-                      "text": "Row 21, Column 2: v 1.1.0+1 more\n"
-                    },
-                    {
-                      "text": "Row 21, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 21, Column 4: published\n"
-                    },
-                    {
-                      "text": "Row 21, Column 5: 27/08/2024\n"
-                    },
-                    {
-                      "text": "Row 21, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 22 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 22, Column 1: automation5q3nct\n"
-                    },
-                    {
-                      "text": "Row 22, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 22, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 22, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 22, Column 5: 20/08/2024\n"
-                    },
-                    {
-                      "text": "Row 22, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 23 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 23, Column 1: getuserrtrtrtrtrt\n"
-                    },
-                    {
-                      "text": "Row 23, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 23, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 23, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 23, Column 5: 19/08/2024\n"
-                    },
-                    {
-                      "text": "Row 23, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 24 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 24, Column 1: goatttt\n"
-                    },
-                    {
-                      "text": "Row 24, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 24, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 24, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 24, Column 5: 19/08/2024\n"
-                    },
-                    {
-                      "text": "Row 24, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 25 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 25, Column 1: fdfdffd\n"
-                    },
-                    {
-                      "text": "Row 25, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 25, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 25, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 25, Column 5: 16/08/2024\n"
-                    },
-                    {
-                      "text": "Row 25, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 26 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 26, Column 1: effdfdfdfdf\n"
-                    },
-                    {
-                      "text": "Row 26, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 26, Column 3: Mocked API\n"
-                    },
-                    {
-                      "text": "Row 26, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 26, Column 5: 16/08/2024\n"
-                    },
-                    {
-                      "text": "Row 26, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 27 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 27, Column 1: automationp3j9c5\n"
-                    },
-                    {
-                      "text": "Row 27, Column 2: v 0.0.1\n"
-                    },
-                    {
-                      "text": "Row 27, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 27, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 27, Column 5: 16/08/2024\n"
-                    },
-                    {
-                      "text": "Row 27, Column 6: \n"
-                    },
-                    {
-                      "text": "Row 28 has 6 columns.\n"
-                    },
-                    {
-                      "text": "Row 28, Column 1: policy endpoint\n"
-                    },
-                    {
-                      "text": "Row 28, Column 2: v 1.0.0\n"
-                    },
-                    {
-                      "text": "Row 28, Column 3: Onboarded API\n"
-                    },
-                    {
-                      "text": "Row 28, Column 4: unpublished\n"
-                    },
-                    {
-                      "text": "Row 28, Column 5: 14/08/2024\n"
-                    },
-                    {
-                      "text": "Row 28, Column 6: \n"
-                    },
-                    {
-                      "text": "Cell value is the --------- kalyan11725444056085\n"
-                    },
-                    {
-                      "text": ">>>>>>>>>>>>>>>>.. kalyan\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-04T10:01:00.661Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Check-the-grid-and-delete-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57bf2438760ffd6189d7-6be1f565d8e8f75b4c05",
-          "file": "testCasesWithCm.spec.ts",
-          "line": 54,
-          "column": 5
-        },
-        {
-          "title": "Createed Mock API_1 ::   1",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 12682,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Mock Name >>>>>>>>>>>>>>>> kalyan11725444084033\n"
-                    },
-                    {
-                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan11725444084033\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-04T10:01:15.858Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Createed-Mock-API-1-1-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57bf2438760ffd6189d7-013bf541d6348acdc141",
-          "file": "testCasesWithCm.spec.ts",
-          "line": 74,
-          "column": 9
-        },
-        {
-          "title": "Invalid Login",
+          "title": "POST from re-usable method -  - iteration - 2",
           "ok": false,
           "tags": [],
           "tests": [
@@ -875,59 +191,293 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30240,
+                  "status": "failed",
+                  "duration": 676,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    "message": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m",
+                    "stack": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests/analytics.spec.ts:24:34",
+                    "location": {
+                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/api-util.ts",
+                      "column": 159,
+                      "line": 27
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
                       "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/pages/login.page.ts",
-                        "column": 25,
-                        "line": 63
+                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/api-util.ts",
+                        "column": 159,
+                        "line": 27
                       },
-                      "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"http://rxtesting.yappes-enterprise.com/\" until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m../pages/login.page.ts:63\n\n\u001b[0m \u001b[90m 61 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39menterPassword(pass)\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mclickLogBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 63 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[32m\"http://rxtesting.yappes-enterprise.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 64 |\u001b[39m         expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"http://rxtesting.yappes-enterprise.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 65 |\u001b[39m     }\n \u001b[90m 66 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at LogingPage.login (/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/pages/login.page.ts:63:25)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/tests/testCasesWithCm.spec.ts:89:5\u001b[22m"
+                      "message": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/tests/analytics.spec.ts:24:34\u001b[22m"
                     }
                   ],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "{ kk: { limit: \u001b[32m'yy'\u001b[39m, period: \u001b[32m'hours'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T10:01:28.555Z",
+                  "startTime": "2024-09-04T10:23:06.587Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Invalid-Login-chromium/test-failed-1.png"
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-POST-from-re-usable-method-----iteration---2-chromium/test-failed-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Invalid-Login-chromium/trace.zip"
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-POST-from-re-usable-method-----iteration---2-chromium/trace.zip"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/src/api-util.ts",
+                    "column": 159,
+                    "line": 27
+                  }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "57bf2438760ffd6189d7-0d8f14c35ea759be0006",
-          "file": "testCasesWithCm.spec.ts",
-          "line": 88,
-          "column": 5
+          "id": "634c82c6846b68aa8d60-623fa71b92ff7d7d5b95",
+          "file": "analytics.spec.ts",
+          "line": 18,
+          "column": 13
+        },
+        {
+          "title": "get cumulative metrics for error code",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 834,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  duration: { limit: \u001b[33m90\u001b[39m, period: \u001b[32m'days'\u001b[39m },\n  organizationId: \u001b[32m'ORG-75BEE1C4'\u001b[39m,\n  errorSeries: \u001b[33m400\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-04T10:23:07.846Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-get-cumulative-metrics-for-error-code-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "634c82c6846b68aa8d60-508deffe08b5e5416cef",
+          "file": "analytics.spec.ts",
+          "line": 31,
+          "column": 9
+        },
+        {
+          "title": "Get Traffic-Metric",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 715,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  dashboardType: \u001b[32m'analytics'\u001b[39m,\n  kpis: [ \u001b[32m'traffic-metric'\u001b[39m ],\n  timePeriod: { startDate: \u001b[32m'2021-06-01'\u001b[39m, endDate: \u001b[32m'2021-06-30'\u001b[39m }\n}\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: [] }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-04T10:23:08.888Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-Get-Traffic-Metric-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "634c82c6846b68aa8d60-c8766f1161db3c71b1db",
+          "file": "analytics.spec.ts",
+          "line": 42,
+          "column": 9
+        },
+        {
+          "title": "GetTraffic-Status-Metric",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 592,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  dashboardType: \u001b[32m'analytics'\u001b[39m,\n  kpis: [ \u001b[32m'traffic-status-metric'\u001b[39m ],\n  timePeriod: { startDate: \u001b[32m'2021-06-01'\u001b[39m, endDate: \u001b[32m'2021-06-30'\u001b[39m }\n}\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: { \u001b[32m'200'\u001b[39m: [], \u001b[32m'300'\u001b[39m: [], \u001b[32m'400'\u001b[39m: [], \u001b[32m'500'\u001b[39m: [] }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-04T10:23:09.610Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-GetTraffic-Status-Metric-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "634c82c6846b68aa8d60-d86c40350dbc2ee40e1e",
+          "file": "analytics.spec.ts",
+          "line": 53,
+          "column": 9
+        },
+        {
+          "title": "Get Existing Apis for Metrices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 653,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{}\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No API created.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-04T10:23:10.214Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/PlaywrightProject/test-results/analytics-Get-Existing-Apis-for-Metrices-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "634c82c6846b68aa8d60-d27bd6ce45ebd1680f85",
+          "file": "analytics.spec.ts",
+          "line": 63,
+          "column": 9
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-04T10:00:25.409Z",
-    "duration": 93592.276,
-    "expected": 4,
+    "startTime": "2024-09-04T10:23:04.890Z",
+    "duration": 6100.187,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

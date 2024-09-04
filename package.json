@@ -1,28 +1,39 @@
 {
-  "name": "playwright-automation-framework", 
+  "name": "playwright-automation-framework",
   "dependencies": {
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
     "allure-playwright": "^3.0.0-beta.10",
+    "axios": "^1.2.2",
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
     "install": "^0.13.0",
     "jsonpath": "^1.1.1",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "mongodb": "^6.8.0",
+    "nodemailer": "^6.9.14",
     "oracledb": "^6.6.0",
     "pdfjs-dist-es5": "^2.13.216",
-    "playwright": "^1.45.3"
+    "playwright": "^1.45.3",
+    "type-fest": "^4.26.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.45.3",
     "@reportportal/agent-js-playwright": "^5.1.9",
     "@types/crypto-js": "^4.2.2",
+    "@types/jsonpath": "^0.2.4",
+    "@types/lodash": "^4.17.7",
     "@types/node": "^22.1.0",
+    "@types/nodemailer": "^6.4.15",
     "exceljs": "^4.4.0",
-    "ortoni-report": "^2.0.1"
+    "ortoni-report": "^2.0.1",
+    "typescript": "^4.9.4"
   },
   "scripts": {
     "postinstall": "npx playwright install",
-    "test":"npx playwright test",
-    "report":"npx playwright show-report"
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
   }
 }

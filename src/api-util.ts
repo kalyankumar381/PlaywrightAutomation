@@ -177,8 +177,8 @@ export  class ApiUtil {
             data:requestBody
         });
 
-        expect(_response.status()).toBe(200);
-        expect(_response.ok()).toBeTruthy(); 
+        // expect(_response.status()).toBe(200);
+        // expect(_response.ok()).toBeTruthy(); 
 
         return _response
     }
@@ -226,6 +226,6 @@ export  class ApiUtil {
     public getValuesByKey(jsonObj: any, key: string): any {
         const query = `$..[?(@.${key})]`;
         const result = jsonpath.query(jsonObj, query);
-        return result.length ? result.map(item => item[key]) : null;
+        return result.length ? result.map((item: { [x: string]: any; }) => item[key]) : null;
     }
 }
