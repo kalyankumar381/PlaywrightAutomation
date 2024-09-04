@@ -1,6 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 import { OrtoniReportConfig } from 'ortoni-report';
 import os from 'os';
+import { Constants } from './src/constants';
 
 /**
  * Read environment variables from file.
@@ -21,27 +22,13 @@ const reportConfig : OrtoniReportConfig={
 }
 
 const _reportPortalConfig={
-  endpoint: "https://demo.reportportal.io/api/v1",
-  
-  apiKey: "y_XfJlAQCPRW27CPeNLW74j4PPjyHGJhJ25urcktKCA7yEB0OQI2c1Zxqu3aNQb72q",
-  
-  project: "default_personal",
-  
-  launch: "Yapse-Api Automation",
-  
-  description: "My awesome launch",
-  
-  attributes: [  
-      {  
-        key: "attributeKey",    
-        value: "attrbiuteValue",  
-      },  
-      {  
-        key:"System",
-        value: os.hostname(),
-      },
-    ],
-        mode: 'DEFAULT',
+    token: Constants.GLOBAL_RP_TOKEN,
+    endpoint: Constants.GLOBAL_RP_ENDPOINT,
+    project: Constants.GLOBAL_PROJECT,
+    launch: Constants.GLOBAL_SUITE_NAME,
+    attributes: Constants.getRpTags(),
+    description: Constants.GLOBAL_SUITE_DESC,
+    mode: 'DEFAULT',
 }
 
 /**
