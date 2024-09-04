@@ -35,19 +35,19 @@ const _reportPortalConfig={
   endpoint: Constants.GLOBAL_RP_ENDPOINT,
   project: Constants.GLOBAL_PROJECT,
   launch: Constants.GLOBAL_SUITE_NAME,
-  attributes: Constants.getRpTags(),
+  // attributes: Constants.getRpTags(),
   description: Constants.GLOBAL_SUITE_DESC,
   
-  // attributes: [  
-  //     {  
-  //       key: "attributeKey",    
-  //       value: "attrbiuteValue",  
-  //     },  
-  //     {  
-  //       key:"System",
-  //       value: os.hostname(),
-  //     },
-  //   ],
+  attributes: [  
+      {  
+        key: "attributeKey",    
+        value: "attrbiuteValue",  
+      },  
+      {  
+        key:"System",
+        value: os.hostname(),
+      },
+    ],
   mode: 'DEFAULT',
 }
 
