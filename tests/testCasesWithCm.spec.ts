@@ -81,7 +81,7 @@ for(let i=0;i<testData.length;i++){
 
 test('Invalid Login', async ({ page,basePage }) => {
     await basePage.loginPage.login("",data.pass);
-})
+});
 
 
 // test.afterEach(async ({ page }) => {
