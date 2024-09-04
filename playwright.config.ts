@@ -23,7 +23,7 @@ const reportConfig : OrtoniReportConfig={
 const _reportPortalConfig={
   endpoint: "https://demo.reportportal.io/api/v1",
   
-  apiKey: "kk_rkewjqvfSBST14rkRywuqwLMFR_tK0iqv_P-0lP0SheuKzH1wKr9HnvlbuMEPko8",
+  apiKey: "y_XfJlAQCPRW27CPeNLW74j4PPjyHGJhJ25urcktKCA7yEB0OQI2c1Zxqu3aNQb72q",
   
   project: "default_personal",
   
@@ -56,11 +56,15 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 1,
+  timeout:1*3*1000,
+  expect:{
+    timeout:5000
+  },
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   // reporter: [['ortoni-report', reportConfig],['dot']],
-  reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+  reporter:process.env.CI ? [['junit',{outputFile:"results.xml"}]]: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
             ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -69,7 +73,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
-    headless:false,
+    headless:process.env.CI ? true:false,
     screenshot:'on',
     viewport:null,
     launchOptions:{

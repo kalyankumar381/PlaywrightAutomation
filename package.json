@@ -1,4 +1,5 @@
 {
+  "name": "playwright-automation-framework", 
   "dependencies": {
     "allure-playwright": "^3.0.0-beta.10",
     "crypto-js": "^4.2.0",
@@ -19,5 +20,9 @@
     "exceljs": "^4.4.0",
     "ortoni-report": "^2.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "postinstall": "npx playwright install",
+    "test":"npx playwright test",
+    "report":"npx playwright show-report"
+  }
 }
