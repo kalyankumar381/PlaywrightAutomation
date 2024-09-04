@@ -67,7 +67,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   // reporter: [['ortoni-report', reportConfig],['dot']],
-  reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+  reporter: process.env.CI ? [['junit',{outputFile:'results.xml'}],['@reportportal/agent-js-playwright', _reportPortalConfig]]:[['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
             ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig],['./src/custom-report.ts']],
   // reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
   // ['allure-playwright'],['@reportportal/agent-js-playwright', ReportPortalAgent.reporter()]],
@@ -78,7 +78,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
-    headless:false,
+    headless:process.env.CI ? true:false,
     screenshot:'on',
     viewport:null,
     launchOptions:{
