@@ -118,12 +118,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 20039,
+                  "duration": 19383,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T08:33:13.989Z",
+                  "startTime": "2024-09-04T10:00:25.956Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -138,7 +138,7 @@
           ],
           "id": "57bf2438760ffd6189d7-791094aa2de061a856bc",
           "file": "testCasesWithCm.spec.ts",
-          "line": 22,
+          "line": 24,
           "column": 5
         },
         {
@@ -156,16 +156,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 14713,
+                  "duration": 14944,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan1\n"
+                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan11725444056085\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T08:33:34.391Z",
+                  "startTime": "2024-09-04T10:00:45.702Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -180,7 +180,7 @@
           ],
           "id": "57bf2438760ffd6189d7-329956e9ced78f250ec0",
           "file": "testCasesWithCm.spec.ts",
-          "line": 39,
+          "line": 41,
           "column": 9
         },
         {
@@ -198,14 +198,14 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15384,
+                  "duration": 15179,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Row 1 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 1, Column 1: kalyan1\n"
+                      "text": "Row 1, Column 1: kalyan11725444056085\n"
                     },
                     {
                       "text": "Row 1, Column 2: v 0.0.1\n"
@@ -226,7 +226,7 @@
                       "text": "Row 2 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 2, Column 1: fsd\n"
+                      "text": "Row 2, Column 1: kalyan11725443991849\n"
                     },
                     {
                       "text": "Row 2, Column 2: v 0.0.1\n"
@@ -238,7 +238,7 @@
                       "text": "Row 2, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 2, Column 5: an hour ago\n"
+                      "text": "Row 2, Column 5: a minute ago\n"
                     },
                     {
                       "text": "Row 2, Column 6: \n"
@@ -247,7 +247,7 @@
                       "text": "Row 3 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 3, Column 1: endpointcheck125\n"
+                      "text": "Row 3, Column 1: kalyan11725443935785\n"
                     },
                     {
                       "text": "Row 3, Column 2: v 0.0.1\n"
@@ -259,7 +259,7 @@
                       "text": "Row 3, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 3, Column 5: an hour ago\n"
+                      "text": "Row 3, Column 5: 2 minutes ago\n"
                     },
                     {
                       "text": "Row 3, Column 6: \n"
@@ -268,10 +268,10 @@
                       "text": "Row 4 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 4, Column 1: chanduyy\n"
+                      "text": "Row 4, Column 1: kalyan2\n"
                     },
                     {
-                      "text": "Row 4, Column 2: v 0.1.0\n"
+                      "text": "Row 4, Column 2: v 0.0.1\n"
                     },
                     {
                       "text": "Row 4, Column 3: Mocked API\n"
@@ -280,7 +280,7 @@
                       "text": "Row 4, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 4, Column 5: an hour ago\n"
+                      "text": "Row 4, Column 5: 12 minutes ago\n"
                     },
                     {
                       "text": "Row 4, Column 6: \n"
@@ -289,7 +289,7 @@
                       "text": "Row 5 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 5, Column 1: putmethod\n"
+                      "text": "Row 5, Column 1: adadada\n"
                     },
                     {
                       "text": "Row 5, Column 2: v 0.0.1\n"
@@ -301,7 +301,7 @@
                       "text": "Row 5, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 5, Column 5: 3 hours ago\n"
+                      "text": "Row 5, Column 5: 13 minutes ago\n"
                     },
                     {
                       "text": "Row 5, Column 6: \n"
@@ -310,7 +310,7 @@
                       "text": "Row 6 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 6, Column 1: gateway\n"
+                      "text": "Row 6, Column 1: kalyan1\n"
                     },
                     {
                       "text": "Row 6, Column 2: v 0.0.1\n"
@@ -322,7 +322,7 @@
                       "text": "Row 6, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 6, Column 5: 21 hours ago\n"
+                      "text": "Row 6, Column 5: 28 minutes ago\n"
                     },
                     {
                       "text": "Row 6, Column 6: \n"
@@ -331,19 +331,19 @@
                       "text": "Row 7 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 7, Column 1: tcheckKK\n"
+                      "text": "Row 7, Column 1: kalyan5\n"
                     },
                     {
                       "text": "Row 7, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 7, Column 3: Onboarded API\n"
+                      "text": "Row 7, Column 3: Mocked API\n"
                     },
                     {
                       "text": "Row 7, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 7, Column 5: 02/09/2024\n"
+                      "text": "Row 7, Column 5: 29 minutes ago\n"
                     },
                     {
                       "text": "Row 7, Column 6: \n"
@@ -352,19 +352,19 @@
                       "text": "Row 8 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 8, Column 1: AUD API01\n"
+                      "text": "Row 8, Column 1: fsd\n"
                     },
                     {
-                      "text": "Row 8, Column 2: v 1.1.0+1 more\n"
+                      "text": "Row 8, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 8, Column 3: Onboarded API\n"
+                      "text": "Row 8, Column 3: Mocked API\n"
                     },
                     {
-                      "text": "Row 8, Column 4: published\n"
+                      "text": "Row 8, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 8, Column 5: 29/08/2024\n"
+                      "text": "Row 8, Column 5: 2 hours ago\n"
                     },
                     {
                       "text": "Row 8, Column 6: \n"
@@ -373,19 +373,19 @@
                       "text": "Row 9 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 9, Column 1: gggtrettt\n"
+                      "text": "Row 9, Column 1: endpointcheck125\n"
                     },
                     {
                       "text": "Row 9, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 9, Column 3: Onboarded API\n"
+                      "text": "Row 9, Column 3: Mocked API\n"
                     },
                     {
                       "text": "Row 9, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 9, Column 5: 29/08/2024\n"
+                      "text": "Row 9, Column 5: 2 hours ago\n"
                     },
                     {
                       "text": "Row 9, Column 6: \n"
@@ -394,19 +394,19 @@
                       "text": "Row 10 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 10, Column 1: rrr\n"
+                      "text": "Row 10, Column 1: chanduyy\n"
                     },
                     {
-                      "text": "Row 10, Column 2: v 0.0.1\n"
+                      "text": "Row 10, Column 2: v 0.1.0\n"
                     },
                     {
-                      "text": "Row 10, Column 3: Onboarded API\n"
+                      "text": "Row 10, Column 3: Mocked API\n"
                     },
                     {
                       "text": "Row 10, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 10, Column 5: 29/08/2024\n"
+                      "text": "Row 10, Column 5: 3 hours ago\n"
                     },
                     {
                       "text": "Row 10, Column 6: \n"
@@ -415,7 +415,7 @@
                       "text": "Row 11 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 11, Column 1: hvhgvhv\n"
+                      "text": "Row 11, Column 1: putmethod\n"
                     },
                     {
                       "text": "Row 11, Column 2: v 0.0.1\n"
@@ -427,7 +427,7 @@
                       "text": "Row 11, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 11, Column 5: 28/08/2024\n"
+                      "text": "Row 11, Column 5: 5 hours ago\n"
                     },
                     {
                       "text": "Row 11, Column 6: \n"
@@ -436,19 +436,19 @@
                       "text": "Row 12 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 12, Column 1: token testing12\n"
+                      "text": "Row 12, Column 1: gateway\n"
                     },
                     {
                       "text": "Row 12, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 12, Column 3: Onboarded API\n"
+                      "text": "Row 12, Column 3: Mocked API\n"
                     },
                     {
                       "text": "Row 12, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 12, Column 5: 28/08/2024\n"
+                      "text": "Row 12, Column 5: a day ago\n"
                     },
                     {
                       "text": "Row 12, Column 6: \n"
@@ -457,19 +457,19 @@
                       "text": "Row 13 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 13, Column 1: CH API01\n"
+                      "text": "Row 13, Column 1: tcheckKK\n"
                     },
                     {
-                      "text": "Row 13, Column 2: v 1.1.0+1 more\n"
+                      "text": "Row 13, Column 2: v 0.0.1\n"
                     },
                     {
                       "text": "Row 13, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 13, Column 4: published\n"
+                      "text": "Row 13, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 13, Column 5: 28/08/2024\n"
+                      "text": "Row 13, Column 5: 02/09/2024\n"
                     },
                     {
                       "text": "Row 13, Column 6: \n"
@@ -478,19 +478,19 @@
                       "text": "Row 14 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 14, Column 1: endpointpolicy\n"
+                      "text": "Row 14, Column 1: AUD API01\n"
                     },
                     {
-                      "text": "Row 14, Column 2: v 0.0.1\n"
+                      "text": "Row 14, Column 2: v 1.1.0+1 more\n"
                     },
                     {
                       "text": "Row 14, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 14, Column 4: unpublished\n"
+                      "text": "Row 14, Column 4: published\n"
                     },
                     {
-                      "text": "Row 14, Column 5: 28/08/2024\n"
+                      "text": "Row 14, Column 5: 29/08/2024\n"
                     },
                     {
                       "text": "Row 14, Column 6: \n"
@@ -499,19 +499,19 @@
                       "text": "Row 15 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 15, Column 1: SA API01\n"
+                      "text": "Row 15, Column 1: gggtrettt\n"
                     },
                     {
-                      "text": "Row 15, Column 2: v 1.1.0+1 more\n"
+                      "text": "Row 15, Column 2: v 0.0.1\n"
                     },
                     {
                       "text": "Row 15, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 15, Column 4: published\n"
+                      "text": "Row 15, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 15, Column 5: 27/08/2024\n"
+                      "text": "Row 15, Column 5: 29/08/2024\n"
                     },
                     {
                       "text": "Row 15, Column 6: \n"
@@ -520,7 +520,7 @@
                       "text": "Row 16 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 16, Column 1: automation5q3nct\n"
+                      "text": "Row 16, Column 1: rrr\n"
                     },
                     {
                       "text": "Row 16, Column 2: v 0.0.1\n"
@@ -532,7 +532,7 @@
                       "text": "Row 16, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 16, Column 5: 20/08/2024\n"
+                      "text": "Row 16, Column 5: 29/08/2024\n"
                     },
                     {
                       "text": "Row 16, Column 6: \n"
@@ -541,7 +541,7 @@
                       "text": "Row 17 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 17, Column 1: getuserrtrtrtrtrt\n"
+                      "text": "Row 17, Column 1: hvhgvhv\n"
                     },
                     {
                       "text": "Row 17, Column 2: v 0.0.1\n"
@@ -553,7 +553,7 @@
                       "text": "Row 17, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 17, Column 5: 19/08/2024\n"
+                      "text": "Row 17, Column 5: 28/08/2024\n"
                     },
                     {
                       "text": "Row 17, Column 6: \n"
@@ -562,19 +562,19 @@
                       "text": "Row 18 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 18, Column 1: goatttt\n"
+                      "text": "Row 18, Column 1: token testing12\n"
                     },
                     {
                       "text": "Row 18, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 18, Column 3: Mocked API\n"
+                      "text": "Row 18, Column 3: Onboarded API\n"
                     },
                     {
                       "text": "Row 18, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 18, Column 5: 19/08/2024\n"
+                      "text": "Row 18, Column 5: 28/08/2024\n"
                     },
                     {
                       "text": "Row 18, Column 6: \n"
@@ -583,19 +583,19 @@
                       "text": "Row 19 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 19, Column 1: fdfdffd\n"
+                      "text": "Row 19, Column 1: CH API01\n"
                     },
                     {
-                      "text": "Row 19, Column 2: v 0.0.1\n"
+                      "text": "Row 19, Column 2: v 1.1.0+1 more\n"
                     },
                     {
                       "text": "Row 19, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 19, Column 4: unpublished\n"
+                      "text": "Row 19, Column 4: published\n"
                     },
                     {
-                      "text": "Row 19, Column 5: 16/08/2024\n"
+                      "text": "Row 19, Column 5: 28/08/2024\n"
                     },
                     {
                       "text": "Row 19, Column 6: \n"
@@ -604,19 +604,19 @@
                       "text": "Row 20 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 20, Column 1: effdfdfdfdf\n"
+                      "text": "Row 20, Column 1: endpointpolicy\n"
                     },
                     {
                       "text": "Row 20, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 20, Column 3: Mocked API\n"
+                      "text": "Row 20, Column 3: Onboarded API\n"
                     },
                     {
                       "text": "Row 20, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 20, Column 5: 16/08/2024\n"
+                      "text": "Row 20, Column 5: 28/08/2024\n"
                     },
                     {
                       "text": "Row 20, Column 6: \n"
@@ -625,19 +625,19 @@
                       "text": "Row 21 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 21, Column 1: automationp3j9c5\n"
+                      "text": "Row 21, Column 1: SA API01\n"
                     },
                     {
-                      "text": "Row 21, Column 2: v 0.0.1\n"
+                      "text": "Row 21, Column 2: v 1.1.0+1 more\n"
                     },
                     {
                       "text": "Row 21, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 21, Column 4: unpublished\n"
+                      "text": "Row 21, Column 4: published\n"
                     },
                     {
-                      "text": "Row 21, Column 5: 16/08/2024\n"
+                      "text": "Row 21, Column 5: 27/08/2024\n"
                     },
                     {
                       "text": "Row 21, Column 6: \n"
@@ -646,10 +646,10 @@
                       "text": "Row 22 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 22, Column 1: policy endpoint\n"
+                      "text": "Row 22, Column 1: automation5q3nct\n"
                     },
                     {
-                      "text": "Row 22, Column 2: v 1.0.0\n"
+                      "text": "Row 22, Column 2: v 0.0.1\n"
                     },
                     {
                       "text": "Row 22, Column 3: Onboarded API\n"
@@ -658,7 +658,7 @@
                       "text": "Row 22, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 22, Column 5: 14/08/2024\n"
+                      "text": "Row 22, Column 5: 20/08/2024\n"
                     },
                     {
                       "text": "Row 22, Column 6: \n"
@@ -667,19 +667,19 @@
                       "text": "Row 23 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 23, Column 1: GG ERA\n"
+                      "text": "Row 23, Column 1: getuserrtrtrtrtrt\n"
                     },
                     {
                       "text": "Row 23, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 23, Column 3: Mocked API\n"
+                      "text": "Row 23, Column 3: Onboarded API\n"
                     },
                     {
                       "text": "Row 23, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 23, Column 5: 09/08/2024\n"
+                      "text": "Row 23, Column 5: 19/08/2024\n"
                     },
                     {
                       "text": "Row 23, Column 6: \n"
@@ -688,7 +688,7 @@
                       "text": "Row 24 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 24, Column 1: kumarkaushik\n"
+                      "text": "Row 24, Column 1: goatttt\n"
                     },
                     {
                       "text": "Row 24, Column 2: v 0.0.1\n"
@@ -700,7 +700,7 @@
                       "text": "Row 24, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 24, Column 5: 08/08/2024\n"
+                      "text": "Row 24, Column 5: 19/08/2024\n"
                     },
                     {
                       "text": "Row 24, Column 6: \n"
@@ -709,19 +709,19 @@
                       "text": "Row 25 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 25, Column 1: policychakru\n"
+                      "text": "Row 25, Column 1: fdfdffd\n"
                     },
                     {
-                      "text": "Row 25, Column 2: v 1.0.0\n"
+                      "text": "Row 25, Column 2: v 0.0.1\n"
                     },
                     {
                       "text": "Row 25, Column 3: Onboarded API\n"
                     },
                     {
-                      "text": "Row 25, Column 4: published\n"
+                      "text": "Row 25, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 25, Column 5: 07/08/2024\n"
+                      "text": "Row 25, Column 5: 16/08/2024\n"
                     },
                     {
                       "text": "Row 25, Column 6: \n"
@@ -730,19 +730,19 @@
                       "text": "Row 26 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 26, Column 1: automationsg6twb\n"
+                      "text": "Row 26, Column 1: effdfdfdfdf\n"
                     },
                     {
                       "text": "Row 26, Column 2: v 0.0.1\n"
                     },
                     {
-                      "text": "Row 26, Column 3: Onboarded API\n"
+                      "text": "Row 26, Column 3: Mocked API\n"
                     },
                     {
                       "text": "Row 26, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 26, Column 5: 05/08/2024\n"
+                      "text": "Row 26, Column 5: 16/08/2024\n"
                     },
                     {
                       "text": "Row 26, Column 6: \n"
@@ -751,7 +751,7 @@
                       "text": "Row 27 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 27, Column 1: automationpuv4pt\n"
+                      "text": "Row 27, Column 1: automationp3j9c5\n"
                     },
                     {
                       "text": "Row 27, Column 2: v 0.0.1\n"
@@ -763,7 +763,7 @@
                       "text": "Row 27, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 27, Column 5: 05/08/2024\n"
+                      "text": "Row 27, Column 5: 16/08/2024\n"
                     },
                     {
                       "text": "Row 27, Column 6: \n"
@@ -772,7 +772,7 @@
                       "text": "Row 28 has 6 columns.\n"
                     },
                     {
-                      "text": "Row 28, Column 1: praveenkttest\n"
+                      "text": "Row 28, Column 1: policy endpoint\n"
                     },
                     {
                       "text": "Row 28, Column 2: v 1.0.0\n"
@@ -784,13 +784,13 @@
                       "text": "Row 28, Column 4: unpublished\n"
                     },
                     {
-                      "text": "Row 28, Column 5: 02/08/2024\n"
+                      "text": "Row 28, Column 5: 14/08/2024\n"
                     },
                     {
                       "text": "Row 28, Column 6: \n"
                     },
                     {
-                      "text": "Cell value is the --------- kalyan1\n"
+                      "text": "Cell value is the --------- kalyan11725444056085\n"
                     },
                     {
                       "text": ">>>>>>>>>>>>>>>>.. kalyan\n"
@@ -798,7 +798,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T08:33:49.115Z",
+                  "startTime": "2024-09-04T10:01:00.661Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -813,7 +813,7 @@
           ],
           "id": "57bf2438760ffd6189d7-6be1f565d8e8f75b4c05",
           "file": "testCasesWithCm.spec.ts",
-          "line": 51,
+          "line": 54,
           "column": 5
         },
         {
@@ -831,16 +831,19 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13042,
+                  "duration": 12682,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan1\n"
+                      "text": "Mock Name >>>>>>>>>>>>>>>> kalyan11725444084033\n"
+                    },
+                    {
+                      "text": ">>>>>>>>>>>>>>>>>>> Create Mock API - kalyan11725444084033\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T08:34:04.514Z",
+                  "startTime": "2024-09-04T10:01:15.858Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -855,12 +858,12 @@
           ],
           "id": "57bf2438760ffd6189d7-013bf541d6348acdc141",
           "file": "testCasesWithCm.spec.ts",
-          "line": 71,
+          "line": 74,
           "column": 9
         },
         {
           "title": "Invalid Login",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -872,28 +875,49 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 22808,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30240,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/pages/login.page.ts",
+                        "column": 25,
+                        "line": 63
+                      },
+                      "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"http://rxtesting.yappes-enterprise.com/\" until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m../pages/login.page.ts:63\n\n\u001b[0m \u001b[90m 61 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39menterPassword(pass)\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mclickLogBtn()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 63 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[32m\"http://rxtesting.yappes-enterprise.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 64 |\u001b[39m         expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"http://rxtesting.yappes-enterprise.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 65 |\u001b[39m     }\n \u001b[90m 66 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at LogingPage.login (/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/pages/login.page.ts:63:25)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/tests/testCasesWithCm.spec.ts:89:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T08:34:17.573Z",
+                  "startTime": "2024-09-04T10:01:28.555Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Invalid-Login-chromium/test-finished-1.png"
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Invalid-Login-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/test-results/testCasesWithCm-Invalid-Login-chromium/trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "57bf2438760ffd6189d7-0d8f14c35ea759be0006",
           "file": "testCasesWithCm.spec.ts",
-          "line": 82,
+          "line": 88,
           "column": 5
         }
       ]
@@ -901,11 +925,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-04T08:33:13.483Z",
-    "duration": 87038.461,
-    "expected": 5,
+    "startTime": "2024-09-04T10:00:25.409Z",
+    "duration": 93592.276,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

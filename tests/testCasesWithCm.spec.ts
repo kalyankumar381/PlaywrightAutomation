@@ -12,7 +12,9 @@ const testData=[{
     apiName:"kalyan1",
     apiDisc:"kalyan_desc",
 }
-]
+];
+
+let mockApiName:string;
 
 test.beforeEach(async ({ page }) => {
     await page.goto(Env.test);
@@ -42,8 +44,9 @@ testData.forEach(testdata=>{
         await basePage.commonPage.clickSideBar("Manage APIs");
         await basePage.commonPage.clickSideBar("My APIs");
         await page.waitForTimeout(2000);
-        // await myapiPage.creatMockApi("Kalyan1","kalyan_desc");            
-        await basePage.myapiPage.creatMockApi(testdata.apiName,testdata.apiDisc);
+        // await myapiPage.creatMockApi("Kalyan1","kalyan_desc"); 
+        mockApiName=testdata.apiName+Date.now().toString();           
+        await basePage.myapiPage.creatMockApi(mockApiName,testdata.apiDisc);
     });  
 });
 
@@ -58,7 +61,7 @@ test('Check the grid and delete', async ({page, basePage }) => {
     console.log(`Cell value is the --------- ${rowValue}`);
 
     for(let i=0;i<testData.length;i++){
-        await basePage.myapiPage.clickButtonInRowByText(testData[i].apiName);
+        await basePage.myapiPage.clickButtonInRowByText(mockApiName);
         await basePage.myapiPage.deleteMockApi();    
         await basePage.myapiPage.dialogDelete();
     }
@@ -74,8 +77,11 @@ for(let i=0;i<testData.length;i++){
         await basePage.commonPage.clickSideBar("Manage APIs");
         await basePage.commonPage.clickSideBar("My APIs");
         await page.waitForTimeout(2000);
-        // await myapiPage.creatMockApi("Kalyan1","kalyan_desc");            
-        await basePage.myapiPage.creatMockApi(testData[i].apiName,testData[i].apiDisc);
+        // await myapiPage.creatMockApi("Kalyan1","kalyan_desc");   
+        let mockApiName=testData[i].apiName+Date.now().toString();
+        console.log("Mock Name >>>>>>>>>>>>>>>> " + mockApiName);
+                
+        await basePage.myapiPage.creatMockApi(mockApiName,testData[i].apiDisc);
     });
 }
 
