@@ -10,7 +10,7 @@ dotenv.config({
 });
 
 test.beforeAll(async ({ }) => {
-    const baseURL = process.env.base_URL;
+    const baseURL = process.env.BASEURL;
     console.log('Base URL <><><><><><><><><> ::', baseURL);  
 });
 

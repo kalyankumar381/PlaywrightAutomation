@@ -11,8 +11,6 @@ jobs:
           command: npm ci
       - run:
           name: Run tests
-          environment:
-            base_URL: $BASEURL 
           command: npm run analy_test
       - store_test_results:
           path: results.xml
