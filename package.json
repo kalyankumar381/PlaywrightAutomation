@@ -34,6 +34,7 @@
   "scripts": {
     "postinstall": "npx playwright install",
     "test": "npx playwright test",
+    "analy_test":"npx playwright test apiExample.spec.ts",
     "report": "npx playwright show-report"
   }
 }

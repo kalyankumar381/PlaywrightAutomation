@@ -9,6 +9,11 @@ dotenv.config({
     override:true
 });
 
+test.beforeAll(async ({ }) => {
+    console.log("<><><><><><><><><><><><> :: "+process.env.base_URL);
+    
+})
+
 
 const baseUrl:string="https://api.testing.yappes-enterprise.com";
 
