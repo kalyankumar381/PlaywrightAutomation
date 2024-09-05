@@ -7,9 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Download dependency
-          environment:
-            base_url:base_URL          
+          name: Download dependency          
           command: npm ci
       - run:
           name: Run tests
