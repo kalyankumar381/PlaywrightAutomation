@@ -12,11 +12,11 @@ jobs:
       - run:
           name: Run tests
           environment:
-            base_URL: BASEURL 
+            base_URL: $BASEURL 
           command: npm run analy_test
       - store_test_results:
           path: results.xml
-               
+
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
