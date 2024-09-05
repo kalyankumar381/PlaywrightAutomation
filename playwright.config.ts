@@ -21,7 +21,7 @@ const reportConfig : OrtoniReportConfig={
   projectName:"Playwright Demo",
   testType:"Smoke"
 }
-
+const rpTags = process.env.PWG_ENV_RP_TAGS ? JSON.parse(process.env.PWG_ENV_RP_TAGS) : {};
 const _reportPortalConfig={
   // endpoint: "https://demo.reportportal.io/api/v1",  
   // apiKey: Constants.GLOBAL_RP_TOKEN,  
@@ -38,16 +38,23 @@ const _reportPortalConfig={
   // attributes: Constants.getRpTags(),
   description: Constants.GLOBAL_SUITE_DESC,
   
-  attributes: [  
-      {  
-        key: "attributeKey",    
-        value: "attrbiuteValue",  
-      },  
-      {  
-        key:"System",
-        value: os.hostname(),
-      },
-    ],
+  // attributes: [  
+  //     {  
+  //       key: "attributeKey",    
+  //       value: "attrbiuteValue",  
+  //     },  
+  //     {  
+  //       key:"System",
+  //       value: os.hostname(),
+  //     },
+  //   ],
+  attributes : [
+    ...Object.entries(rpTags).map(([key, value]) => ({ key, value })), // Spread rpTags into key-value pairs
+    {
+      key: "System",
+      value: os.hostname(),
+    }
+  ],
   mode: 'DEFAULT',
 }
 
