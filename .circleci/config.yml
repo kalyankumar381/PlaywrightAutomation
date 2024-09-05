@@ -7,15 +7,16 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Download dependency
-          environment:
-            base_URL: BASEURL        
+          name: Download dependency                 
           command: npm ci
       - run:
           name: Run tests
+          environment:
+            base_URL: BASEURL 
           command: npm run analy_test
       - store_test_results:
           path: results.xml
+               
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
