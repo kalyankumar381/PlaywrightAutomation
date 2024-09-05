@@ -17,7 +17,7 @@ test.beforeAll(async ({ }) => {
 
 const baseUrl:string="https://api.testing.yappes-enterprise.com";
 
-// test.describe('Analystics API test cases', () => {
+test.describe('Analystics API test cases', () => {
         
     for (let i = 0; i <= dataset['APIAnalyticsPOST'].length - 1; i++) {
         test('POST from re-usable method - '  + ' - iteration - ' + (i + 1) , async ({ request,global }) => {
@@ -78,4 +78,4 @@ const baseUrl:string="https://api.testing.yappes-enterprise.com";
         expect(msg[0]).toBe('No API created.');   
     });
 
-// });
+});
