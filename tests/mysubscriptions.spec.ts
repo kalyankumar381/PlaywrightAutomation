@@ -10,7 +10,7 @@ dotenv.config({
 });
 const baseUrl=process.env.baseUrl;
 
-test('get cumulative metrics for error code', async ({ request,global }) => {
+test('Get cumulative metrics for error code', async ({ request,global }) => {
     const requestBody= dataset['getcumulativemetricsforerrorcode']
     console.log(requestBody);    
     const url=`${baseUrl}${requestBody.endPoint}` 
