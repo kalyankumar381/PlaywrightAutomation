@@ -50,23 +50,23 @@
       [
         "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/node_modules/@reportportal/agent-js-playwright/build/index.js",
         {
-          "token": "y_bWVfksMPThiAA2dIVxf4dgerFeeSryMEm5ZbXGs_Y4zumvNr2udT1rX6pzzpxq2P",
+          "token": "y_WDJCAAS9QVKoBgc6PJUvoBNcqnH6IEPstoNiM-VtI0EAyyx92aHGROPMWAgILOp5",
           "endpoint": "https://demo.reportportal.io/api/v1",
           "project": "default_personal",
           "launch": "Yappes_Automation",
           "description": "Yappes_Automation tests",
           "attributes": [
             {
-              "key": "k1",
-              "value": "v1"
+              "key": "Application",
+              "value": "Yapse_API"
             },
             {
-              "key": "k2",
-              "value": "v2"
+              "key": "ApplicationGroup",
+              "value": "Analytics"
             },
             {
-              "key": "k3",
-              "value": "v3"
+              "key": "RunType",
+              "value": "Daily"
             },
             {
               "key": "System",
@@ -110,8 +110,8 @@
   },
   "suites": [
     {
-      "title": "analytics.spec.ts",
-      "file": "analytics.spec.ts",
+      "title": "mysubscriptions.spec.ts",
+      "file": "mysubscriptions.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -121,7 +121,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 0,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -130,14 +130,11 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 941,
+                  "duration": 813,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Base URL <><><><><><><><><> :: \u001b[90mundefined\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  duration: { limit: \u001b[33m90\u001b[39m, period: \u001b[32m'days'\u001b[39m },\n  organizationId: \u001b[32m'ORG-75BEE1C4'\u001b[39m,\n  errorSeries: \u001b[33m400\u001b[39m\n}\n"
+                      "text": "{ endPoint: \u001b[32m'/api/connect/providers/USR-83BEAEBE/apilists'\u001b[39m }\n"
                     },
                     {
                       "text": "Token status code is ***************** - >200\n"
@@ -154,12 +151,12 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-05T08:43:39.418Z",
+                  "startTime": "2024-09-10T08:26:44.638Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-get-cumulative-metrics-for-error-code-chromium/test-finished-1.png"
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-get-cumulative-metrics-for-error-code-chromium/test-finished-1.png"
                     }
                   ]
                 }
@@ -167,19 +164,835 @@
               "status": "expected"
             }
           ],
-          "id": "634c82c6846b68aa8d60-508deffe08b5e5416cef",
-          "file": "analytics.spec.ts",
-          "line": 36,
-          "column": 9
+          "id": "cc5029e287b92b800f45-e79cec0fed30ed508281",
+          "file": "mysubscriptions.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "Get Curl Data for Subscription",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 807,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/consumer/subscription/curldata'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, subscriptionId: \u001b[32m'SCB-D72DCD8C'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscriptionData: {\n      publicKey: \u001b[32m'5637933239f45c8f4715953b98d6bccb53f33b9ff42ff57d27de61625e042a7a'\u001b[39m,\n      privateKey: \u001b[32m'b596004d25d90fd97b42957f77b3b7dce332beeee93e4b6e664bd0be548384a1'\u001b[39m,\n      expiryDateTime: \u001b[32m'2024-09-03T09:49:39.000Z'\u001b[39m,\n      pricePlanId: \u001b[32m'PRI-1CEE9522'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m\n    },\n    versionData: {\n      publishedVersion: \u001b[32m'1.1.0'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m,\n      apiName: \u001b[32m'SA API01'\u001b[39m,\n      apiType: \u001b[32m'existing'\u001b[39m\n    },\n    resourceData: {\n      resourceId: \u001b[32m'RES-D7CAEB02'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m,\n      endPointName: \u001b[32m'Get Posts'\u001b[39m,\n      endPoint: \u001b[32m'/posts'\u001b[39m,\n      method: \u001b[32m'GET'\u001b[39m\n    }\n  }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:45.653Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Curl-Data-for-Subscription-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-5f26907afadad8e5c0f8",
+          "file": "mysubscriptions.spec.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "Get All Subscription -- iteration - 1 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1008,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  },\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'apiGroup'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscribedAPIs: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ]\n  }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:46.470Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Subscription----iteration---1--chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-5dc693fe84c75165ae3e",
+          "file": "mysubscriptions.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "Get All Subscription -- iteration - 2 ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2246,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  },\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'apiGroup'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscribedGroups: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    subscriptionDetails: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ]\n  }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:47.483Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Subscription----iteration---2--chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-72a6ea63f7e67c1b79e1",
+          "file": "mysubscriptions.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "Curl Preview Consumers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 768,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  endPoint: \u001b[32m'/api/connect/consumers/api/preview/RES-AC993130?apiId=API-8E5A094A&version=1.5.0'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[33m401\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:49.738Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Curl-Preview-Consumers-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-97b468b0873d122fdfb3",
+          "file": "mysubscriptions.spec.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "Add Review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 706,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/review/rating/API-8E5A094A'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { organizationId: \u001b[32m'ORG-4389C54A'\u001b[39m, review: \u001b[32m'ss'\u001b[39m, rating: \u001b[33m5\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m401\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[33m401\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:50.513Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Add-Review-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-7d3c659092e2bf17198b",
+          "file": "mysubscriptions.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "Get Reviews",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 758,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ endPoint: \u001b[32m'/api/content/review/rating/API-1030A645'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Response data message is <><> :: No data found.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:51.225Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Reviews-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-040d102c4577018434e6",
+          "file": "mysubscriptions.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "Update Review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 908,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/review/rating/user/REV-15E34316'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { review: \u001b[32m'updated again'\u001b[39m, rating: \u001b[33m3\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[33m401\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:51.987Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Update-Review-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-6abff4fa480a0026aa8e",
+          "file": "mysubscriptions.spec.ts",
+          "line": 95,
+          "column": 5
+        },
+        {
+          "title": "Get User Reviews",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 830,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ endPoint: \u001b[32m'/api/content/review/rating/user/API-24DD4FA6'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Response message >>>> :::: \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:52.901Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-User-Reviews-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-de68d62efc795a2e97f2",
+          "file": "mysubscriptions.spec.ts",
+          "line": 107,
+          "column": 5
+        },
+        {
+          "title": "Get Specification For Download",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 592,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/specifications/download'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { type: \u001b[32m'yappesdef'\u001b[39m, apiId: \u001b[32m'API-EAE312FE'\u001b[39m, version: \u001b[32m'latest'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:53.738Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Specification-For-Download-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-5cbbaeaff1ae318a66b6",
+          "file": "mysubscriptions.spec.ts",
+          "line": 123,
+          "column": 5
+        },
+        {
+          "title": "Get All Attached Policy",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 606,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/gateway/fetchpolicyattach'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { subscriberId: \u001b[32m'SCB-2CE31FA2'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:54.335Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Attached-Policy-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-6ccc863026c12b761c32",
+          "file": "mysubscriptions.spec.ts",
+          "line": 135,
+          "column": 5
+        },
+        {
+          "title": "Get Application Keys",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 645,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ endPoint: \u001b[32m'/api/content/users/appkeys'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    appSets: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    message: \u001b[32m'Application Keys Sets Found'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Response message >>>> :::: \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:54.946Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Application-Keys-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-d842a3fd54713710cad2",
+          "file": "mysubscriptions.spec.ts",
+          "line": 147,
+          "column": 5
+        },
+        {
+          "title": "Fetch Subscription Details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 636,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ endPoint: \u001b[32m'/api/content/consumers/subscriptiondetails/SCB-E0B72E59'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Response message >>>> :::: \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:55.595Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Fetch-Subscription-Details-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-d980e93bc740d5d891c3",
+          "file": "mysubscriptions.spec.ts",
+          "line": 163,
+          "column": 5
+        },
+        {
+          "title": "Get AllSubscribed Organization Details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 616,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/connect/consumers/subscribed/organizationlist/USR-183152C2'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, userId: \u001b[32m'USR-183152C2'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: [\n    {\n      organizationName: \u001b[32m'Yappes Organization'\u001b[39m,\n      organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m\n    }\n  ]\n}\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:56.236Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-AllSubscribed-Organization-Details-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-292e4651deba09c0a9a6",
+          "file": "mysubscriptions.spec.ts",
+          "line": 179,
+          "column": 5
+        },
+        {
+          "title": "Get remaining Tryouts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 606,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/get/tryouts'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiId: \u001b[32m'API-0BE60A26'\u001b[39m, userId: \u001b[32m'USR-FB99F9D9'\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:56.858Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-remaining-Tryouts-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-9cce4ca6bf6463521733",
+          "file": "mysubscriptions.spec.ts",
+          "line": 191,
+          "column": 5
+        },
+        {
+          "title": "Added APIName",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 581,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/apigroups/addedapiname'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiGroupId: \u001b[32m''\u001b[39m }\n  }\n]\n"
+                    },
+                    {
+                      "text": "Token status code is ***************** - >200\n"
+                    },
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No API created.'\u001b[39m } }\n"
+                    },
+                    {
+                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-10T08:26:57.468Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Added-APIName-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cc5029e287b92b800f45-0b4331dc1eb49abe997b",
+          "file": "mysubscriptions.spec.ts",
+          "line": 203,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-05T08:43:26.588Z",
-    "duration": 14509.858,
-    "expected": 1,
+    "startTime": "2024-09-10T08:26:43.951Z",
+    "duration": 14159.546,
+    "expected": 16,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

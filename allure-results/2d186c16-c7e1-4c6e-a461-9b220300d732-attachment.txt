@@ -1,0 +1,20 @@
+[
+  {
+    endPoint: '/api/connect/consumers/subscribed/organizationlist/USR-183152C2',
+    statusCode: '200',
+    requestbody: { apiDealType: 'individualApi', userId: 'USR-183152C2' }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      organizationName: 'Yappes Organization',
+      organizationId: 'ORG-9C2D5B74'
+    }
+  ]
+}
+[ 'OK' ]

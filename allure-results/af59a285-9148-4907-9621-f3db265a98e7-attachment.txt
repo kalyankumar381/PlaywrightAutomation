@@ -1,0 +1,6 @@
+{ endPoint: '/api/content/review/rating/API-1030A645' }
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]
+Response data message is <><> :: No data found.

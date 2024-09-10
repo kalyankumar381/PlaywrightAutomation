@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/API/connect/consumers/subscribed/USR-E6903E9D',
+    statusCode: '200',
+    requestbody: { apiDealType: 'individualApi', organizationId: 'ORG-9C2D5B7' }
+  }
+]
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

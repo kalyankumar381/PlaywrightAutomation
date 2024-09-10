@@ -1,0 +1,1 @@
+{ endPoint: '/api/connect/providers/USR-83BEAEBE/apilists' }

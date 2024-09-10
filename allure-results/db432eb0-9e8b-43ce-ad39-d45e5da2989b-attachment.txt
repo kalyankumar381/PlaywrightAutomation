@@ -1,0 +1,17 @@
+[
+  {
+    endPoint: '/api/content/review/rating/API-8E5A094A',
+    statusCode: '200',
+    requestbody: { organizationId: 'ORG-4389C54A', review: 'ss', rating: 5 }
+  }
+]
+Token status code is ***************** - >200
+401
+{
+  error: {
+    name: 'AuthenticationError',
+    message: 'Unauthorized',
+    value: 'invalid_token'
+  }
+}
+[]

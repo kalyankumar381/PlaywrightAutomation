@@ -1,0 +1,36 @@
+[
+  {
+    endPoint: '/api/content/consumer/subscription/curldata',
+    statusCode: '200',
+    requestbody: { apiDealType: 'individualApi', subscriptionId: 'SCB-D72DCD8C' }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    subscriptionData: {
+      publicKey: '5637933239f45c8f4715953b98d6bccb53f33b9ff42ff57d27de61625e042a7a',
+      privateKey: 'b596004d25d90fd97b42957f77b3b7dce332beeee93e4b6e664bd0be548384a1',
+      expiryDateTime: '2024-09-03T09:49:39.000Z',
+      pricePlanId: 'PRI-1CEE9522',
+      apiId: 'API-1761031B'
+    },
+    versionData: {
+      publishedVersion: '1.1.0',
+      apiId: 'API-1761031B',
+      apiName: 'SA API01',
+      apiType: 'existing'
+    },
+    resourceData: {
+      resourceId: 'RES-D7CAEB02',
+      apiId: 'API-1761031B',
+      endPointName: 'Get Posts',
+      endPoint: '/posts',
+      method: 'GET'
+    }
+  }
+}
+[ 'OK' ]

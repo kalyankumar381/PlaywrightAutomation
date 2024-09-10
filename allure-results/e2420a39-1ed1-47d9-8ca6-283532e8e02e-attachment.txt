@@ -1,0 +1,9 @@
+[
+  {
+    endPoint: '/api/content/consumer/subscription/curldata',
+    statusCode: '200',
+    requestbody: { apiDealType: 'individualApi', subscriptionId: 'SCB-D72DCD8C' }
+  }
+]
+Token status code is ***************** - >200
+401

@@ -1,0 +1,6 @@
+{
+  duration: { limit: 90, period: 'days' },
+  organizationId: 'ORG-75BEE1C4',
+  errorSeries: 400
+}
+Token status code is ***************** - >200

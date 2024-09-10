@@ -1,0 +1,9 @@
+[
+  {
+    endPoint: '/api/connect/consumers/subscribed/organizationlist/USR-183152C2',
+    statusCode: '200',
+    requestbody: { apiGroupId: '' }
+  }
+]
+Token status code is ***************** - >200
+500

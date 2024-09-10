@@ -1,0 +1,9 @@
+[
+  {
+    endPoint: '/api/content/review/rating/user/REV-15E34316',
+    statusCode: '200',
+    requestbody: { review: 'updated again', rating: 3 }
+  }
+]
+Token status code is ***************** - >200
+404

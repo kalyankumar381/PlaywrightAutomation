@@ -1,0 +1,101 @@
+{
+   
+    "getcumulativemetricsforerrorcode":{
+       "endPoint":"/api/connect/providers/USR-83BEAEBE/apilists"
+    },
+    "GetCurlDataforSubscription" : [{
+        "endPoint":"/api/content/consumer/subscription/curldata",
+        "statusCode":"200",
+        "requestbody":{
+           "apiDealType": "individualApi",
+            "subscriptionId": "SCB-D72DCD8C"
+        }
+    }],
+    "GetAllSubscription":[{
+        "endPoint":"/API/connect/consumers/subscribed/USR-E6903E9D",
+        "statusCode":"200",
+        "requestbody":{
+            "apiDealType": "individualApi",
+            "organizationId": "ORG-9C2D5B74"
+        }},{
+            "endPoint":"/API/connect/consumers/subscribed/USR-E6903E9D",
+            "statusCode":"200",
+            "requestbody":{
+                "apiDealType": "apiGroup",
+                "organizationId": "ORG-9C2D5B74"
+            }
+        }],
+    "curlPreviewConsumers":{
+        "endPoint":"/api/connect/consumers/api/preview/RES-AC993130?apiId=API-8E5A094A&version=1.5.0"
+    },
+    "addReview" : [{
+        "endPoint":"/api/content/review/rating/API-8E5A094A",
+        "statusCode":"200",
+        "requestbody":{
+           "organizationId": "ORG-4389C54A",
+            "review": "ss", 
+            "rating": 5
+        }
+    }],
+    "getReviews":{
+        "endPoint":"/api/content/review/rating/API-1030A645"
+    },
+    "updateReview" : [{
+        "endPoint":"/api/content/review/rating/user/REV-15E34316",
+        "statusCode":"200",
+        "requestbody":{
+            "review":"updated again",
+	        "rating":3
+        }
+    }],
+    "getUserReviews":{
+        "endPoint":"/api/content/review/rating/user/API-24DD4FA6"
+    },
+    "getSpecificationForDownload":[{
+        "endPoint":"/api/content/specifications/download",
+        "statusCode":"200",
+        "requestbody":{
+            "type": "yappesdef",
+            "apiId": "API-EAE312FE",
+            "version": "latest"
+        }
+    }],
+    "getAllAttachedPolicy":[{
+        "endPoint":"/api/content/provider/gateway/fetchpolicyattach",
+        "statusCode":"200",
+        "requestbody":{
+           "subscriberId": "SCB-2CE31FA2"
+        }
+    }],
+    "getApplicationKeys":{
+        "endPoint":"/api/content/users/appkeys"
+    },
+    "fetchSubscriptionDetails":{
+        "endPoint":"/api/content/consumers/subscriptiondetails/SCB-E0B72E59"
+    },
+    "getAllSubscribedOrganizationDetails":[{
+        "endPoint":"/api/connect/consumers/subscribed/organizationlist/USR-183152C2",
+        "statusCode":"200",
+        "requestbody":{
+            "apiDealType": "individualApi",
+            "userId": "USR-183152C2"
+        }
+    }],
+    "getremainingTryouts":[{
+        "endPoint":"/api/content/get/tryouts",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId": "API-0BE60A26",
+            "userId": "USR-FB99F9D9"
+        }
+    }],
+    "addedAPIName":[{
+        "endPoint":"/api/content/provider/apigroups/addedapiname",
+        "statusCode":"200",
+        "requestbody":{
+           "apiGroupId": ""
+        }
+    }]
+   
+   
+}
