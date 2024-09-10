@@ -36,6 +36,8 @@
     "test": "npx playwright test",
     "analy_test":"npx playwright test analytics.spec.ts",
     "mySubScr":"npx playwright test mysubscriptions.spec.ts",
+    "gateWayPolicy":"npx playwright test gatewayPolicy.spec.ts",
+    "mySubGateWay": "npx playwright test gatewayPolicy.spec.ts mysubscriptions.spec.ts",
     "report": "npx playwright show-report"
   }
 }

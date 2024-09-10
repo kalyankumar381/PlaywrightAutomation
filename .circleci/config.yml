@@ -11,7 +11,7 @@ jobs:
           command: npm ci
       - run:
           name: Run tests
-          command: npm run mySubScr
+          command: npm run mySubGateWay
       - store_test_results:
           path: results.xml
 

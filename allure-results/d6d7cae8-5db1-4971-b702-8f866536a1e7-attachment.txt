@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroups/addedapiname',
+    statusCode: '200',
+    requestbody: { apiGroupId: '' }
+  }
+]
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No API created.' } }
+[ 'OK' ]

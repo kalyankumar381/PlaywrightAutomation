@@ -1,0 +1,13 @@
+{
+  statusCode: '200',
+  endPoint: '/api/content/provider/monitor/policydeattach'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: { message: 'Provisioned Policy Detached successfully ' }
+}
+[ 'OK' ]
+>>>>>>>>>>>>> ::Provisioned Policy Detached successfully 

@@ -1,0 +1,308 @@
+{
+  endPoint: '/api/content/provider/policy/allattachedentity/POL-5E43049B',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-70888D73',
+      apiOrGroupName: 'Testnew',
+      apiOrGroupId: 'API-411AF8FA',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-F1266AC6',
+      apiOrGroupName: 'block44',
+      apiOrGroupId: 'API-1B63F48D',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-21EE8F62',
+      apiOrGroupName: 'testest12',
+      apiOrGroupId: 'API-402F8DD6',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-3F06BBFD',
+      apiOrGroupName: 'new API',
+      apiOrGroupId: 'API-1B62C316',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-EF27057E',
+      apiOrGroupName: 'new API name',
+      apiOrGroupId: 'API-6D2D0A37',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-341D7871',
+      apiOrGroupName: 'chandantickettttttttttttt',
+      apiOrGroupId: 'API-DCC52C99',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-14B7A4E0',
+      apiOrGroupName: 'ATL API01',
+      apiOrGroupId: 'API-3C638CE4',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-2524D20D',
+      apiOrGroupName: 'test54',
+      apiOrGroupId: 'API-0D722657',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-DF48FA05',
+      apiOrGroupName: 'whitelist',
+      apiOrGroupId: 'API-18E5B8BB',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-8CE8EB6C',
+      apiOrGroupName: 'chandanip',
+      apiOrGroupId: 'API-403E2003',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-24F1D360',
+      apiOrGroupName: 'CB Bank API02',
+      apiOrGroupId: 'API-16A4E9F6',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-DDEE6E88',
+      apiOrGroupName: 'blocking145',
+      apiOrGroupId: 'API-E8C413BB',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-1DFCE8F6',
+      apiOrGroupName: 'sjssjssss',
+      apiOrGroupId: 'API-7EBAAE71',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-FEDA085A',
+      apiOrGroupName: 'hhhhhhhhhhhhhhhhhh',
+      apiOrGroupId: 'API-5A9D109B',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-0E505A7F',
+      apiOrGroupName: 'hhhhhhhhhhhhhhhhhh',
+      apiOrGroupId: 'API-5A9D109B',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-08BCA3B8',
+      apiOrGroupName: 'sjssjssss',
+      apiOrGroupId: 'API-7EBAAE71',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-6F399332',
+      apiOrGroupName: 'MH API01',
+      apiOrGroupId: 'API-B48EB3B0',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-3ECA6348',
+      apiOrGroupName: 'Tigerrrrrrrr',
+      apiOrGroupId: 'API-7B3D7564',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-4C118FED',
+      apiOrGroupName: 'Tigerrrrrrrr',
+      apiOrGroupId: 'API-7B3D7564',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-DCB28BCD',
+      apiOrGroupName: 'praveenkttest',
+      apiOrGroupId: 'API-6344A0E9',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-34A34555',
+      apiOrGroupName: 'NV API01',
+      apiOrGroupId: 'API-2DD3C725',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-88F04A3F',
+      apiOrGroupName: 'testquotanew',
+      apiOrGroupId: 'API-BA3CDE6A',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-A10BB9D2',
+      apiOrGroupName: 'policy endpoint',
+      apiOrGroupId: 'API-7DAF7C02',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-F8F93AE9',
+      apiOrGroupName: 'AUD API01',
+      apiOrGroupId: 'API-4CFCB61A',
+      provisionType: 'individualApi',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-2D803904',
+      apiOrGroupName: 'KYC APIs',
+      apiOrGroupId: 'GRP-48A2',
+      provisionType: 'apiGroup',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-2D803904',
+      apiOrGroupName: 'KYC APIs',
+      apiOrGroupId: 'GRP-48A2',
+      provisionType: 'apiGroup',
+      endPointDetails: ''
+    },
+    {
+      subscriptionId: 'SCB-D72DCD8C',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    },
+    {
+      subscriptionId: 'SCB-C3141313',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    },
+    {
+      subscriptionId: 'SCB-C3141313',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    },
+    {
+      subscriptionId: 'SCB-EAA9528C',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    },
+    {
+      subscriptionId: 'SCB-EAA9528C',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    },
+    {
+      subscriptionId: 'SCB-EAA9528C',
+      apiOrGroupName: '',
+      apiOrGroupId: '',
+      provisionType: 'individualApi'
+    }
+  ]
+}
+[ 'OK' ]

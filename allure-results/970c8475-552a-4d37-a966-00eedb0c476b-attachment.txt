@@ -1,0 +1,15 @@
+[
+  {
+    endPoint: '/api/content/provider/policy',
+    statusCode: '200',
+    requestbody: { policyName: 'test3', policyType: 'whitelist', configs: [Object] }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'policy-exists',
+  data: { message: 'Policy already exists.' }
+}
+[ 'policy-exists' ]

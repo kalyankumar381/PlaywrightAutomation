@@ -1,0 +1,2 @@
+{ endPoint: '/api/content/provider/policy', statusCode: '200' }
+Token status code is ***************** - >200

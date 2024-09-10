@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/api/content/get/tryouts',
+    statusCode: '200',
+    requestbody: { apiId: 'API-0BE60A26', userId: 'USR-FB99F9D9' }
+  }
+]
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

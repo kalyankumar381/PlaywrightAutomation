@@ -1,0 +1,14 @@
+[
+  {
+    endPoint: '/api/content/provider/policy/POL-0E6670CC',
+    statusCode: '200',
+    requestbody: {
+      policyId: 'POL-0E6670CC',
+      policyName: 'test3',
+      policyType: 'whitelist',
+      configs: [Object],
+      description: 'This is test update.'
+    }
+  }
+]
+Token status code is ***************** - >200

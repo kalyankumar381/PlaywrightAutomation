@@ -1,0 +1,66 @@
+{
+    "getGroupAttachedMonitorPolicy" : [{
+        "endPoint":"/api/content/provider/monitor/attachedpolicies",
+        "statusCode":"200",
+        "requestbody":{
+           "groupId":"GRP-D327"
+        }
+    }],
+    "groupMonitorPolicyAttach":[{
+        "endPoint":"/api/content/provider/monitor/policyattach",
+        "statusCode":"200",
+        "requestbody":{
+            "policyId":["5d2310ee8dd765c438adfdaf"],
+            "attachId":"GRP-D327",
+            "provisionType":"api-groups",
+            "moduleType":"api-monitor"
+        }}],
+    "removeGroupAttachedMonitorPolicy":{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/monitor/policydeattach"
+    },
+    "getAllPolicyList" : {
+        "endPoint":"/api/content/provider/policy",
+        "statusCode":"200"     
+    },
+    "deletePolicy":{
+        "endPoint":"/api/content/provider/policy/POL-41556AF2",
+        "statusCode":"200"
+    },
+    "addPolicy" : [{
+        "endPoint":"/api/content/provider/policy",
+        "statusCode":"200",
+        "requestbody":{
+            "policyName": "test3", 
+            "policyType": "whitelist", 
+            "configs": { 
+                "ipaddress": "123.456.678.901" 
+            } 
+        }
+    }],
+    "updatePolicy":[{
+        "endPoint":"/api/content/provider/policy/POL-0E6670CC",
+        "statusCode":"200",
+        "requestbody":{
+            "policyId": "POL-0E6670CC", 
+            "policyName": "test3", 
+            "policyType": "whitelist", 
+            "configs":{"ipaddress": "123.456.678.901" },
+             "description": "This is test update."
+        }
+    }],
+    "attachGatewayPolicyAtApiGroup":[{
+        "endPoint":"/api/content/provider/gateway/policyattach",
+        "statusCode":"200",
+        "requestbody":{
+            "policyId": "POL-222AF26D", 
+            "attachId": "GRP-15C0", 
+            "provisionType": "api-groups"
+        }
+    }],
+    "getAllattachedentity":{
+        "endPoint":"/api/content/provider/policy/allattachedentity/POL-5E43049B",
+        "statusCode":"200"
+    }
+   
+}
