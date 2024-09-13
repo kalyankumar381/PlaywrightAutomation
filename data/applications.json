@@ -1,0 +1,169 @@
+{
+    "getallapplication" : {
+        "statusCode":"200",
+        "endPoint":"/api/content/definitions/provider/yappestestmail@gmail.com"       
+    },
+    "createApplicationKeys":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/api/API-B351E477/environmentconfig",
+        "requestbody":{
+            "apiId":"API-B351E477",
+            "environmentName":"development"
+        }
+    }],
+    "createApplication" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/api/API-B351E477/environmentconfig/6447947d72eaa8e0c4cc28d6",
+        "requestbody":{
+            "apiId":"API-B351E477",
+            "environmentConfigData":{
+                "env":"development12"
+            },
+            "environmentName":"development",
+            "objectId":"6447947d72eaa8e0c4cc28d6",
+            "userId":"USR-183152C2"
+            }
+    }],
+    "getallApplication":{
+        "statusCode":"200",
+        "endPoint":"/api/content/api/API-B351E477/remotes"
+    },
+    "deleteApplication" : {
+        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "statusCode":"200"
+    },
+    "updateApplication":[{
+        "endPoint":"/api/content/deploy/functions",
+        "statusCode":"200",
+        "requestbody":{
+            "environment":"production",
+            "resourceId":"RES-B688A553"
+            }
+    }],
+    "getApplicationDetails":{
+        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "statusCode":"200"
+    },
+    "getAPIFollowers":{
+        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "statusCode":"200"
+    },
+    "followAPI":[{
+        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-B351E477",
+            "fileName":	"doc.pem",
+            "fileUrl":"http://storageapi.yappes.local:98/serve/files/doc?format=pem&meta=securitkey&id=d9f472020e9dcbeae9458294db2c42ad&apiId=30824431bef1698b1b1d64ecb3257593"
+        }
+    }],
+    "unFollowAPI":[{
+        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-B351E477",
+            "fileName":	"doc.pem",
+            "fileUrl":"http://storageapi.yappes.local:98/serve/files/doc?format=pem&meta=securitkey&id=d9f472020e9dcbeae9458294db2c42ad&apiId=30824431bef1698b1b1d64ecb3257593"
+        }
+    }],
+    "getAPIVotes":{
+        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles/SKF-D0E0912D",
+        "statusCode":"200"
+    },
+    "upVoteAnAPI":[{
+        "endPoint":"/api/content/api/API-6E2AA3F3/remotes",
+        "statusCode":"200",
+        "requestbody":{
+            "name" : "remote_store_test",
+            "type" : "store",
+            "description" : "Store as remote endpoint data source",
+            "logicCodeName" :  "abcABC123",
+            "configs" : {
+                    "hostname" : "remoteHost_store" ,
+                    "databaseName" : "remoteDB_store",
+                    "userName" : "userName_store",
+                    "password" : "password_store", 
+                    "portNumber" : "1234_store"
+                
+            }
+        }
+    }],
+    "downVoteAnAPI":[{
+        "endPoint":"/api/content/newapi/logic/RES-C28B3160",
+        "statusCode":"200",
+        "requestbody":{	
+            "apiId" : "apiId",
+            "resourceLogic" : "function(){var x = ['a','b','c']; console.log(x);"
+        }
+    }] ,
+    "deleteAPIFromApplication":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getApplicationKeys":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "regenerateApplicationKeys":[{
+        "endPoint":"/api/content/api/API-6E2AA3F3/remotes/REP-51BD0247",
+        "statusCode":"200",
+        "requestbody":{
+            "name" : "Nishi_Update",
+            "description" : "MySQL as remote endpoint data source",
+            "logicCodeName" : "aabcABC1233",
+            "configs" : {
+                    "hostname" : "remoteHost" ,
+                    "databaseName" : "remoteDB",
+                    "userName" : "userName",
+                    "password" : "password",  
+                    "portNumber" : "1234"
+                
+            }
+        }
+    }],
+    "getApiForConsumers":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },  
+    "getResourceDetailsConsumers":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getAvgRating":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getApplicationAPIs":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getAboutAPIsConsumer":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getVersionList":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "getLicenseTermsConditionConsumer":{
+        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "statusCode":"200"
+    },
+    "listAnalyticsAPIsConsumers":[{
+        "endPoint":"/api/content/api/API-6E2AA3F3/remotes/REP-51BD0247",
+        "statusCode":"200",
+        "requestbody":{
+            "name" : "Nishi_Update",
+            "description" : "MySQL as remote endpoint data source",
+            "logicCodeName" : "aabcABC1233",
+            "configs" : {
+                    "hostname" : "remoteHost" ,
+                    "databaseName" : "remoteDB",
+                    "userName" : "userName",
+                    "password" : "password",  
+                    "portNumber" : "1234"
+                
+            }
+        }
+    }]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    endPoint: '/api/content/user/organization/apitransfer/API-5049C67A',
+    statusCode: '200',
+    requestbody: {
+      userIdentifier: 'snehilbanerji@gmail.com',
+      organizationId: 'ORG-C8737901'
+    }
+  }
+]
+Token status code is ***************** - >200
+404

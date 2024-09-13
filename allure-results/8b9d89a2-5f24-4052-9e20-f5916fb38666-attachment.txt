@@ -1,0 +1,5 @@
+{
+  endPoint: '/api/content/definitions/API-CDF8BFC0',
+  statusCode: '200'
+}
+Token status code is ***************** - >200

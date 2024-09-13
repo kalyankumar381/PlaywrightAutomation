@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -50,7 +50,7 @@
       [
         "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/node_modules/@reportportal/agent-js-playwright/build/index.js",
         {
-          "token": "y_WDJCAAS9QVKoBgc6PJUvoBNcqnH6IEPstoNiM-VtI0EAyyx92aHGROPMWAgILOp5",
+          "token": "y_DVqN3GMRSGq9zQSPZsap29lwiOrQazYm-m3B56j5aev42LEUErU28qYewLqZcKaG",
           "endpoint": "https://demo.reportportal.io/api/v1",
           "project": "default_personal",
           "launch": "Yappes_Automation",
@@ -110,1489 +110,383 @@
   },
   "suites": [
     {
-      "title": "gatewayPolicy.spec.ts",
-      "file": "gatewayPolicy.spec.ts",
+      "title": "analytics.spec.ts",
+      "file": "analytics.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Get  Group Attached monitor policy",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Analystics API test cases",
+          "file": "analytics.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "POST from re-usable method -  - iteration - 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 774,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:19:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "location": {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 893,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL <><><><><><><><><> :: \u001b[90mundefined\u001b[39m\n"
+                        },
+                        {
+                          "text": "{ duration: { limit: \u001b[33m48\u001b[39m, period: \u001b[32m'hours'\u001b[39m } }\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: { totalNoTransactions: [], totalNoUsers: \u001b[33m0\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:02.367Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-t-d2928-le-method-----iteration---1-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "634c82c6846b68aa8d60-464e53e70fabb7a4e0d2",
+              "file": "analytics.spec.ts",
+              "line": 23,
+              "column": 13
+            },
+            {
+              "title": "POST from re-usable method -  - iteration - 2",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 651,
+                      "error": {
+                        "message": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m",
+                        "stack": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/analytics.spec.ts:29:34",
+                        "location": {
+                          "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
+                          "column": 159,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
+                            "column": 159,
+                            "line": 27
+                          },
+                          "message": "Error:  Expected  '400 '  status code diffrent from actual 200  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m4\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m2\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/analytics.spec.ts:29:34\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "{ kk: { limit: \u001b[32m'yy'\u001b[39m, period: \u001b[32m'hours'\u001b[39m } }\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:03.555Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-t-01b46-le-method-----iteration---2-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-t-01b46-le-method-----iteration---2-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
                         "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
                         "column": 159,
                         "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:19:26\u001b[22m"
+                      }
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/monitor/attachedpolicies'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { groupId: \u001b[32m'GRP-D327'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m401\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:27.237Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Get-Group-Attached-monitor-policy-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Get-Group-Attached-monitor-policy-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-c025dee69dccbad319d2",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 13,
-          "column": 5
-        },
-        {
-          "title": "Group  monitor policy attach",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "634c82c6846b68aa8d60-1af575cc91e73bcc20db",
+              "file": "analytics.spec.ts",
+              "line": 23,
+              "column": 13
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "get cumulative metrics for error code",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 775,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:31:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 401  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"401\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:31:26\u001b[22m"
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 848,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Base URL <><><><><><><><><> :: \u001b[90mundefined\u001b[39m\n"
+                        },
+                        {
+                          "text": "{\n  duration: { limit: \u001b[33m90\u001b[39m, period: \u001b[32m'days'\u001b[39m },\n  organizationId: \u001b[32m'ORG-75BEE1C4'\u001b[39m,\n  errorSeries: \u001b[33m400\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
+                        },
+                        {
+                          "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:04.975Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-t-9bea7-tive-metrics-for-error-code-chromium/test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/monitor/policyattach'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: {\n      policyId: \u001b[36m[Array]\u001b[39m,\n      attachId: \u001b[32m'GRP-D327'\u001b[39m,\n      provisionType: \u001b[32m'api-groups'\u001b[39m,\n      moduleType: \u001b[32m'api-monitor'\u001b[39m\n    }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m401\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:28.968Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Group-monitor-policy-attach-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Group-monitor-policy-attach-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-874ea4e99b37f3aab507",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 25,
-          "column": 5
-        },
-        {
-          "title": "Remove Group attached monitor  policy.",
-          "ok": true,
-          "tags": [],
-          "tests": [
+              "id": "634c82c6846b68aa8d60-54cb69d5d6580996f230",
+              "file": "analytics.spec.ts",
+              "line": 36,
+              "column": 9
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Get Traffic-Metric",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 841,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "text": "{\n  statusCode: \u001b[32m'200'\u001b[39m,\n  endPoint: \u001b[32m'/api/content/provider/monitor/policydeattach'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: { message: \u001b[32m'Provisioned Policy Detached successfully '\u001b[39m }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": ">>>>>>>>>>>>> ::Provisioned Policy Detached successfully \n"
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 671,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  dashboardType: \u001b[32m'analytics'\u001b[39m,\n  kpis: [ \u001b[32m'traffic-metric'\u001b[39m ],\n  timePeriod: { startDate: \u001b[32m'2021-06-01'\u001b[39m, endDate: \u001b[32m'2021-06-30'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: [] }\n"
+                        },
+                        {
+                          "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:06.106Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-test-cases-Get-Traffic-Metric-chromium/test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:30.681Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Remove-Group-attached-monitor-policy--chromium/test-finished-1.png"
-                    }
-                  ]
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-8a7af54f3092f540620b",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 39,
-          "column": 5
-        },
-        {
-          "title": "GET all policy list",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "634c82c6846b68aa8d60-7a6212c1243105610dcd",
+              "file": "analytics.spec.ts",
+              "line": 47,
+              "column": 9
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "GetTraffic-Status-Metric",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 667,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.GET (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:158:36)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:57:21",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 36,
-                      "line": 158
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:158\n\n\u001b[0m \u001b[90m 156 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 158 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 159 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m \n \u001b[90m 160 |\u001b[39m\n \u001b[90m 161 |\u001b[39m         \u001b[36mreturn\u001b[39m _response\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 36,
-                        "line": 158
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:158\n\n\u001b[0m \u001b[90m 156 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 157 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 158 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 159 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m \n \u001b[90m 160 |\u001b[39m\n \u001b[90m 161 |\u001b[39m         \u001b[36mreturn\u001b[39m _response\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.GET (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:158:36)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:57:21\u001b[22m"
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 650,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  dashboardType: \u001b[32m'analytics'\u001b[39m,\n  kpis: [ \u001b[32m'traffic-status-metric'\u001b[39m ],\n  timePeriod: { startDate: \u001b[32m'2021-06-01'\u001b[39m, endDate: \u001b[32m'2021-06-30'\u001b[39m }\n}\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: { \u001b[32m'200'\u001b[39m: [], \u001b[32m'300'\u001b[39m: [], \u001b[32m'400'\u001b[39m: [], \u001b[32m'500'\u001b[39m: [] }\n}\n"
+                        },
+                        {
+                          "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:06.785Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-test-cases-GetTraffic-Status-Metric-chromium/test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/provider/policy'\u001b[39m, statusCode: \u001b[32m'200'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:31.920Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-GET-all-policy-list-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-GET-all-policy-list-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 36,
-                    "line": 158
-                  }
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-7e6c846ffbbc7c8cee7a",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 53,
-          "column": 5
-        },
-        {
-          "title": "DELETE policy",
-          "ok": false,
-          "tags": [],
-          "tests": [
+              "id": "634c82c6846b68aa8d60-68cac28224d2fcc9e46a",
+              "file": "analytics.spec.ts",
+              "line": 58,
+              "column": 9
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Get Existing Apis for Metrices",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 4,
-                  "status": "failed",
-                  "duration": 944,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.DELETE (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:213:36)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:69:21",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 36,
-                      "line": 213
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:213\n\n\u001b[0m \u001b[90m 211 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 212 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 213 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 214 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m \n \u001b[90m 215 |\u001b[39m\n \u001b[90m 216 |\u001b[39m         \u001b[36mreturn\u001b[39m _response\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 36,
-                        "line": 213
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:213\n\n\u001b[0m \u001b[90m 211 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 212 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 213 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 214 |\u001b[39m         expect(_response\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m \n \u001b[90m 215 |\u001b[39m\n \u001b[90m 216 |\u001b[39m         \u001b[36mreturn\u001b[39m _response\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.DELETE (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:213:36)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:69:21\u001b[22m"
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 609,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{}\n"
+                        },
+                        {
+                          "text": "Token status code is ***************** - >200\n"
+                        },
+                        {
+                          "text": "\u001b[33m200\u001b[39m\n"
+                        },
+                        {
+                          "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No API created.'\u001b[39m } }\n"
+                        },
+                        {
+                          "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-13T04:33:07.444Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/analytics-Analystics-API-t-ce446--Existing-Apis-for-Metrices-chromium/test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "{\n  endPoint: \u001b[32m'/api/content/provider/policy/POL-41556AF2'\u001b[39m,\n  statusCode: \u001b[32m'200'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:33.259Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-DELETE-policy-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-DELETE-policy-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 36,
-                    "line": 213
-                  }
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
+              "id": "634c82c6846b68aa8d60-a3f1751fcaa3653dd5c9",
+              "file": "analytics.spec.ts",
+              "line": 68,
+              "column": 9
             }
-          ],
-          "id": "cc81e6386081083bd91c-fdaea78afd3db3d35a06",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 65,
-          "column": 5
-        },
-        {
-          "title": "ADD policy",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 1082,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/policy'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { policyName: \u001b[32m'test3'\u001b[39m, policyType: \u001b[32m'whitelist'\u001b[39m, configs: \u001b[36m[Object]\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'policy-exists'\u001b[39m,\n  data: { message: \u001b[32m'Policy already exists.'\u001b[39m }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'policy-exists'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:35.165Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-ADD-policy-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-498157bf7b1148d387c5",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 81,
-          "column": 5
-        },
-        {
-          "title": "UPDATE policy",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 654,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/policy/POL-0E6670CC'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: {\n      policyId: \u001b[32m'POL-0E6670CC'\u001b[39m,\n      policyName: \u001b[32m'test3'\u001b[39m,\n      policyType: \u001b[32m'whitelist'\u001b[39m,\n      configs: \u001b[36m[Object]\u001b[39m,\n      description: \u001b[32m'This is test update.'\u001b[39m\n    }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Response message >>>> :::: No data found.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:36.519Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-UPDATE-policy-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-336801a2a4e207715b1e",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 93,
-          "column": 5
-        },
-        {
-          "title": "Attach gateway policy at api-group",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "timedOut",
-                  "duration": 30164,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 39,
-                        "line": 175
-                      },
-                      "message": "Error: apiRequestContext.post: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- → POST https://api.testing.yappes-enterprise.com/api/content/provider/gateway/policyattach\u001b[22m\n\u001b[2m  -   user-agent: Playwright/1.45.3 (x64; ubuntu 22.04) node/18.17\u001b[22m\n\u001b[2m  -   accept: application/json\u001b[22m\n\u001b[2m  -   accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m  -   Authorization: Bearer f5fef0b243fcb8fb1de07fdda648fb0c190791ae52efbb149c2e886bc7df2603\u001b[22m\n\u001b[2m  -   content-type: application/json\u001b[22m\n\u001b[2m  -   content-length: 78\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:175\n\n\u001b[0m \u001b[90m 173 |\u001b[39m\n \u001b[90m 174 |\u001b[39m         \u001b[36mconst\u001b[39m resToken\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetToken()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 175 |\u001b[39m         \u001b[36mconst\u001b[39m _response\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m`${baseUrl}`\u001b[39m\u001b[33m,\u001b[39m{\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 176 |\u001b[39m             headers\u001b[33m:\u001b[39m\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcreateHeaders(resToken)\u001b[33m,\u001b[39m\n \u001b[90m 177 |\u001b[39m             data\u001b[33m:\u001b[39mrequestBody\n \u001b[90m 178 |\u001b[39m         })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.POST (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:175:39)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/gatewayPolicy.spec.ts:113:21\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/gateway/policyattach'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: {\n      policyId: \u001b[32m'POL-222AF26D'\u001b[39m,\n      attachId: \u001b[32m'GRP-15C0'\u001b[39m,\n      provisionType: \u001b[32m'api-groups'\u001b[39m\n    }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:37.179Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Attach-gateway-policy-at-api-group-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-Attach-gateway-policy-at-api-group-chromium/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-bde8b980cf71b5096157",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 109,
-          "column": 5
-        },
-        {
-          "title": "GET allattachedentity",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "status": "passed",
-                  "duration": 829,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{\n  endPoint: \u001b[32m'/api/content/provider/policy/allattachedentity/POL-5E43049B'\u001b[39m,\n  statusCode: \u001b[32m'200'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: [\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-70888D73'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Testnew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-411AF8FA'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-F1266AC6'\u001b[39m,\n      apiOrGroupName: \u001b[32m'block44'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-1B63F48D'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-21EE8F62'\u001b[39m,\n      apiOrGroupName: \u001b[32m'testest12'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-402F8DD6'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-3F06BBFD'\u001b[39m,\n      apiOrGroupName: \u001b[32m'new API'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-1B62C316'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-EF27057E'\u001b[39m,\n      apiOrGroupName: \u001b[32m'new API name'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-6D2D0A37'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-341D7871'\u001b[39m,\n      apiOrGroupName: \u001b[32m'chandantickettttttttttttt'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-DCC52C99'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-14B7A4E0'\u001b[39m,\n      apiOrGroupName: \u001b[32m'ATL API01'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-3C638CE4'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-2524D20D'\u001b[39m,\n      apiOrGroupName: \u001b[32m'test54'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-0D722657'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-DF48FA05'\u001b[39m,\n      apiOrGroupName: \u001b[32m'whitelist'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-18E5B8BB'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-8CE8EB6C'\u001b[39m,\n      apiOrGroupName: \u001b[32m'chandanip'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-403E2003'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-24F1D360'\u001b[39m,\n      apiOrGroupName: \u001b[32m'CB Bank API02'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-16A4E9F6'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-DDEE6E88'\u001b[39m,\n      apiOrGroupName: \u001b[32m'blocking145'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-E8C413BB'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-1DFCE8F6'\u001b[39m,\n      apiOrGroupName: \u001b[32m'sjssjssss'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-7EBAAE71'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-FEDA085A'\u001b[39m,\n      apiOrGroupName: \u001b[32m'hhhhhhhhhhhhhhhhhh'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-5A9D109B'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-0E505A7F'\u001b[39m,\n      apiOrGroupName: \u001b[32m'hhhhhhhhhhhhhhhhhh'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-5A9D109B'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-08BCA3B8'\u001b[39m,\n      apiOrGroupName: \u001b[32m'sjssjssss'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-7EBAAE71'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-6F399332'\u001b[39m,\n      apiOrGroupName: \u001b[32m'MH API01'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-B48EB3B0'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-3ECA6348'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Tigerrrrrrrr'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-7B3D7564'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-4C118FED'\u001b[39m,\n      apiOrGroupName: \u001b[32m'Tigerrrrrrrr'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-7B3D7564'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-DCB28BCD'\u001b[39m,\n      apiOrGroupName: \u001b[32m'praveenkttest'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-6344A0E9'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-34A34555'\u001b[39m,\n      apiOrGroupName: \u001b[32m'NV API01'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-2DD3C725'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-88F04A3F'\u001b[39m,\n      apiOrGroupName: \u001b[32m'testquotanew'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-BA3CDE6A'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-A10BB9D2'\u001b[39m,\n      apiOrGroupName: \u001b[32m'policy endpoint'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-7DAF7C02'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-F8F93AE9'\u001b[39m,\n      apiOrGroupName: \u001b[32m'AUD API01'\u001b[39m,\n      apiOrGroupId: \u001b[32m'API-4CFCB61A'\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-2D803904'\u001b[39m,\n      apiOrGroupName: \u001b[32m'KYC APIs'\u001b[39m,\n      apiOrGroupId: \u001b[32m'GRP-48A2'\u001b[39m,\n      provisionType: \u001b[32m'apiGroup'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-2D803904'\u001b[39m,\n      apiOrGroupName: \u001b[32m'KYC APIs'\u001b[39m,\n      apiOrGroupId: \u001b[32m'GRP-48A2'\u001b[39m,\n      provisionType: \u001b[32m'apiGroup'\u001b[39m,\n      endPointDetails: \u001b[32m''\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-D72DCD8C'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-C3141313'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-C3141313'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-EAA9528C'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-EAA9528C'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    },\n    {\n      subscriptionId: \u001b[32m'SCB-EAA9528C'\u001b[39m,\n      apiOrGroupName: \u001b[32m''\u001b[39m,\n      apiOrGroupId: \u001b[32m''\u001b[39m,\n      provisionType: \u001b[32m'individualApi'\u001b[39m\n    }\n  ]\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:01:07.878Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/gatewayPolicy-GET-allattachedentity-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc81e6386081083bd91c-5a4caa2a60381b6c9d70",
-          "file": "gatewayPolicy.spec.ts",
-          "line": 121,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "mysubscriptions.spec.ts",
-      "file": "mysubscriptions.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Get cumulative metrics for error code",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 834,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/connect/providers/USR-83BEAEBE/apilists'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:27.240Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-cumulative-metrics-for-error-code-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-5f32bed14f93b62cd958",
-          "file": "mysubscriptions.spec.ts",
-          "line": 13,
-          "column": 5
-        },
-        {
-          "title": "Get Curl Data for Subscription",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 555,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/consumer/subscription/curldata'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, subscriptionId: \u001b[32m'SCB-D72DCD8C'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscriptionData: {\n      publicKey: \u001b[32m'5637933239f45c8f4715953b98d6bccb53f33b9ff42ff57d27de61625e042a7a'\u001b[39m,\n      privateKey: \u001b[32m'b596004d25d90fd97b42957f77b3b7dce332beeee93e4b6e664bd0be548384a1'\u001b[39m,\n      expiryDateTime: \u001b[32m'2024-09-03T09:49:39.000Z'\u001b[39m,\n      pricePlanId: \u001b[32m'PRI-1CEE9522'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m\n    },\n    versionData: {\n      publishedVersion: \u001b[32m'1.1.0'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m,\n      apiName: \u001b[32m'SA API01'\u001b[39m,\n      apiType: \u001b[32m'existing'\u001b[39m\n    },\n    resourceData: {\n      resourceId: \u001b[32m'RES-D7CAEB02'\u001b[39m,\n      apiId: \u001b[32m'API-1761031B'\u001b[39m,\n      endPointName: \u001b[32m'Get Posts'\u001b[39m,\n      endPoint: \u001b[32m'/posts'\u001b[39m,\n      method: \u001b[32m'GET'\u001b[39m\n    }\n  }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:28.329Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Curl-Data-for-Subscription-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-5f26907afadad8e5c0f8",
-          "file": "mysubscriptions.spec.ts",
-          "line": 27,
-          "column": 5
-        },
-        {
-          "title": "Get All Subscription -- iteration - 1 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 603,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  },\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'apiGroup'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscribedAPIs: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ]\n  }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:28.896Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Subscription----iteration---1--chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-5dc693fe84c75165ae3e",
-          "file": "mysubscriptions.spec.ts",
-          "line": 39,
-          "column": 5
-        },
-        {
-          "title": "Get All Subscription -- iteration - 2 ",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 629,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  },\n  {\n    endPoint: \u001b[32m'/API/connect/consumers/subscribed/USR-E6903E9D'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'apiGroup'\u001b[39m, organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    subscribedGroups: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    subscriptionDetails: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ]\n  }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:29.505Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Subscription----iteration---2--chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-72a6ea63f7e67c1b79e1",
-          "file": "mysubscriptions.spec.ts",
-          "line": 39,
-          "column": 5
-        },
-        {
-          "title": "Curl Preview Consumers",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 595,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{\n  endPoint: \u001b[32m'/api/connect/consumers/api/preview/RES-AC993130?apiId=API-8E5A094A&version=1.5.0'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[33m401\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:30.140Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Curl-Preview-Consumers-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-97b468b0873d122fdfb3",
-          "file": "mysubscriptions.spec.ts",
-          "line": 53,
-          "column": 5
-        },
-        {
-          "title": "Add Review",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 638,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/review/rating/API-8E5A094A'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { organizationId: \u001b[32m'ORG-4389C54A'\u001b[39m, review: \u001b[32m'ss'\u001b[39m, rating: \u001b[33m5\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m401\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[33m401\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:30.741Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Add-Review-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-7d3c659092e2bf17198b",
-          "file": "mysubscriptions.spec.ts",
-          "line": 67,
-          "column": 5
-        },
-        {
-          "title": "Get Reviews",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 803,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/review/rating/API-1030A645'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Response data message is <><> :: No data found.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:31.385Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Reviews-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-040d102c4577018434e6",
-          "file": "mysubscriptions.spec.ts",
-          "line": 79,
-          "column": 5
-        },
-        {
-          "title": "Update Review",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 748,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/review/rating/user/REV-15E34316'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { review: \u001b[32m'updated again'\u001b[39m, rating: \u001b[33m3\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m401\u001b[39m,\n  status: \u001b[33m401\u001b[39m,\n  name: \u001b[32m'invalid-resource-access'\u001b[39m,\n  message: \u001b[32m'Invalid Resource Access.'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[33m401\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:32.193Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Update-Review-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-6abff4fa480a0026aa8e",
-          "file": "mysubscriptions.spec.ts",
-          "line": 95,
-          "column": 5
-        },
-        {
-          "title": "Get User Reviews",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 688,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/review/rating/user/API-24DD4FA6'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Response message >>>> :::: \n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:32.947Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-User-Reviews-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-de68d62efc795a2e97f2",
-          "file": "mysubscriptions.spec.ts",
-          "line": 107,
-          "column": 5
-        },
-        {
-          "title": "Get Specification For Download",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 705,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/specifications/download'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { type: \u001b[32m'yappesdef'\u001b[39m, apiId: \u001b[32m'API-EAE312FE'\u001b[39m, version: \u001b[32m'latest'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:33.646Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Specification-For-Download-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-5cbbaeaff1ae318a66b6",
-          "file": "mysubscriptions.spec.ts",
-          "line": 123,
-          "column": 5
-        },
-        {
-          "title": "Get All Attached Policy",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 723,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/gateway/fetchpolicyattach'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { subscriberId: \u001b[32m'SCB-2CE31FA2'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:34.360Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-All-Attached-Policy-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-6ccc863026c12b761c32",
-          "file": "mysubscriptions.spec.ts",
-          "line": 135,
-          "column": 5
-        },
-        {
-          "title": "Get Application Keys",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 874,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/users/appkeys'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: {\n    appSets: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    message: \u001b[32m'Application Keys Sets Found'\u001b[39m\n  }\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Response message >>>> :::: \n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:35.090Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-Application-Keys-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-d842a3fd54713710cad2",
-          "file": "mysubscriptions.spec.ts",
-          "line": 147,
-          "column": 5
-        },
-        {
-          "title": "Fetch Subscription Details",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 805,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/consumers/subscriptiondetails/SCB-E0B72E59'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Response message >>>> :::: \n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:35.970Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Fetch-Subscription-Details-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-d980e93bc740d5d891c3",
-          "file": "mysubscriptions.spec.ts",
-          "line": 163,
-          "column": 5
-        },
-        {
-          "title": "Get AllSubscribed Organization Details",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 818,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/connect/consumers/subscribed/organizationlist/USR-183152C2'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiDealType: \u001b[32m'individualApi'\u001b[39m, userId: \u001b[32m'USR-183152C2'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{\n  code: \u001b[33m200\u001b[39m,\n  status: \u001b[32m'OK'\u001b[39m,\n  data: [\n    {\n      organizationName: \u001b[32m'Yappes Organization'\u001b[39m,\n      organizationId: \u001b[32m'ORG-9C2D5B74'\u001b[39m\n    }\n  ]\n}\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:36.780Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-AllSubscribed-Organization-Details-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-292e4651deba09c0a9a6",
-          "file": "mysubscriptions.spec.ts",
-          "line": 179,
-          "column": 5
-        },
-        {
-          "title": "Get remaining Tryouts",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 616,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/get/tryouts'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiId: \u001b[32m'API-0BE60A26'\u001b[39m, userId: \u001b[32m'USR-FB99F9D9'\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No data found.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:37.603Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Get-remaining-Tryouts-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-9cce4ca6bf6463521733",
-          "file": "mysubscriptions.spec.ts",
-          "line": 191,
-          "column": 5
-        },
-        {
-          "title": "Added APIName",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 534,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/provider/apigroups/addedapiname'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { apiGroupId: \u001b[32m''\u001b[39m }\n  }\n]\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "\u001b[33m200\u001b[39m\n"
-                    },
-                    {
-                      "text": "{ code: \u001b[33m200\u001b[39m, status: \u001b[32m'OK'\u001b[39m, data: { message: \u001b[32m'No API created.'\u001b[39m } }\n"
-                    },
-                    {
-                      "text": "[ \u001b[32m'OK'\u001b[39m ]\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-10T15:00:38.224Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/mysubscriptions-Added-APIName-chromium/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "cc5029e287b92b800f45-0b4331dc1eb49abe997b",
-          "file": "mysubscriptions.spec.ts",
-          "line": 203,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-10T15:00:26.498Z",
-    "duration": 42487.554,
-    "expected": 20,
+    "startTime": "2024-09-13T04:33:01.517Z",
+    "duration": 6621.957,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 5,
+    "unexpected": 1,
     "flaky": 0
   }
 }

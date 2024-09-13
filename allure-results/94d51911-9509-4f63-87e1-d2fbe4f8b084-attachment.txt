@@ -1,0 +1,15 @@
+[
+  {
+    endPoint: '/api/content/user/owner/apitransfer/API-CDF8BFC0',
+    statusCode: '200',
+    requestbody: { userIdentifier: 'info@yappes.com' }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: { message: 'API Ownership Change was successful' }
+}
+[ 'OK' ]

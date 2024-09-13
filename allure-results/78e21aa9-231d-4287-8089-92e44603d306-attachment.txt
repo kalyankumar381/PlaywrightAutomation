@@ -1,0 +1,30 @@
+{
+  endPoint: '/api/content/definitions/API-6A536A7D',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      apiName: 'kalyan11725443935785',
+      baseUrl: 'https://kalyan11725443935785.apizone001.pr.testing.yappes-enterprise.com',
+      description: 'kalyan_desc',
+      publishingDomainType: 'proxy',
+      customDomainValue: null,
+      status: 'unpublished',
+      availability: 'public',
+      logoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=api',
+      yappesBaseUrl: 'https://kalyan11725443935785.apizone001.pr.testing.yappes-enterprise.com',
+      contactPricing: 'enabled',
+      publishingEnvironment: 'testing',
+      apiType: 'new',
+      basePath: null,
+      organizationDetails: [Object],
+      accessSpecifier: [Object]
+    }
+  ]
+}
+[ 'OK' ]

@@ -1,0 +1,14 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/api/API-B351E477/environmentconfig/6447947d72eaa8e0c4cc28d6',
+    requestbody: {
+      apiId: 'API-B351E477',
+      environmentConfigData: [Object],
+      environmentName: 'development',
+      objectId: '6447947d72eaa8e0c4cc28d6',
+      userId: 'USR-183152C2'
+    }
+  }
+]
+Token status code is ***************** - >503

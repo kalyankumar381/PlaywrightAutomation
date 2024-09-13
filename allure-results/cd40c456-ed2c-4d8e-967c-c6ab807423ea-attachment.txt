@@ -1,0 +1,18 @@
+[
+  {
+    endPoint: '/api/content/user/organization/apitransfer/API-5049C67A',
+    statusCode: '200',
+    requestbody: {
+      userIdentifier: 'snehilbanerji@gmail.com',
+      organizationId: 'ORG-C8737901'
+    }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 401,
+  status: 'api-not-associated',
+  data: { message: 'Api is not associated to the mentioned organization' }
+}
+[ 'api-not-associated' ]

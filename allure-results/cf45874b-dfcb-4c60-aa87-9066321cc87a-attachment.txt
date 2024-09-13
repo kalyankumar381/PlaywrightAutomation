@@ -1,0 +1,15 @@
+[
+  {
+    endPoint: '/api/content/api/retire/API-2ED6C64F',
+    statusCode: '200',
+    requestbody: {}
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 400,
+  status: 'invalid-option',
+  message: 'Please, Enter Valid option For Decommissioning Api.'
+}
+[ 'invalid-option' ]

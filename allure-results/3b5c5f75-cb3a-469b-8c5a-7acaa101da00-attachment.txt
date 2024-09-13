@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/api/content/user/notifyChange/API-6A04D058',
+    statusCode: '200',
+    requestbody: {}
+  }
+]
+Token status code is ***************** - >200
+200
+{ code: 200, result: 'yes', status: 'ok' }
+[ 'ok' ]

@@ -1,0 +1,12 @@
+[
+  {
+    endPoint: '/api/content/api/retire/API-2ED6C64F',
+    statusCode: '200',
+    requestbody: {
+      apiId: 'API-2ED6C64F',
+      action: 'reactivate',
+      deprecatedDetails: [Object]
+    }
+  }
+]
+Token status code is ***************** - >503

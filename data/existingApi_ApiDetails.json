@@ -1,0 +1,120 @@
+{
+    "getApiDetails" : {
+        "endPoint":"/api/content/definitions/API-6A536A7D",
+        "statusCode":"200"
+    },
+    "getTags":{
+        "endPoint":"/api/content/tags",
+        "statusCode":"200"
+    },
+    "postGetRelevantArticles":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/help/relevance",
+        "requestbody":{
+          "viewPath":"/updateExistingApi/update/info@yappes.com/API-1D661A7A"
+        }
+    }],
+    "updateApi" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/definitions/API-CDF8BFC0",
+        "requestbody":{
+            "apiName": "tcheckKK",
+            "baseUrl": "https://jsonplaceholder.typicode.com/",
+            "description": "",
+            "availability": "public",
+            "status": "unpublished",
+            "organizationId": "ORG-9C2D5B74",
+            "publishingDomainType": "proxy",
+            "customDomainValue": "proxy",
+            "operation": "update"
+        }
+    }],
+    "apiLogoUrlUpdate":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/definitions/logo/API-CDF8BFC0",
+        "requestbody":{
+            "logoUrl":"http://storageapi.yappes.local:98/serve/files/API-1D661A7A_api_logo?format=png&meta=api&id=d9f472020e9dcbeae9458294db2c42ad&apiId=c8a065812b910c93a5a5712bf64ee629"
+        }
+    }],
+    "putApiOwnershipChange" : [{
+        "endPoint":"/api/content/user/owner/apitransfer/API-CDF8BFC0",
+        "statusCode":"200",
+        "requestbody":{
+           "userIdentifier": "info@yappes.com"
+        }
+    }],
+    "putApiOwnershipChangeAssToOrgan":[{
+        "endPoint":"/api/content/user/organization/apitransfer/API-5049C67A",
+        "statusCode":"200",
+        "requestbody":{
+            "userIdentifier": "snehilbanerji@gmail.com",
+            "organizationId":"ORG-C8737901"
+        }
+    }],
+    "deletedeleteapi":{
+        "endPoint":"/api/content/user/api/API-43456C8C",
+        "statusCode":"200"
+    },
+    "reactivateDeprecatedAPIVersions":[{
+        "endPoint":"/api/content/reactivate/apiversion",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-2ED6C64F",
+            "version":"10.0.0"
+        }
+    }],
+    "upload":[{
+        "endPoint":"/api/content/media/USR-183152C2",
+        "statusCode":"200",
+        "requestbody":{
+        }
+    }],
+    "detectChanges":[{
+        "endPoint":"/api/content/user/notifyChange/API-6A04D058",
+        "statusCode":"200",
+        "requestbody":{
+        }
+    }],
+    "getAllOrgaDropDown":[{
+        "endPoint":"/api/content/useraccess/orglist",
+        "statusCode":"200",
+        "requestbody":{
+             "userId":"USR-183152C2"
+        }
+    }],
+    "deprecateAPIVersions":[{
+        "endPoint":"/api/content/deprecate/apiversion",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-2ED6C64F",
+            "version":"8.0.0",
+                "deprecatedDetails":{
+                    "period":{
+                        "format":"days",
+                        "value":2
+                    }
+            }
+        }
+    }],
+    "decommissionAndReactiveAPI":[{
+        "endPoint":"/api/content/api/retire/API-2ED6C64F",
+        "statusCode":"200",
+        "requestbody":{
+        
+        }
+    }] ,
+    "retireAnAPI":[{
+        "endPoint":"/api/content/api/retire/API-2ED6C64F",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-2ED6C64F",
+            "action":"reactivate",
+            "deprecatedDetails":{
+                    "period":{  
+                        "format":"days",
+                        "value":2
+                    }
+            }
+        }
+    }]
+}

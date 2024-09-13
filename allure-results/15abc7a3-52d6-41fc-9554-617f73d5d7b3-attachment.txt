@@ -1,0 +1,18 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/definitions/API-CDF8BFC0',
+    requestbody: {
+      apiName: 'tcheckKK',
+      baseUrl: 'https://jsonplaceholder.typicode.com/',
+      description: '',
+      availability: 'public',
+      status: 'unpublished',
+      organizationId: 'ORG-9C2D5B74',
+      publishingDomainType: 'proxy',
+      customDomainValue: 'proxy',
+      operation: 'update'
+    }
+  }
+]
+Token status code is ***************** - >200

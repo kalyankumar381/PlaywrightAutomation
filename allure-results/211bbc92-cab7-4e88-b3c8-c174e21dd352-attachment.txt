@@ -1,0 +1,8 @@
+[
+  {
+    endPoint: '/api/content/api/retire/API-2ED6C64F',
+    statusCode: '200',
+    requestbody: {}
+  }
+]
+Token status code is ***************** - >503

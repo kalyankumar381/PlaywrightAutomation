@@ -1,0 +1,11 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/definitions/logo/API-CDF8BFC0',
+    requestbody: {
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/API-1D661A7A_api_logo?format=png&meta=api&id=d9f472020e9dcbeae9458294db2c42ad&apiId=c8a065812b910c93a5a5712bf64ee629'
+    }
+  }
+]
+Token status code is ***************** - >200
+404

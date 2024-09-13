@@ -1,0 +1,8 @@
+[
+  {
+    endPoint: '/api/content/useraccess/orglist',
+    statusCode: '200',
+    requestbody: { userId: 'USR-183152C2' }
+  }
+]
+Token status code is ***************** - >503

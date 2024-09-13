@@ -1,0 +1,15 @@
+[
+  {
+    statusCode: '200',
+    endPoint: 'http://localhost:3001/api/content/definitions/provider/yappestestmail@gmail.com',
+    requestbody: {
+      apiName: 'newTest',
+      apiType: 'new',
+      availability: 'public',
+      baseUrl: '',
+      description: 'newTest',
+      organizationId: 'ORG-9C2D5B74'
+    }
+  }
+]
+Token status code is ***************** - >200
