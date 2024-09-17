@@ -2,7 +2,7 @@ import { expect } from 'playwright/test';
 import {test} from '../src/test-base'; 
 import {APIUtils} from '../utils/APIUtis'
 import {ReportingApi} from '@reportportal/agent-js-playwright';
-const dataset = JSON.parse(JSON.stringify(require('../data/buildingApi_MakeApi.json')));
+const dataset = JSON.parse(JSON.stringify(require('../data/applications.json')));
 import dotenv from 'dotenv';
 dotenv.config({
     path:`.env.test`,
@@ -40,16 +40,21 @@ test('Create Application Keys', async ({ request,global }) => {
 test('Create Application', async ({ request,global }) => {
     const requestBody= dataset['createApplication']
     console.log(requestBody); 
-    const url=`${baseUrl}${requestBody[0].endPoint}`  
-    const _response=await global.apiUtil.POST(request,`${url}`,requestBody[0].requestbody);
+    const url=`${baseUrl}${requestBody[0].endPoint}` 
+    const requestInput = dataset['createApplication'][0]['requestbody']; 
+    requestInput.applicationName = `test App3_${await global.wrapper.generateRandomValue()}`;
+    console.log(requestInput); 
+    const _response=await global.apiUtil.POST(request,`${url}`,requestInput);
     console.log(_response.status());
     await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
     console.log(await _response.json());   
     const responseJson=await _response.json();    
-    console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status'));           
+    console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status')); 
+    console.log("Aplication ID is :: " + responseJson.data.applicationId);
+              
 });
 
-test('Get all application', async ({ request,global }) => {
+test('Get all application After Post', async ({ request,global }) => {
     const requestBody= dataset['getallApplication']
     console.log(requestBody);    
     const url=`${baseUrl}${requestBody.endPoint}` 
@@ -67,8 +72,7 @@ test('Delete Application', async ({ request,global }) => {
     const url=`${baseUrl}${requestBody.endPoint}`     
     const _response=await global.apiUtil.DELETE(request,`${url}`);
     console.log(_response.status());
-    await global.apiUtil.verifyStatusCode(_response,requestBody.statusCode);
-  
+    await global.apiUtil.verifyStatusCode(_response,requestBody.statusCode);  
 });
 
 test('Update Application', async ({ request,global }) => {
