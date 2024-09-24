@@ -1,0 +1,12 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/application',
+    requestbody: {
+      applicationName: 'test App',
+      applicationDescription: 'for testing creation'
+    }
+  }
+]
+Token status code is ***************** - >200
+401

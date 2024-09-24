@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/provider/subscriptions/eligibleapis',
+    requestbody: { organizationId: 'ORG-BBED4611C' }
+  }
+]
+{ organizationId: 'ORG-BBED4611C' }
+Token status code is ***************** - >200
+404

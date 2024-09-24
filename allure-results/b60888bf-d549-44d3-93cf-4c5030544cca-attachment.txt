@@ -1,0 +1,9 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroups/addedlist',
+    statusCode: '200',
+    requestbody: { apiGroupId: 'GRP-193C' }
+  }
+]
+{ apiGroupId: 'GRP-193C' }
+Token status code is ***************** - >200

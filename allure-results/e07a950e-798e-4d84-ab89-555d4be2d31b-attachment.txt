@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/useraccess/orglist',
+    requestbody: {
+      collectionName: 'Test Collection',
+      collectionDescription: 'Test Collection'
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  endPoint: '/api/content/get/monitoring/mastervars',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  name: 'OK',
+  data: [
+    'api-name',
+    'status-code',
+    'request-time',
+    'response-time',
+    'latency',
+    'endpoint-path',
+    'requested-by',
+    'subscription-reference',
+    'error-reference'
+  ]
+}
+[]

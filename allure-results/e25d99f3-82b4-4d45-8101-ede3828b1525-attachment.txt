@@ -1,0 +1,4 @@
+{
+  endPoint: '/api/content/apis/API-B351E477/errorinfo',
+  statusCode: '200'
+}

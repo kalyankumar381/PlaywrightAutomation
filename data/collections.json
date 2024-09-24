@@ -1,0 +1,33 @@
+{
+    "CollectionRequest" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/collections/CLL-480189AF",
+        "requestbody":{ 
+            "collectionName":"Test Collection",
+            "collectionDescription" : "Test Collection"         
+        }
+    }],
+    "UpdateCollectionObject":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/collections/CLL-A408CFA4/objects/634406474b4fd00026cfb5a5",
+        "requestbody":{}
+    }],
+    "GetCollections" : {
+        "statusCode":"200",
+        "endPoint":"/api/content/collections"
+    },
+    "PostCollections":[{
+        "endPoint":"/api/content/collections",
+        "statusCode":"200",
+        "requestbody":{}
+    }],
+    "GetCollectionObjects":{
+        "endPoint":"/api/content/collections/CLL-16E5A3F1/objects",
+        "statusCode":"200"
+    },
+    "InsertCollection":[{
+        "endPoint":"/api/content/collections/CLL-16E5A3F1/objects",
+        "statusCode":"200",
+        "requestbody":{}
+    }]
+}

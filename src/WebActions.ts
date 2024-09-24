@@ -81,4 +81,18 @@ export class WebActions {
         const pageTexts = await Promise.all(pageTextPromises);
         return pageTexts.join(' ');
     }
+
+  
+
+    public writeEnvVariable(key: string, value: string) {
+        let envContent = fs.readFileSync('.env', 'utf8');
+      
+        const regex = new RegExp(`^${key}=.*`, 'gm');
+        if (envContent.match(regex)) {
+          envContent = envContent.replace(regex, `${key}=${value}`);
+        } else {
+          envContent += `\n${key}=${value}`;
+        }
+        fs.writeFileSync('.env', envContent);
+    }  
 }

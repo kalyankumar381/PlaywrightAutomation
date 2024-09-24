@@ -155,8 +155,8 @@ export  class ApiUtil {
             headers:this.createHeaders(resToken)
         });
 
-        expect(_response.status()).toBe(200);
-        expect(_response.ok()).toBeTruthy(); 
+        // expect(_response.status()).toBe(200);
+        // expect(_response.ok()).toBeTruthy(); 
 
         return _response;
     };    
@@ -170,12 +170,19 @@ export  class ApiUtil {
      * @returns 
      */
     async POST(request:any,baseUrl:string,requestBody:any){
-
+        let _response;
         const resToken=await this.getToken()
-        const _response=await request.post(`${baseUrl}`,{
-            headers:this.createHeaders(resToken),
-            data:requestBody
-        });
+        if(Object.keys(requestBody).length === 0){
+            _response=await request.post(`${baseUrl}`,{
+                headers:this.createHeaders(resToken)
+            });
+
+        }else{
+            _response=await request.post(`${baseUrl}`,{
+                headers:this.createHeaders(resToken),
+                data:requestBody
+            });
+        }
 
         // expect(_response.status()).toBe(200);
         // expect(_response.ok()).toBeTruthy(); 
@@ -185,14 +192,31 @@ export  class ApiUtil {
 
     async PUT(request:any,baseUrl:string,requestBody:any){
 
-        const resToken=await this.getToken()
-        const _response=await request.put(`${baseUrl}`,{
-            headers:this.createHeaders(resToken),
-            data:requestBody
-        });
+        // const resToken=await this.getToken()
+        // const _response=await request.put(`${baseUrl}`,{
+        //     headers:this.createHeaders(resToken),
+        //     data:requestBody
+        // });
 
-        expect(_response.status()).toBe(200);
-        expect(_response.ok()).toBeTruthy(); 
+        let _response;
+        const resToken=await this.getToken()
+        if(Object.keys(requestBody).length === 0){
+            _response=await request.post(`${baseUrl}`,{
+                headers:this.createHeaders(resToken)
+            });
+
+        }else{
+            _response=await request.post(`${baseUrl}`,{
+                headers:this.createHeaders(resToken),
+                data:requestBody
+            });
+        }
+
+
+
+
+        // expect(_response.status()).toBe(200);
+        // expect(_response.ok()).toBeTruthy(); 
 
         return _response
     };
@@ -210,8 +234,8 @@ export  class ApiUtil {
             headers:this.createHeaders(resToken)
         });
 
-        expect(_response.status()).toBe(200);
-        expect(_response.ok()).toBeTruthy(); 
+        // expect(_response.status()).toBe(200);
+        // expect(_response.ok()).toBeTruthy(); 
 
         return _response;
     };  

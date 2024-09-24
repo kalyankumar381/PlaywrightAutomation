@@ -1,0 +1,18 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/reset/password/29734198101dd94484d035a06ae195776f67e9cb43751f6c245fa90345f40a66',
+    requestbody: {
+      emailId: 'yappestestmail1@gmail.com',
+      password: 'qqqq',
+      confirmPassword: 'qqqq'
+    }
+  }
+]
+{
+  emailId: 'yappestestmail1@gmail.com',
+  password: 'qqqq',
+  confirmPassword: 'qqqq'
+}
+Token status code is ***************** - >200
+401

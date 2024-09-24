@@ -1,0 +1,7 @@
+[
+  {
+    endPoint: '/api/content/collections',
+    statusCode: '200',
+    requestbody: {}
+  }
+]

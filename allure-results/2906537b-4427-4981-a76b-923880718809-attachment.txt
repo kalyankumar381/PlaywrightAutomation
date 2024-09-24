@@ -1,0 +1,58 @@
+{
+  endPoint: '/api/content/provider/internalorganization/list',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      organizationName: 'Yappes Organization',
+      organizationId: 'ORG-9C2D5B74'
+    },
+    { organizationName: 'sachinnnnn', organizationId: 'ORG-E768CEC6' },
+    { organizationName: 'gauravv', organizationId: 'ORG-73608295' },
+    { organizationName: 'test-org3', organizationId: 'ORG-960D950A' },
+    {
+      organizationName: 'ewrewr324324',
+      organizationId: 'ORG-A08D59D2'
+    },
+    { organizationName: 'testnew', organizationId: 'ORG-C9DCC4FF' },
+    {
+      organizationName: 'neworganization ',
+      organizationId: 'ORG-DF554CBA'
+    },
+    {
+      organizationName: 'neworganization2',
+      organizationId: 'ORG-D4F089DC'
+    },
+    { organizationName: 'newsachin', organizationId: 'ORG-3B68A0BF' },
+    {
+      organizationName: 'hellooosooossos',
+      organizationId: 'ORG-CA4D40DF'
+    },
+    { organizationName: 'heeeee', organizationId: 'ORG-84C30D68' },
+    { organizationName: 'newsssss', organizationId: 'ORG-A8CB8011' },
+    { organizationName: 'Internal', organizationId: 'ORG-A2BD8974' },
+    { organizationName: 'API Partner', organizationId: 'ORG-370AE2EC' },
+    { organizationName: 'hfmhg', organizationId: 'ORG-79FF4F68' },
+    { organizationName: 'ghfjf', organizationId: 'ORG-04DA3537' },
+    {
+      organizationName: 'New organization',
+      organizationId: 'ORG-C70F6726'
+    },
+    { organizationName: 'nrwwww3455', organizationId: 'ORG-AE02308A' },
+    { organizationName: 'Admin org', organizationId: 'ORG-7E656480' },
+    { organizationName: 'HHHH34', organizationId: 'ORG-423F500A' },
+    { organizationName: 'NY677', organizationId: 'ORG-CC150395' },
+    { organizationName: 'HTTT', organizationId: 'ORG-AF2958BF' },
+    { organizationName: 'API ORGGG', organizationId: 'ORG-CAFD93E8' },
+    {
+      organizationName: 'Whatsapp Client',
+      organizationId: 'ORG-7D5C244C'
+    }
+  ]
+}
+[ 'OK' ]

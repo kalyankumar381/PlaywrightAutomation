@@ -1,0 +1,145 @@
+{
+    "Geteligibleorganizationlistforproviderfilterinvoicesearch" : {
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/subscriptions/eligibleorganization/"       
+    },
+    "GetSubscribedAPIList":{
+        "statusCode":"200",
+        "endPoint":"/api/connect/providers/USR-8D602D67/apilists"       
+    },
+    "GeteligibleAPIlistforproviderfilterinvoicesearch" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/subscriptions/eligibleapis",
+        "requestbody":{
+            "organizationId":"ORG-BBED4611C"
+        }      
+    }],
+    "GetinvoicesofsubscribedAPIsfromfilters":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/invoice/search",
+        "requestbody":{
+            "timePeriod":{
+              "month":8,
+              "year":2021
+          },
+          "invoiceStatus":"not-paid",
+          "emailAddress":"vivek.pawar@yappes.com",
+          "api":  "API-4EF34481"
+        } 
+    }],
+    "APIInvoiceSearch" : [{
+        "endPoint":"/api/content/providerapi/invoicesearch",
+        "statusCode":"200",
+        "requestbody":{
+            "invoiceStatus":"not-paid",
+            "invoicePeriod":{
+                "startDate":"2018-12-01T18:30:00.000Z",
+                "endDate":"2020-01-24T18:30:00.000Z"
+            }
+        }
+    }],
+    "APIInvoiceEmailnotification":[{
+        "endPoint":"/api/content/providerapi/invoice/notification",
+        "statusCode":"200",
+        "requestbody":
+        {
+            "emailId":"vivek.pawar@yappes.com",
+            "invoiceId":"INV-43F1177A",
+            "customerName":"Jhon Doe",
+            "startDate":"2019-12-01",
+            "endDate":"2019-12-31"
+        }
+    }],
+    "APIInvoicePreview":[{
+        "endPoint":"/api/content/providerapi/apiI1234/invoicepreview",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"API-58117C79",
+            "userId":"USR-B9A3E61D",
+            "invoicePeriod":{
+                "startDate":"2020-01-01",
+                "endDate":"2020-01-31"
+            }
+        }
+    }],
+    "CreateAPIInvoice":[{
+        "endPoint":"/api/content/providerapi/API-244B9159/invoice",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"",
+            "userId":"",
+            "invoicePeriod":{
+                "startDate":"",
+                "endDate":""
+            }
+        }
+    }],
+    "ProviderEligibleInvoiceList":[{
+        "endPoint":"/api/content/providerapi/eligible/invoicelist",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId": "",
+            "subscriberId": "",
+            "invoicePeriod": ""
+        }
+    }],
+    "ConsumerInvoice":[{
+        "endPoint":"/api/content/consumerapi/invoicesearch",
+        "statusCode":"200",
+        "requestbody":{
+            "invoiceStatus": "",
+            "invoicePeriod": {
+                "startDate": "",
+                "endDate": ""
+            }
+        }
+    }],
+    "UpdateUserInvoice":[{
+        "endPoint":"/api/content/user/USR-FC7376A1/invoices/INV-99D1A4E0",
+        "statusCode":"200",
+        "requestbody":{
+            "status":"not-paid"
+        }
+    }],
+    "GetInvoiceDetails":{
+        "endPoint":"/api/content/user/USR-FC7376A1/invoices",
+        "statusCode":"200"
+    },
+    "GETuserbillingdetails":{
+        "endPoint":"/api/content/user/billing/USR-FC7376A1",
+        "statusCode":"200"
+    } ,
+    "CreateUserInvoice":{
+        "endPoint":"/api/content/user/USR-FC7376A1/invoices/",
+        "statusCode":"200",
+        "requestbody":{
+            "userId":"USR-FC7376A1"
+        }
+    },
+    "UserInvoicePreviewDetails":[{
+        "endPoint":"/api/content/admin/invoiceready/details",
+        "statusCode":"200",
+        "requestbody": {
+            "emailId":"rajagopal.s@yappes.com",
+            "userId":"USR-FC7376A1", 
+            "invoicePeriod":
+            {
+                "startDate":"2018-05-01", 
+                "endDate":"2018-05-31"
+                
+            }
+            
+        }
+    }],
+    "batchjobscheduleevent":[{
+        "endPoint":"/api/content/batch/jobs",
+        "statusCode":"200",
+        "requestbody":{
+            "type":"event",
+            "jobType":"scheduled",
+            "action":"invoice-generation",
+         "client_id":"15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+          "client_secret":"cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }]
+}

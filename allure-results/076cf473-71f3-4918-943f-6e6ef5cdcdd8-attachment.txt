@@ -1,0 +1,24 @@
+[
+  {
+    endPoint: '/api/content/providerapi/apiI1234/invoicepreview',
+    statusCode: '200',
+    requestbody: {
+      apiId: 'API-58117C79',
+      userId: 'USR-B9A3E61D',
+      invoicePeriod: [Object]
+    }
+  }
+]
+{
+  apiId: 'API-58117C79',
+  userId: 'USR-B9A3E61D',
+  invoicePeriod: { startDate: '2020-01-01', endDate: '2020-01-31' }
+}
+Token status code is ***************** - >200
+200
+{
+  code: 400,
+  name: 'parameter-error',
+  message: 'Incorrect query parameters.'
+}
+[]

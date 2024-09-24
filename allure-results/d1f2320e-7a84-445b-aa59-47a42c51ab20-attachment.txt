@@ -1,0 +1,9 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/profile/info@yappes.com',
+    requestbody: { firstName: 'devlop', lastName: 'testing' }
+  }
+]
+Token status code is ***************** - >200
+404

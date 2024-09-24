@@ -1,0 +1,31 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/shared/resources/custom-ssl-certificate',
+    requestbody: {
+      resourceName: 'Cert3',
+      description: 'Cert3',
+      resourceType: 'custom-ssl-certificate',
+      uploadedCertificateName: 'Cert333',
+      uploadedCertificateUrl: 'https://Cert1.url',
+      passphrase: '123'
+    }
+  }
+]
+{
+  resourceName: 'Cert3',
+  description: 'Cert3',
+  resourceType: 'custom-ssl-certificate',
+  uploadedCertificateName: 'Cert333',
+  uploadedCertificateUrl: 'https://Cert1.url',
+  passphrase: '123'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 400,
+  status: 'unique-error',
+  data: { message: 'Shared Resources Name should be unique.' }
+}
+[ 'unique-error' ]
+Aplication ID is :: undefined

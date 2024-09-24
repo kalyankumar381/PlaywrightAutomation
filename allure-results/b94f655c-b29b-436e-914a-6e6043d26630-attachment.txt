@@ -1,0 +1,6 @@
+{
+  statusCode: '200',
+  endPoint: '//api/connect/providers/USR-8D602D67/apilists'
+}
+Token status code is ***************** - >200
+404

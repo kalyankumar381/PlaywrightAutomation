@@ -1,0 +1,17 @@
+{
+  endPoint: '/api/content/user/organization/basic/details/ORG-9C2D5B74',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    organizationId: 'ORG-9C2D5B74',
+    organizationName: 'Yappes Organization',
+    description: 'Master Organization',
+    logoUrl: 'url'
+  }
+}
+[ 'OK' ]

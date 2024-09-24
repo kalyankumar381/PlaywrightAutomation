@@ -1,0 +1,84 @@
+{
+   
+    "PublicAPIView":[{
+        "endPoint":"/api/content/public/apiview",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId": "f3c339a0dd8a8d6d68273ad9df2f19fc",
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    "GetAPIbyName" : [{
+        "endPoint":"/api/content/public/apiname/list",
+        "statusCode":"200",
+        "requestbody":{
+            "searchName":"de",
+            "index":0,
+            "boundary":10,
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    
+    "PublicTagsGET" : [{
+        "endPoint":"/api/content/public/tags",
+        "statusCode":"200",
+        "requestbody":{
+            "boundary":"all",
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    "PublicAPIGET" : [{
+        "endPoint":"/api/content/public/apilist",
+        "statusCode":"200",
+        "requestbody":{
+            "tags":"travel",
+            "index":1,
+            "boundary":10,
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    "POSTFetchApilistaccordingtoApiName" : [{
+        "endPoint":"/api/content/public/apiname/list",
+        "statusCode":"200",
+        "requestbody":{
+            "searchName":"",
+            "index":0,
+            "boundary":9,
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+           "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    "POSTcategoriespreview" : [{
+        "endPoint":"/api/content/public/tags",
+        "statusCode":"200",
+        "requestbody":{
+            "client_id":"15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret":"cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }],
+    "POSTapiViewpreview" : [{
+        "endPoint":"/api/content/public/apiview",
+        "statusCode":"200",
+        "requestbody":{
+            "apiId":"6ae1cba3e24de8fc172de84d9f5275c8",
+            "client_id":"15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret":"cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        
+        }
+    }],
+    "POSTapiListPreview" : [{
+        "endPoint":"/api/content/public/apilist",
+        "statusCode":"200",
+        "requestbody":{
+            "tags":"sdfsdf",
+            "index":1,
+            "boundary":10,
+            "client_id" : "15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106",
+            "client_secret" : "cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797"
+        }
+    }]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    endPoint: '/api/content/followapi/API-AF8FE682',
+    statusCode: '200',
+    requestbody: {
+      followerId: '',
+      value: '',
+      userId: '',
+      apiId: '',
+      submittedBy: '',
+      modifiedBy: '',
+      submittedDateTime: '',
+      modifiedDateTime: ''
+    }
+  }
+]

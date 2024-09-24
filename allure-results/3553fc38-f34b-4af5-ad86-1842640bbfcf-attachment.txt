@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/general/activation/mail',
+    requestbody: { expiredToken: '' }
+  }
+]
+{ expiredToken: '' }
+Token status code is ***************** - >200
+401

@@ -1,0 +1,12 @@
+[
+  {
+    endPoint: '/api/content/organization/api/addedlist',
+    statusCode: '200',
+    requestbody: { organizationId: 'ORG-427315B8' }
+  }
+]
+{ organizationId: 'ORG-427315B8' }
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { apisForDiscovery: [ 0, 9, 8, 7 ] } }
+[ 'OK' ]

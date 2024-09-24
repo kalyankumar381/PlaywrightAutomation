@@ -1,0 +1,33 @@
+{
+   
+    "PUTUpdateArticle":[{
+        "endPoint":"/api/content/admin/support/articleindex/5b9118e9b99ae36d8c0697d7",
+        "statusCode":"200",
+        "requestbody":{
+            "viewName":"newName",
+            "viewPath":"hello/{param}/{param}",
+            "relevanceArticleSets":[
+            {"name":"searchAPI", "indexLable":"asdasdasda an API", "videoUrl":"", "videoTitle":"", "paragraph":"", "steps":["step1", "step2", "step3"] }],
+            "allArticleSets":[
+            {"name":"searchAPI", "indexLable":"Search an API", "videoUrl":"", "videoTitle":"", "paragraph":"", "steps":["step1", "step2", "step3"] }]
+        }
+    }],
+    "POSTAddArticle" : [{
+        "endPoint":"/api/content/admin/support/articleindex",
+        "statusCode":"200",
+        "requestbody":{
+            "viewName":"as",
+            "viewPath":"as/abcd/{param}",
+            "relevanceArticleSets":[
+            {"name":"searchAPI", "indexLable":"Search an API", "videoUrl":"", "videoTitle":"", "paragraph":"", "steps":["step1", "step2", "step3"] }],
+            "allArticleSets":[
+            {"name":"searchAPI", "indexLable":"Search an API", "videoUrl":"", "videoTitle":"", "paragraph":"", "steps":["step1", "step2", "step3"] }]
+        }
+    }],
+    
+    "POSTgetallrelevantarticles" : [{
+        "endPoint":"/api/content/admin/help/relevance",
+        "statusCode":"200",
+        "requestbody":{}
+    }]
+}

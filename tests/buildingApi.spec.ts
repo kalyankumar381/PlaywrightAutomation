@@ -2,7 +2,7 @@ import { expect } from 'playwright/test';
 import {test} from '../src/test-base'; 
 import {APIUtils} from '../utils/APIUtis'
 import {ReportingApi} from '@reportportal/agent-js-playwright';
-const dataset = JSON.parse(JSON.stringify(require('../data/buildingApi_MakeApi.json')));
+const dataset = JSON.parse(JSON.stringify(require('../data/buildingApi.json')));
 import dotenv from 'dotenv';
 dotenv.config({
     path:`.env.test`,

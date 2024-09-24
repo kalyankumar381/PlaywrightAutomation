@@ -1,140 +1,137 @@
 {
     "getallapplication" : {
         "statusCode":"200",
-        "endPoint":"/api/content/definitions/provider/yappestestmail@gmail.com"       
+        "endPoint":"/api/content/application/"       
     },
     "createApplicationKeys":[{
         "statusCode":"200",
-        "endPoint":"/api/content/api/API-B351E477/environmentconfig",
+        "endPoint":"/api/content/application/keys/APP-39856A8E",
         "requestbody":{
-            "apiId":"API-B351E477",
-            "environmentName":"development"
+            "applicationId": "APP-39856A8E",
+            "environment": "testing"
         }
     }],
     "createApplication" : [{
         "statusCode":"200",
-        "endPoint":"/api/content/api/API-B351E477/environmentconfig/6447947d72eaa8e0c4cc28d6",
+        "endPoint":"/api/content/application",
         "requestbody":{
-            "apiId":"API-B351E477",
-            "environmentConfigData":{
-                "env":"development12"
-            },
-            "environmentName":"development",
-            "objectId":"6447947d72eaa8e0c4cc28d6",
-            "userId":"USR-183152C2"
-            }
+            "applicationName":"test App3",
+            "applicationDescription":"for testing creation"
+        }        
     }],
     "getallApplication":{
         "statusCode":"200",
-        "endPoint":"/api/content/api/API-B351E477/remotes"
+        "endPoint":"/api/content/application/"
     },
     "deleteApplication" : {
-        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "endPoint":"/api/content/application/APP-117F528E",
         "statusCode":"200"
     },
     "updateApplication":[{
-        "endPoint":"/api/content/deploy/functions",
+        "endPoint":"/api/content/application/APP-96AEE552",
         "statusCode":"200",
         "requestbody":{
-            "environment":"production",
-            "resourceId":"RES-B688A553"
-            }
+            "applicationName":"test App11",
+            "applicationDescription":"for testing creation updated successfully!!!"
+        }
     }],
     "getApplicationDetails":{
-        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "endPoint":"/api/content/application/APP-C3FF550C",
         "statusCode":"200"
     },
     "getAPIFollowers":{
-        "endPoint":"/api/content/newapi/logic/RES-B688A553",
+        "endPoint":"/api/content/followapi/API-AF8FE682",
         "statusCode":"200"
     },
     "followAPI":[{
-        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles",
+        "endPoint":"/api/content/followapi/API-AF8FE682",
         "statusCode":"200",
         "requestbody":{
-            "apiId":"API-B351E477",
-            "fileName":	"doc.pem",
-            "fileUrl":"http://storageapi.yappes.local:98/serve/files/doc?format=pem&meta=securitkey&id=d9f472020e9dcbeae9458294db2c42ad&apiId=30824431bef1698b1b1d64ecb3257593"
+            "followerId":"info@yappes.com",
+            "value":"1",
+            "userId":"infoe40",
+            "apiId":"APP-3ADD5C07",
+            "submittedBy":"xyz",
+            "modifiedBy":"dsg",
+            "submittedDateTime":"3",
+            "modifiedDateTime":"12"
         }
     }],
     "unFollowAPI":[{
-        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles",
+        "endPoint":"/api/content/followapi/API-AF8FE682",
         "statusCode":"200",
         "requestbody":{
-            "apiId":"API-B351E477",
-            "fileName":	"doc.pem",
-            "fileUrl":"http://storageapi.yappes.local:98/serve/files/doc?format=pem&meta=securitkey&id=d9f472020e9dcbeae9458294db2c42ad&apiId=30824431bef1698b1b1d64ecb3257593"
+            "followerId":"",
+            "value":"",
+            "userId":"",
+            "apiId":"",
+            "submittedBy":"",
+            "modifiedBy":"",
+            "submittedDateTime":"",
+            "modifiedDateTime":""
         }
     }],
     "getAPIVotes":{
-        "endPoint":"/api/content/api/API-B351E477/remotes/securefiles/SKF-D0E0912D",
+        "endPoint":"/api/content/voteapi/API-AF8FE682",
         "statusCode":"200"
     },
     "upVoteAnAPI":[{
-        "endPoint":"/api/content/api/API-6E2AA3F3/remotes",
+        "endPoint":"/api/content/voteapi/API-AF8FE682",
         "statusCode":"200",
         "requestbody":{
-            "name" : "remote_store_test",
-            "type" : "store",
-            "description" : "Store as remote endpoint data source",
-            "logicCodeName" :  "abcABC123",
-            "configs" : {
-                    "hostname" : "remoteHost_store" ,
-                    "databaseName" : "remoteDB_store",
-                    "userName" : "userName_store",
-                    "password" : "password_store", 
-                    "portNumber" : "1234_store"
-                
-            }
+            "voteId":"",
+            "value":"",
+            "userId":"",
+            "apiId":"",
+            "submittedBy":"",
+            "modifiedBy":"",
+            "submittedDateTime":"",
+            "modifiedDateTime":""
         }
     }],
     "downVoteAnAPI":[{
-        "endPoint":"/api/content/newapi/logic/RES-C28B3160",
+        "endPoint":"/api/content/voteapi/API-AF8FE682",
         "statusCode":"200",
-        "requestbody":{	
-            "apiId" : "apiId",
-            "resourceLogic" : "function(){var x = ['a','b','c']; console.log(x);"
+        "requestbody":{
+            "voteId":"",
+            "value":"",
+            "userId":"",
+            "apiId":"",
+            "submittedBy":"",
+            "modifiedBy":"",
+            "submittedDateTime":"",
+            "modifiedDateTime":""
         }
     }] ,
     "deleteAPIFromApplication":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/connect/app/apilink/REL-01FEE412",
         "statusCode":"200"
     },
     "getApplicationKeys":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/content/application/keys/APP-3ADD5C07",
         "statusCode":"200"
     },
     "regenerateApplicationKeys":[{
-        "endPoint":"/api/content/api/API-6E2AA3F3/remotes/REP-51BD0247",
+        "endPoint":"/api/content/application/keys/APP-3ADD5C07",
         "statusCode":"200",
         "requestbody":{
-            "name" : "Nishi_Update",
-            "description" : "MySQL as remote endpoint data source",
-            "logicCodeName" : "aabcABC1233",
-            "configs" : {
-                    "hostname" : "remoteHost" ,
-                    "databaseName" : "remoteDB",
-                    "userName" : "userName",
-                    "password" : "password",  
-                    "portNumber" : "1234"
-                
-            }
+            "environment": "testing"
         }
     }],
     "getApiForConsumers":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/connect/consumers/apidetails/API-02B44EFB",
         "statusCode":"200"
     },  
     "getResourceDetailsConsumers":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/connect/consumers/apiresources/API-02B44EFB",
         "statusCode":"200"
     },
     "getAvgRating":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/content/review/ratings/average/API-02B44EFB",
         "statusCode":"200"
     },
     "getApplicationAPIs":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/connect/app/apilink/API-02B44EFB",
         "statusCode":"200"
     },
     "getAboutAPIsConsumer":{
@@ -146,24 +143,24 @@
         "statusCode":"200"
     },
     "getLicenseTermsConditionConsumer":{
-        "endPoint":"/api/content/apis/API-B351E477/errorinfo",
+        "endPoint":"/api/connect/app/apilink/API-02B44EFB",
         "statusCode":"200"
     },
     "listAnalyticsAPIsConsumers":[{
-        "endPoint":"/api/content/api/API-6E2AA3F3/remotes/REP-51BD0247",
+        "endPoint":"/api/content/applications/APP-3ADD5C07/analytics?metric=api",
         "statusCode":"200",
         "requestbody":{
-            "name" : "Nishi_Update",
-            "description" : "MySQL as remote endpoint data source",
-            "logicCodeName" : "aabcABC1233",
-            "configs" : {
-                    "hostname" : "remoteHost" ,
-                    "databaseName" : "remoteDB",
-                    "userName" : "userName",
-                    "password" : "password",  
-                    "portNumber" : "1234"
-                
-            }
+            "duration": "8",
+            "organizationId":"erg",
+            "stRange":"sv"
+        }
+    }],
+    "Save Report":[{
+        "endPoint":"/api/content/apis/API-02B44EFB/report",
+        "statusCode":"200",
+        "requestbody":{
+            "reportType":"grwg",
+            "description":"rgg"
         }
     }]
 }

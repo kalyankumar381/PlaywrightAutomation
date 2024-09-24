@@ -1,0 +1,9 @@
+[
+  {
+    endPoint: '/api/content/applications/APP-3ADD5C07/analytics?metric=api',
+    statusCode: '200',
+    requestbody: { duration: '8', organizationId: 'erg', stRange: 'sv' }
+  }
+]
+Token status code is ***************** - >200
+200

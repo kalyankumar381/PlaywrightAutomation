@@ -1,0 +1,91 @@
+{
+    "UpdateAPIgroups" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/apigroups/GRP-3D0C",
+        "requestbody":{
+            "applicationId": "APP-39856A8E",
+            "environment": "testing"
+        }
+    }],
+    "GetAPIgroupdetails":{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/apigroups/GRP-3D0C/"
+    },
+    "GetAllAPIGroups" : {
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/apigroups"
+    },
+    "createAPIgroups":[{
+        "endPoint":"/api/content/provider/apigroups",
+        "statusCode":"200",
+        "requestbody":{
+            "groupName": "dddd",
+            "description": "dd",
+            "marketplace": {
+                "subscriptionEnabled": true,
+                "marketplaceListing": false
+            }
+        }
+    }],
+    "GetApisAlreadyAddedtotheGroup" : [{
+        "endPoint":"/api/content/provider/apigroups/addedlist",
+        "statusCode":"200",
+        "requestbody":{
+            "apiGroupId": "GRP-193C"
+        }
+    }],
+    "ListAPItoaddtotheGroup":{
+        "endPoint":"/api/content/provider/apigroups",
+        "statusCode":"200"
+    },
+    "AddAPItotheGroup":[{
+        "endPoint":"/api/content/provider/apigroups/apiadd",
+        "statusCode":"200",
+        "requestbody":{
+            "apiGroupId": "60ebfaf282c67b0012d3ea07",
+            "apisToAdd": ["API-27EE45A7"]
+        }
+    }],
+    "RemoveAPIfromtheGroup":[{
+        "endPoint":"/api/content/provider/apigroups/apiremove",
+        "statusCode":"200",
+        "requestbody":{
+            "apiGroupId": "60ebfaf282c67b0012d3ea07",
+            "apisToRemove": ["API-14F96DD0","API-27EE45A7"]
+        }
+    }],
+    "UpdateGroupLogourl":[{
+        "endPoint":"/api/content/provider/apigroup/logo/GRP-2085",
+        "statusCode":"200",
+        "requestbody":{
+          
+        }
+    }],
+    "GetInternalOrganizationList":{
+        "endPoint":"/api/content/provider/internalorganization/list",
+        "statusCode":"200"
+    },
+    "GETOrganizationBasicDetails":{
+        "endPoint":"/api/content/user/organization/basic/details/ORG-9C2D5B74",
+        "statusCode":"200"
+    },
+    "GETAllMonitorVar":{
+        "endPoint":"/api/content/get/monitoring/mastervars",
+        "statusCode":"200"
+    },
+    "GETExternalOrganisation":{
+        "endPoint":"/api/content/user/external/organizationlist",
+        "statusCode":"200"
+    } ,
+    "DeleteAPIgroup":{
+        "endPoint":"/api/content/provider/apigroups/deletegroup",
+        "statusCode":"200"
+    },
+    "apigroupAPIlist":[{
+        "endPoint":"/api/content/provider/apigroups/apilist",
+        "statusCode":"200",
+        "requestbody":{
+            "organization": "Yappes Organization"
+        }
+    }]
+}

@@ -1,0 +1,120 @@
+{ statusCode: '200', endPoint: '/api/content/application/' }
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      applicationId: 'APP-BF9864BA',
+      applicationName: 'test App2',
+      applicationDescription: 'for testing creation',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-09-13',
+      apiCount: 0
+    },
+    {
+      applicationId: 'APP-96AEE552',
+      applicationName: 'test App1',
+      applicationDescription: 'for testing creation',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-09-13',
+      apiCount: 0
+    },
+    {
+      applicationId: 'APP-8FF50D7B',
+      applicationName: 'test App',
+      applicationDescription: 'for testing creation',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-09-13',
+      apiCount: 0
+    },
+    {
+      applicationId: 'APP-500A31F3',
+      applicationName: 'test App1111134',
+      applicationDescription: 'for testing creation',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-09-13',
+      apiCount: 0
+    },
+    {
+      applicationId: 'APP-9169991B',
+      applicationName: 'test App11111',
+      applicationDescription: 'for testing creation',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-09-13',
+      apiCount: 0
+    },
+    {
+      applicationId: 'APP-F9EF8153',
+      applicationName: 'praveentest',
+      applicationDescription: 'fa',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-08-02',
+      apiCount: 6
+    },
+    {
+      applicationId: 'APP-436AACAE',
+      applicationName: 'new',
+      applicationDescription: 'gggg',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-05-16',
+      apiCount: 69
+    },
+    {
+      applicationId: 'APP-5A3ECBD6',
+      applicationName: 'DEFAULT67766',
+      applicationDescription: 'hhhHH6666',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-05-16',
+      apiCount: 17
+    },
+    {
+      applicationId: 'APP-4DDC56BB',
+      applicationName: 'ASSDFFD',
+      applicationDescription: 'CVCXV',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-05-16',
+      apiCount: 1
+    },
+    {
+      applicationId: 'APP-6221C55C',
+      applicationName: 'tfjfkjgkyt',
+      applicationDescription: 'test',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'custom',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-05-13',
+      apiCount: 2
+    },
+    {
+      applicationId: 'APP-117F528E',
+      applicationName: 'Default Application',
+      applicationDescription: 'Default Application reated for the user',
+      applicationLogoUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=application',
+      type: 'default',
+      activeEnvironment: 'testing',
+      modifiedDateTime: '2024-04-11',
+      apiCount: 65
+    }
+  ]
+}
+[ 'OK' ]

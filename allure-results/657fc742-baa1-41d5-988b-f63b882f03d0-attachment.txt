@@ -1,0 +1,23 @@
+{
+  statusCode: '200',
+  endPoint: '/api/content/provider/subscriptions/eligibleorganization/'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'ok',
+  data: [
+    {
+      organizationId: 'ORG-9C2D5B74',
+      organizationName: 'Yappes Organization',
+      organizationType: 'master'
+    },
+    {
+      organizationId: 'ORG-84C30D68',
+      organizationName: 'heeeee',
+      organizationType: 'internal'
+    }
+  ]
+}
+[ 'ok' ]

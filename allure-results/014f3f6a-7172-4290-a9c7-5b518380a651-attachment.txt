@@ -1,0 +1,8 @@
+{
+  endPoint: '/api/connect/consumers/apidetails/API-02B44EFB',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

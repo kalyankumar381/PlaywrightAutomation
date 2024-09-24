@@ -2,10 +2,12 @@ import { Page, TestInfo, test } from '@playwright/test';
 import { Constants } from './constants';
 import { ApiUtil } from "./api-util";
 import { WebActions } from './WebActions';
+import Wrapper from './wrapper';
 
 export class GlobalUtil{
     apiUtil: ApiUtil;
     webAction:WebActions;
+    wrapper:Wrapper;
     // testInfo:TestInfo;
     private testCaseName:string;
     testId: string;
@@ -16,6 +18,7 @@ export class GlobalUtil{
     constructor(public page:Page,public request:any,public testInfo:TestInfo){
         this.apiUtil=new ApiUtil(request);
         this.webAction=new WebActions(page);
+        this.wrapper=new Wrapper(page);
         this.testInfo=testInfo;
         this.testCaseName=testInfo.title;
         const _testSpecName=testInfo.titlePath[0].split(".");

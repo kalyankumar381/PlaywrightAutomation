@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/api/content/application/APP-C3FF55',
+    statusCode: '200',
+    requestbody: {
+      applicationName: 'test App11',
+      applicationDescription: 'for testing creation updated successfully!!!'
+    }
+  }
+]
+Token status code is ***************** - >200

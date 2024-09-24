@@ -1,0 +1,17 @@
+[
+  {
+    endPoint: '/api/content/application/keys/APP-3ADD5C07',
+    statusCode: '200',
+    requestbody: { environment: 'testing' }
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    applicationKey: 'ad25a29b99e935b0e04e197ffec6de69a8c684c9778e2f53bd324a289ecf6161'
+  }
+}
+[ 'OK' ]

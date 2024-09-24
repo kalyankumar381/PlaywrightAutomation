@@ -1,0 +1,5 @@
+{
+  endPoint: '/api/content/application/APP-30C41B1F',
+  statusCode: '200'
+}
+Token status code is ***************** - >200

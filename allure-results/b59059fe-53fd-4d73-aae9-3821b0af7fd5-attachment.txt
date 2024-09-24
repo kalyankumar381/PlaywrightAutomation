@@ -1,0 +1,15 @@
+{
+  statusCode: '200',
+  endPoint: '/api/content/user/profile/image/:userName'
+}
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    profileImageUrl: 'http://storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=profile',
+    message: 'Profile Picture Resetted successfully'
+  }
+}
+[ 'OK' ]

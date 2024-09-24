@@ -1,0 +1,25 @@
+[
+  {
+    endPoint: '/api/content/providerapi/invoice/notification',
+    statusCode: '200',
+    requestbody: {
+      emailId: 'vivek.pawar@yappes.com',
+      invoiceId: 'INV-43F1177A',
+      customerName: 'Jhon Doe',
+      startDate: '2019-12-01',
+      endDate: '2019-12-31'
+    }
+  }
+]
+{
+  emailId: 'vivek.pawar@yappes.com',
+  invoiceId: 'INV-43F1177A',
+  customerName: 'Jhon Doe',
+  startDate: '2019-12-01',
+  endDate: '2019-12-31'
+}
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]
+Aplication ID is :: undefined

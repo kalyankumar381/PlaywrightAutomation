@@ -1,0 +1,8 @@
+{
+  endPoint: '/api/content/user/billing/USR-FC7376A1',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

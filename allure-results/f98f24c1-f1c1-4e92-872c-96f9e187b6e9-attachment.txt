@@ -1,0 +1,20 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroups/apiremove',
+    statusCode: '200',
+    requestbody: { apiGroupId: '60ebfaf282c67b0012d3ea07', apisToRemove: [Array] }
+  }
+]
+{
+  apiGroupId: '60ebfaf282c67b0012d3ea07',
+  apisToRemove: [ 'API-14F96DD0', 'API-27EE45A7' ]
+}
+Token status code is ***************** - >200
+200
+{
+  code: 401,
+  status: 'invalid-access',
+  data: { message: 'Cannot perform remove operation on this API Group' }
+}
+[ 'invalid-access' ]
+Aplication ID is :: undefined

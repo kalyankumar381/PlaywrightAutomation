@@ -1,0 +1,4 @@
+{
+  endPoint: '/api/content/review/ratings/average/API-02B44EFB',
+  statusCode: '200'
+}

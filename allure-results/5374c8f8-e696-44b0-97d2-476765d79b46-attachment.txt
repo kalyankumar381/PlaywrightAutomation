@@ -1,0 +1,4 @@
+{
+  endPoint: '/api/connect/app/apilink/API-02B44EFB',
+  statusCode: '200'
+}

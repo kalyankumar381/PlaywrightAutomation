@@ -1,0 +1,13 @@
+[
+  {
+    endPoint: '/api/content/providerapi/API-244B9159/invoice',
+    statusCode: '200',
+    requestbody: { apiId: '', userId: '', invoicePeriod: [Object] }
+  }
+]
+{
+  apiId: '',
+  userId: '',
+  invoicePeriod: { startDate: '', endDate: '' }
+}
+Token status code is ***************** - >200

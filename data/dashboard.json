@@ -1,0 +1,29 @@
+{
+    "GetAllOrganisationDropDown" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/useraccess/orglist",
+        "requestbody":{}
+    }],
+    "GetTop10APIMetric":[{
+        "statusCode":"200",
+        "endPoint":"/api/content/provider/dashboards/analytics",
+        "requestbody": {
+            "dashboardType": "analytics", 
+            "kpis": [ "top-api-metric" ],
+            "timePeriod": {
+                "startDate": "2021-06-01", 
+                "endDate": "2021-06-30"
+                }
+            }
+    }],
+    "GetMarketplaceDetails":[{
+        "endPoint":"/api/content/dashboard/marketplace",
+        "statusCode":"200",
+        "requestbody":{}
+    }],
+    "GetOrganisationDetails":[{
+        "endPoint":"/api/content/dashboard/organization",
+        "statusCode":"200",
+        "requestbody":{}
+    }]
+}

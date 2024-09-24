@@ -1,0 +1,103 @@
+{
+    "Authentication" : [{
+        "statusCode":"200",
+        "endPoint":"/api/general/authenticate",
+        "requestbody":{
+            "emailId":"hariinkpta@gmail.com",
+            "password": "qqq"
+           }    
+    }],
+    "Registration" : [{
+        "statusCode":"200",
+        "endPoint":"/api/general/register",
+        "requestbody":{
+            "firstName":"fn",
+            "lastName":"ln",
+            "password": "qqq",
+            "confirmPassword": "qqq",
+            "emailId": "hariinkpta@gmail.com",
+            "clientIp":"54.31.43.633"
+           }             
+    }],
+    "ResetPasswordLink" : [{
+        "statusCode":"200",
+        "endPoint":"/api/general/reset/password/",
+        "requestbody":{
+            "emailId":"hariinkpta@gmail.com"
+        }    
+    }],
+    "PasswordReset" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/reset/password/29734198101dd94484d035a06ae195776f67e9cb43751f6c245fa90345f40a66",
+        "requestbody":{
+            "emailId":"yappestestmail1@gmail.com",
+            "password":"qqqq",
+            "confirmPassword":"qqqq"
+        }    
+    }],
+    "ProfileView":{
+        "statusCode":"200",
+        "endPoint":"/api/content/profile/yappestestmail@gmail.com"       
+    },
+    "PasswordChange" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/profile/password/info@gmail.com",
+        "requestbody":{
+            "currentPassword": "qqqq",
+            "newPassword": "qqqq"
+      }    
+    }],
+    "ProfileUpdate" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/profile/info@yappes.com",
+        "requestbody":{
+            "firstName":"devlop",
+            "lastName":"testing"
+        }   
+    }],
+    "InternalTokenValidity" : [{
+        "statusCode":"200",
+        "endPoint":"/api/general/token/validity/",
+        "requestbody":{
+            "type": "profile-activation",
+            "token": "cc3c40025880ccdba6814457a7a0e5ccde02c12531eaca5a7bc363ef54c21f42"
+          }          
+    }],
+    "AccountActivationMail" : [{
+        "statusCode":"200",
+        "endPoint":"/api/general/activation/mail",
+        "requestbody":{
+            "expiredToken" : ""
+        }
+    }],
+    "PUTupdatePreferences" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/user/USR-94ACFCA6/preferences",
+        "requestbody":{
+            "userId" : "USR-94ACFCA6",
+           "preferenceList" : [ 
+               {
+                   "preferenceId" : "PRE-0001",
+                   "status" : "false"
+               }, 
+               {
+                   "preferenceId" : "PRE-0002",
+                   "status" : "false"
+               }
+           ]
+       }   
+    }],
+    "UpdateProfilePic" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/user/profile/image/:userName",
+        "requestbody":{}      
+    }],
+    "GETPreferences":{
+        "statusCode":"200",
+        "endPoint":"/api/content/user/USR-94ACFCA6/preferences"
+    },
+    "DELETEProfilePic":{
+        "statusCode":"200",
+        "endPoint":"/api/content/user/profile/image/:userName"
+    }
+}

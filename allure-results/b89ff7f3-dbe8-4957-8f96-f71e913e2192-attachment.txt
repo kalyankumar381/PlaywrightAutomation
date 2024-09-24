@@ -1,0 +1,7 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroups',
+    statusCode: '200',
+    requestbody: { groupName: 'dddd', description: 'dd', marketplace: [Object] }
+  }
+]

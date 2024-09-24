@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/general/authenticate',
+    requestbody: { emailId: 'hariinkpta@gmail.com', password: 'qqq' }
+  }
+]
+{ emailId: 'hariinkpta@gmail.com', password: 'qqq' }
+Token status code is ***************** - >200
+400

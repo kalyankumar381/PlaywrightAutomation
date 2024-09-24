@@ -1,0 +1,15 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroup/logo/GRP-2085',
+    statusCode: '200',
+    requestbody: {}
+  }
+]
+Token status code is ***************** - >200
+200
+{
+  code: 200,
+  status: 'OK',
+  data: { message: 'API Group Logo updated Successfully' }
+}
+[ 'OK' ]

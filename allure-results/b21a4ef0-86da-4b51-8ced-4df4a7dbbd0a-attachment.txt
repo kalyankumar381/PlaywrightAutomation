@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/application',
+    requestbody: {
+      applicationName: 'test App3',
+      applicationDescription: 'for testing creation'
+    }
+  }
+]

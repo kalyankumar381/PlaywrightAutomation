@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/useraccess/orglist',
+    requestbody: {}
+  }
+]
+{}
+Token status code is ***************** - >200
+401

@@ -1,0 +1,12 @@
+[
+  {
+    endPoint: '/api/content/provider/apigroups/apiadd',
+    statusCode: '200',
+    requestbody: { apiGroupId: '60ebfaf282c67b0012d3ea07', apisToAdd: [Array] }
+  }
+]
+{
+  apiGroupId: '60ebfaf282c67b0012d3ea07',
+  apisToAdd: [ 'API-27EE45A7' ]
+}
+Token status code is ***************** - >200

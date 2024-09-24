@@ -39,4 +39,8 @@ export default class Wrapper{
             await this.page.close();
         }
     }
+
+    public async generateRandomValue() {
+        return Math.floor(1000 + Math.random() * 9000); // Generates a random number between 1000 and 9999
+    }    
 }

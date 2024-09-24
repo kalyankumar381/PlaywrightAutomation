@@ -1,0 +1,12 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/collections/CLL-480189AF',
+    requestbody: {
+      collectionName: 'Test Collection',
+      collectionDescription: 'Test Collection'
+    }
+  }
+]
+Token status code is ***************** - >200
+500

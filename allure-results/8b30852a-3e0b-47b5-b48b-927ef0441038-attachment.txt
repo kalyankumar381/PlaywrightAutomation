@@ -1,0 +1,115 @@
+[
+  {
+    endPoint: '/api/content/batch/jobs',
+    statusCode: '200',
+    requestbody: {
+      type: 'event',
+      jobType: 'scheduled',
+      action: 'invoice-generation',
+      client_id: '15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106',
+      client_secret: 'cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797'
+    }
+  }
+]
+{
+  type: 'event',
+  jobType: 'scheduled',
+  action: 'invoice-generation',
+  client_id: '15baf8a50c0c653b47b4df9cee458e2d1a6ae226a27c4bf7e9871d387eb95106',
+  client_secret: 'cc62bc8020cfa4c73661fcb92671962adc5ba3d9afcf60c9b44aa4a691246797'
+}
+Token status code is ***************** - >200
+200
+[
+  {
+    customerName: 'null null',
+    emailId: null,
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-2E98DC9C',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Sarvesh Sasidharan',
+    emailId: 'sarvesh.s@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-CA5A7943',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Kailas Parameswaran',
+    emailId: 'kailas.p@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-5AAFADF8',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Kailas Parameswaran',
+    emailId: 'kailas.p@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-B51E26FE',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Sarvesh Sasidharan',
+    emailId: 'sarvesh.s@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-1AE1E709',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Kailas Parameswaran',
+    emailId: 'kailas.p@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-A41A75B0',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Kailas Parameswaran',
+    emailId: 'kailas.p@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-8A832196',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Kailas Parameswaran',
+    emailId: 'kailas.p@yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-3C50669E',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'Pallavi Kini',
+    emailId: 'pallavi.kini@Yappes.com',
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-62EF49D5',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  },
+  {
+    customerName: 'null null',
+    emailId: null,
+    startDate: '2024-08-01',
+    endDate: '2024-09-20',
+    invoiceId: 'INV-71444D14',
+    message: 'Invoice Created Successfully',
+    statusCode: 200
+  }
+]
+[]

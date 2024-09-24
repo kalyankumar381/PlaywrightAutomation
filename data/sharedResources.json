@@ -1,0 +1,29 @@
+{
+    "CreateSharedResources" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/shared/resources/custom-ssl-certificate",
+        "requestbody":{
+            "resourceName": "Cert3",
+            "description": "Cert3",
+            "resourceType": "custom-ssl-certificate",
+            "uploadedCertificateName": "Cert333",
+            "uploadedCertificateUrl": "https://Cert1.url",
+            "passphrase": "123"
+        }     
+    }],
+    "GetAllSharedResources":{
+        "statusCode":"200",
+        "endPoint":"/api/content/shared/resources/custom-ssl-certificate"       
+    },
+    "UpdateSharedResources" : [{
+        "statusCode":"200",
+        "endPoint":"/api/content/shared/resources/custom-ssl-certificate/64465992e14ec80d959ab578",
+        "requestbody":{
+            "organizationId":"ORG-BBED4611C"
+        }      
+    }],
+    "DeleteSharedResources":{
+        "statusCode":"200",
+        "endPoint":"/api/content/shared/resources/custom-ssl-certificate/64465992e14ec80d959ab578"
+    }
+}
