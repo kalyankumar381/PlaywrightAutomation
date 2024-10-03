@@ -1,0 +1,10 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/application/keys/APP-B00450AA',
+    requestbody: { applicationId: 'APP-B00450AA', environment: 'testing' }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 65 - ms
+404

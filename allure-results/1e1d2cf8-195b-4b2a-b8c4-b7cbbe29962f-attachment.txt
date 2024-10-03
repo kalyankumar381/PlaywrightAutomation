@@ -1,9 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/user/USR-94ACFCA6/preferences',
-    requestbody: { userId: 'USR-94ACFCA6', preferenceList: [Array] }
-  }
-]
-Token status code is ***************** - >200
-404

@@ -1,2 +1,0 @@
-{ duration: { limit: 58, period: 'hours' } }
-Token status code is ***************** - >200

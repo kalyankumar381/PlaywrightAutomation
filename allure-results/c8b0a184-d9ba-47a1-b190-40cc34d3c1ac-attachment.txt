@@ -1,0 +1,32 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/application',
+    requestbody: {
+      applicationName: 'test App3',
+      applicationDescription: 'for testing creation'
+    }
+  }
+]
+{
+  applicationName: 'test App3_5828',
+  applicationDescription: 'for testing creation'
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 151 - ms
+[
+  {
+    endPoint: '/api/content/application/APP-96AEE552',
+    statusCode: '200',
+    requestbody: {
+      applicationId: 'APP-7F6AC6E3',
+      applicationName: 'test',
+      applicationDescription: 'This is a application',
+      applicationLogoUrl: 'gaurav-kumar',
+      activeEnvironment: 'testing'
+    }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 87 - ms
+404

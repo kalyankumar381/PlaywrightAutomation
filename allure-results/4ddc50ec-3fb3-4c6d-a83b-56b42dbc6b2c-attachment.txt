@@ -1,0 +1,10 @@
+[
+  {
+    endPoint: '/api/content/specifications/download',
+    statusCode: '200',
+    requestbody: { type: 'yappesdef', apiId: 'API-EAE312FE', version: 'latest' }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 131 - ms
+200

@@ -1,0 +1,275 @@
+{ endPoint: '/api/content/provider/policy', statusCode: '200' }
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 121 - ms
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      policyId: 'POL-CE6856E8',
+      policyName: 'pritu',
+      description: 'ergergegerger',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-27599C25',
+      policyName: 'YDM76',
+      description: 'Description',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-637FD091',
+      policyName: 'svvvvvvvvv',
+      description: 'ugvygv',
+      policyAttached: true,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-8C2348C8',
+      policyName: 'whilepublic',
+      description: '',
+      policyAttached: true,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-5F35F76D',
+      policyName: 'public',
+      description: '',
+      policyAttached: true,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-E9BDA7A5',
+      policyName: 'dfsd',
+      description: 'sdf',
+      policyAttached: true,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-FD511AC4',
+      policyName: 'cbtrhrottle',
+      description: '',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-2366D466',
+      policyName: 'URLLL',
+      description: 'DDD',
+      policyAttached: true,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-9DC9B071',
+      policyName: 'dghdgj',
+      description: 'ghfghf',
+      policyAttached: false,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-156186CF',
+      policyName: 'dfdsf',
+      description: 'dsdsffc',
+      policyAttached: false,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-7739A234',
+      policyName: 'sadas',
+      description: 'dffde',
+      policyAttached: false,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-A6E3D065',
+      policyName: 'SIGNATURE',
+      description: 'SGSGDHF',
+      policyAttached: false,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-FC84D228',
+      policyName: 'Message',
+      description: 'fffffff',
+      policyAttached: false,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-B1FAC7C3',
+      policyName: 'Black',
+      description: 'fff',
+      policyAttached: false,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-2D1400DF',
+      policyName: 'whitepolicy',
+      description: 'dddd',
+      policyAttached: true,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-E94EAA27',
+      policyName: 'hhhhhhhh',
+      description: 'hhhh',
+      policyAttached: false,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-11B2E2BE',
+      policyName: 'chandanip',
+      description: '',
+      policyAttached: true,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-ABA4594F',
+      policyName: 'addresssss',
+      description: 'bdhfdgsssss',
+      policyAttached: false,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-664FEC7D',
+      policyName: 'signatureee',
+      description: 'fgdgdgdgeee',
+      policyAttached: false,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-47B691EE',
+      policyName: 'tttt',
+      description: 'gddgdg',
+      policyAttached: false,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-BF9BE2A4',
+      policyName: 'thyyhy',
+      description: 'dfdfdg',
+      policyAttached: false,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-EDE3C436',
+      policyName: 'thrott',
+      description: 'hdhdhgdhdhd',
+      policyAttached: false,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-48C345B7',
+      policyName: 'atl01',
+      description: '',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-E186F022',
+      policyName: 'new gateway policy',
+      description: 'check sub',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-7D0A6D2D',
+      policyName: 'Hello Analytics',
+      description: 'ffffff',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-7150E7FD',
+      policyName: 'gnfdvcs',
+      description: 'dfsdf',
+      policyAttached: false,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-BFC539B2',
+      policyName: 'gggggggyyyjjttt',
+      description: 'ggggyyyytttt',
+      policyAttached: false,
+      policyType: 'whitelist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-37194BDD',
+      policyName: 'hellllloooo',
+      description: 'hhhhhh',
+      policyAttached: false,
+      policyType: 'message_signature',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-0803BB6A',
+      policyName: 'gggg',
+      description: 'gggg',
+      policyAttached: false,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-9B0F073E',
+      policyName: 'helloooooo',
+      description: 'ddgg',
+      policyAttached: true,
+      policyType: 'blacklist_ip',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-2529ABDF',
+      policyName: 'gatway',
+      description: 'fgcnfghfg',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-493891DA',
+      policyName: 'gatewaywwww',
+      description: '2222333333333333',
+      policyAttached: true,
+      policyType: 'throttling',
+      configs: [Object]
+    },
+    {
+      policyId: 'POL-9B91C517',
+      policyName: 'dfsdfh',
+      description: 'This is test update.zxcvdsfsdf',
+      policyAttached: false,
+      policyType: 'whitelist',
+      configs: [Object]
+    }
+  ]
+}
+[ 'OK' ]

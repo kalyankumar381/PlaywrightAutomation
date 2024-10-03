@@ -1,0 +1,12 @@
+[
+  {
+    endPoint: '/api/content/provider/gateway/fetchpolicyattach',
+    statusCode: '200',
+    requestbody: { subscriberId: 'SCB-2CE31FA2' }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 112 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

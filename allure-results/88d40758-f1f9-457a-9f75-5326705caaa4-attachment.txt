@@ -1,0 +1,212 @@
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 164 - ms
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      _id: '66fe7c12f6ef11f25f1ca532',
+      groupId: 'GRP-F380',
+      groupName: 'test- 6352',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '66fadbc56bcd37232e6aed28',
+      groupId: 'GRP-7351',
+      groupName: 'test- 3297',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66faaf135b04242dc9400391',
+      groupId: 'GRP-D286',
+      groupName: 'test- 5900',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66faa36e4056576c6bc4a5ab',
+      groupId: 'GRP-4E19',
+      groupName: 'res',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66fa9e2b6bcd37232e6aecb6',
+      groupId: 'GRP-DE4A',
+      groupName: 'test- 1423',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66fa8e294056576c6bc4a582',
+      groupId: 'GRP-1111',
+      groupName: 'test- 6549',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '66fa8d826bcd37232e6aeca5',
+      groupId: 'GRP-0DAB',
+      groupName: 'test- 6746',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '66fa81226bcd37232e6aec65',
+      groupId: 'GRP-3AB9',
+      groupName: 'dddd1',
+      description: 'ddd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66f536f9934bd7693a93ca61',
+      groupId: 'GRP-4E3A',
+      groupName: 'KYC Group',
+      description: '',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 2
+    },
+    {
+      _id: '66ebe91b2b89d740477472b2',
+      groupId: 'GRP-D9A0',
+      groupName: 'dddd',
+      description: 'dd',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 1
+    },
+    {
+      _id: '66ebbdc12b89d74047747028',
+      groupId: 'GRP-F57E',
+      groupName: 'Attached Gateway',
+      description: 'Checking',
+      logoUrl: 'storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 4
+    },
+    {
+      _id: '66d96992fdb124ecd3a91b1d',
+      groupId: 'GRP-9606',
+      groupName: 'nvghvgjvh',
+      description: '',
+      logoUrl: 'storageapi.integration.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '66d5873c6c01443f496722ae',
+      groupId: 'GRP-8A8B',
+      groupName: 'fghj',
+      description: '',
+      logoUrl: 'storageapi.integration.yappes-enterprise.com/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '665ed1a5e5b35c31546cffc6',
+      groupId: 'GRP-CF9A',
+      groupName: 'whatsapp banking client',
+      description: '',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 9
+    },
+    {
+      _id: '665456c382a994ca9919c676',
+      groupId: 'GRP-481B',
+      groupName: 'chakruu6777',
+      description: 'ffff6666',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 0
+    },
+    {
+      _id: '66545abd82a994ca9919c691',
+      groupId: 'GRP-66DA',
+      groupName: 'Chakru567',
+      description: 'mmmm@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!@@#2323232323232vs;mamqlncacnn an clamcla cnla clan laclna lacnal nca lanclann ncan lcan alnclalncaln lacl acln lacla ncla lcan ncalcnlanclanclanclanclnaln clanclanclnalcnalncanclnlcnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 6
+    },
+    {
+      _id: '6633a3e1472ef0dbf5664cd9',
+      groupId: 'GRP-B80D',
+      groupName: 'TestGroup',
+      description: '',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 7
+    },
+    {
+      _id: '66176b4a4b5cc31d24a88acd',
+      groupId: 'GRP-40DC',
+      groupName: 'sdfsf324324',
+      description: '',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 2
+    },
+    {
+      _id: '6628d3925f9e385f15793766',
+      groupId: 'GRP-AE8A',
+      groupName: 'test',
+      description: '',
+      logoUrl: 'http://storageapi.yappes.local:98/serve/files/defaults?format=png&meta=group',
+      marketplace: [Object],
+      apisCount: 2
+    }
+  ]
+}
+GRP-F380
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/provider/apigroups/GROUPID',
+    requestbody: {
+      groupName: 'GRP-3D0C',
+      description: 'dd1',
+      logoUrl: '...',
+      groupId: 'GRP-3AB9',
+      marketplace: [Object]
+    }
+  }
+]
+After update --  [
+  {
+    "statusCode": "200",
+    "endPoint": "/api/content/provider/apigroups/GROUPID",
+    "requestbody": {
+      "groupName": "test- 6352",
+      "description": "dd1",
+      "logoUrl": "storageapi.testing.yappes-enterprise.com/serve/files/defaults?format=png&meta=group",
+      "groupId": "GRP-F380",
+      "marketplace": {
+        "subscriptionEnabled": false,
+        "marketplaceListing": false
+      }
+    }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 81 - ms
+404

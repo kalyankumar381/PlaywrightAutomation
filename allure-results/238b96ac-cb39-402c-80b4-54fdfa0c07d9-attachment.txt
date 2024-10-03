@@ -1,7 +1,0 @@
-[
-  {
-    endPoint: '/api/content/organization/api/addedlist',
-    statusCode: '200',
-    requestbody: { organizationId: 'ORG-427315B8' }
-  }
-]

@@ -1,0 +1,19 @@
+[
+  {
+    endPoint: '/api/content/followapi/API-AF8FE682',
+    statusCode: '200',
+    requestbody: {
+      followerId: '',
+      value: '',
+      userId: '',
+      apiId: '',
+      submittedBy: '',
+      modifiedBy: '',
+      submittedDateTime: '',
+      modifiedDateTime: ''
+    }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 110 - ms
+200

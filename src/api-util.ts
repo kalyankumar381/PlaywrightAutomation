@@ -151,12 +151,14 @@ export  class ApiUtil {
 
     async GET(request:any,baseUrl:string){
         const resToken=await this.getToken()
+        const startTime=Date.now();
         const _response=await request.get(`${baseUrl}`,{       
             headers:this.createHeaders(resToken)
         });
 
-        // expect(_response.status()).toBe(200);
-        // expect(_response.ok()).toBeTruthy(); 
+        const endTime=Date.now();
+        const responseTime = endTime - startTime;
+        console.log(`GET - API response time <><><><><><><><><><><><><><><><>   :: ${responseTime} - ms`);
 
         return _response;
     };    
@@ -172,6 +174,7 @@ export  class ApiUtil {
     async POST(request:any,baseUrl:string,requestBody:any){
         let _response;
         const resToken=await this.getToken()
+        const startTime=Date.now();
         if(Object.keys(requestBody).length === 0){
             _response=await request.post(`${baseUrl}`,{
                 headers:this.createHeaders(resToken)
@@ -183,23 +186,16 @@ export  class ApiUtil {
                 data:requestBody
             });
         }
-
-        // expect(_response.status()).toBe(200);
-        // expect(_response.ok()).toBeTruthy(); 
-
+        const endTime=Date.now();
+        const responseTime = endTime - startTime;
+        console.log(`POST - API response time <><><><><><><><><><><><><><><><>   :: ${responseTime} - ms`);
         return _response
     }
 
     async PUT(request:any,baseUrl:string,requestBody:any){
-
-        // const resToken=await this.getToken()
-        // const _response=await request.put(`${baseUrl}`,{
-        //     headers:this.createHeaders(resToken),
-        //     data:requestBody
-        // });
-
         let _response;
         const resToken=await this.getToken()
+        const startTime=Date.now();
         if(Object.keys(requestBody).length === 0){
             _response=await request.post(`${baseUrl}`,{
                 headers:this.createHeaders(resToken)
@@ -212,11 +208,9 @@ export  class ApiUtil {
             });
         }
 
-
-
-
-        // expect(_response.status()).toBe(200);
-        // expect(_response.ok()).toBeTruthy(); 
+        const endTime=Date.now();
+        const responseTime = endTime - startTime;
+        console.log(`PUT - API response time <><><><><><><><><><><><><><><><>   :: ${responseTime} - ms`);
 
         return _response
     };
@@ -230,12 +224,14 @@ export  class ApiUtil {
 
     async DELETE(request:any,baseUrl:string){
         const resToken=await this.getToken()
+        const startTime=Date.now();
         const _response=await request.delete(`${baseUrl}`,{       
             headers:this.createHeaders(resToken)
         });
 
-        // expect(_response.status()).toBe(200);
-        // expect(_response.ok()).toBeTruthy(); 
+        const endTime=Date.now();
+        const responseTime = endTime - startTime;
+        console.log(`DELETE - API response time <><><><><><><><><><><><><><><><>   :: ${responseTime} - ms`);
 
         return _response;
     };  

@@ -13,10 +13,10 @@ const baseUrl=process.env.baseUrl;
 test('Make API', async ({ request,global }) => {
     const requestBody= dataset['makeAPI']
     console.log(requestBody); 
-    const url=`${baseUrl}${requestBody[0].endPoint}`  
-    const _response=await global.apiUtil.POST(request,`${url}`,requestBody[0].requestbody);
+    const url=`${baseUrl}${requestBody.endPoint}`  
+    const _response=await global.apiUtil.GET(request,`${url}`);
     console.log(_response.status());
-    await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
+    await global.apiUtil.verifyStatusCode(_response,requestBody.statusCode);
     console.log(await _response.json());   
     const responseJson=await _response.json();    
     console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status'));           

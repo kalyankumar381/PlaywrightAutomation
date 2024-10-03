@@ -1,1 +1,0 @@
-{ duration: { limit: 58, period: 'hours' } }

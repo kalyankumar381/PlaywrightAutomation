@@ -1,0 +1,10 @@
+[
+  {
+    endPoint: '/api/content/review/rating/user/REV-15E34316',
+    statusCode: '200',
+    requestbody: { review: 'updated again', rating: 3 }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 66 - ms
+404

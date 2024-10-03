@@ -1,0 +1,184 @@
+{
+  endPoint: '/api/content/provider/internalorganization/list',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 121 - ms
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      organizationName: 'Yappes Organization',
+      organizationId: 'ORG-9C2D5B74',
+      type: 'master'
+    },
+    {
+      organizationName: 'sachinnnnn',
+      organizationId: 'ORG-E768CEC6',
+      type: 'external'
+    },
+    {
+      organizationName: 'gauravv',
+      organizationId: 'ORG-73608295',
+      type: 'internal'
+    },
+    {
+      organizationName: 'test-org3',
+      organizationId: 'ORG-960D950A',
+      type: null
+    },
+    {
+      organizationName: 'ewrewr324324',
+      organizationId: 'ORG-A08D59D2',
+      type: 'external'
+    },
+    {
+      organizationName: 'testnew',
+      organizationId: 'ORG-C9DCC4FF',
+      type: 'internal'
+    },
+    {
+      organizationName: 'neworganization ',
+      organizationId: 'ORG-DF554CBA',
+      type: 'internal'
+    },
+    {
+      organizationName: 'neworganization2',
+      organizationId: 'ORG-D4F089DC',
+      type: 'external'
+    },
+    {
+      organizationName: 'newsachin',
+      organizationId: 'ORG-3B68A0BF',
+      type: 'internal'
+    },
+    {
+      organizationName: 'hellooosooossos',
+      organizationId: 'ORG-CA4D40DF',
+      type: 'internal'
+    },
+    {
+      organizationName: 'heeeee',
+      organizationId: 'ORG-84C30D68',
+      type: 'internal'
+    },
+    {
+      organizationName: 'newsssss',
+      organizationId: 'ORG-A8CB8011',
+      type: 'external'
+    },
+    {
+      organizationName: 'Internal',
+      organizationId: 'ORG-A2BD8974',
+      type: 'internal'
+    },
+    {
+      organizationName: 'API Partner',
+      organizationId: 'ORG-370AE2EC',
+      type: 'external'
+    },
+    {
+      organizationName: 'hfmhg',
+      organizationId: 'ORG-79FF4F68',
+      type: 'external'
+    },
+    {
+      organizationName: 'ghfjf',
+      organizationId: 'ORG-04DA3537',
+      type: 'external'
+    },
+    {
+      organizationName: 'New organization',
+      organizationId: 'ORG-C70F6726',
+      type: 'external'
+    },
+    {
+      organizationName: 'nrwwww3455',
+      organizationId: 'ORG-AE02308A',
+      type: 'external'
+    },
+    {
+      organizationName: 'Admin org',
+      organizationId: 'ORG-7E656480',
+      type: 'external'
+    },
+    {
+      organizationName: 'HHHH34',
+      organizationId: 'ORG-423F500A',
+      type: 'external'
+    },
+    {
+      organizationName: 'NY677',
+      organizationId: 'ORG-CC150395',
+      type: 'external'
+    },
+    {
+      organizationName: 'HTTT',
+      organizationId: 'ORG-AF2958BF',
+      type: 'external'
+    },
+    {
+      organizationName: 'API ORGGG',
+      organizationId: 'ORG-CAFD93E8',
+      type: 'internal'
+    },
+    {
+      organizationName: 'Whatsapp Client',
+      organizationId: 'ORG-7D5C244C',
+      type: 'internal'
+    },
+    {
+      organizationName: 'test org',
+      organizationId: 'ORG-288732CC',
+      type: 'internal'
+    },
+    {
+      organizationName: 'fff',
+      organizationId: 'ORG-EC644662',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ffff',
+      organizationId: 'ORG-FD354F91',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff7126',
+      organizationId: 'ORG-C2E8534F',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff3956',
+      organizationId: 'ORG-4B0580AF',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff2297',
+      organizationId: 'ORG-D56DEE51',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff5732',
+      organizationId: 'ORG-F6B53937',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff8545',
+      organizationId: 'ORG-82E1AFDD',
+      type: 'internal'
+    },
+    {
+      organizationName: 'org check ',
+      organizationId: 'ORG-E78D6DAE',
+      type: 'internal'
+    },
+    {
+      organizationName: 'ff1892',
+      organizationId: 'ORG-F56D5E38',
+      type: 'internal'
+    }
+  ]
+}
+[ 'OK' ]

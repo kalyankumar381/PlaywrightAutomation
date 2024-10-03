@@ -1,12 +1,21 @@
 {
     "UpdateAPIgroups" : [{
         "statusCode":"200",
-        "endPoint":"/api/content/provider/apigroups/GRP-3D0C",
+        "endPoint":"/api/content/provider/apigroups/GROUPID",
         "requestbody":{
-            "applicationId": "APP-39856A8E",
-            "environment": "testing"
-        }
+            "groupName": "GRP-3D0C",
+            "description": "dd1",
+            "logoUrl": "...",
+            "groupId": "GRP-3AB9",
+            "marketplace":{
+                "subscriptionEnabled": false,
+                "marketplaceListing": false
+              }                         
+        }     
     }],
+
+    
+
     "GetAPIgroupdetails":{
         "statusCode":"200",
         "endPoint":"/api/content/provider/apigroups/GRP-3D0C/"
@@ -19,7 +28,7 @@
         "endPoint":"/api/content/provider/apigroups",
         "statusCode":"200",
         "requestbody":{
-            "groupName": "dddd",
+            "groupName": "dddd1",
             "description": "dd",
             "marketplace": {
                 "subscriptionEnabled": true,
@@ -31,7 +40,7 @@
         "endPoint":"/api/content/provider/apigroups/addedlist",
         "statusCode":"200",
         "requestbody":{
-            "apiGroupId": "GRP-193C"
+            "apiGroupId": "GRP-DE4A"
         }
     }],
     "ListAPItoaddtotheGroup":{
@@ -42,10 +51,12 @@
         "endPoint":"/api/content/provider/apigroups/apiadd",
         "statusCode":"200",
         "requestbody":{
-            "apiGroupId": "60ebfaf282c67b0012d3ea07",
-            "apisToAdd": ["API-27EE45A7"]
+            "apiGroupId": "GRP-3AB9",
+            "apisToAdd": ["API-839E45DE","API-ECA837E3","API-BC38C799","API-101C98E4"]
         }
-    }],
+    }], 
+
+
     "RemoveAPIfromtheGroup":[{
         "endPoint":"/api/content/provider/apigroups/apiremove",
         "statusCode":"200",
@@ -55,10 +66,11 @@
         }
     }],
     "UpdateGroupLogourl":[{
-        "endPoint":"/api/content/provider/apigroup/logo/GRP-2085",
+        "endPoint":"/api/content/provider/apigroup/logo/GRP-D92E",
         "statusCode":"200",
         "requestbody":{
-          
+            "groupId":"GRP-D92E",
+            "logoUrl":"gaurav-kumar"
         }
     }],
     "GetInternalOrganizationList":{

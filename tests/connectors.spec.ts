@@ -122,15 +122,6 @@ test('Update Connector', async ({ request,global }) => {
 });
 
 
-
-
-
-
-
-
-
-
-
 test('Delete Shared Resources', async ({ request,global }) => {
     const requestBody= dataset['DeleteSharedResources']
     console.log(requestBody);    

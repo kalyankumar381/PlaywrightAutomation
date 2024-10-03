@@ -1,0 +1,13 @@
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 98 - ms
+[
+  {
+    endPoint: '/api/content/provider/apigroups/addedlist',
+    statusCode: '200',
+    requestbody: { apiGroupId: 'GRP-DE4A' }
+  }
+]
+{ apiGroupId: '' }
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 10177 - ms
+502

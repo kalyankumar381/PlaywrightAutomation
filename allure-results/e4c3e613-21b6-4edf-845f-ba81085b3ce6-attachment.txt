@@ -1,9 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/user/profile/image/:userName',
-    requestbody: {}
-  }
-]
-Token status code is ***************** - >200
-404

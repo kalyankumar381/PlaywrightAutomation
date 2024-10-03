@@ -1,4 +1,0 @@
-{
-  endPoint: '/api/content/application/APP-C3FF550C',
-  statusCode: '200'
-}

@@ -1,5 +1,0 @@
-{
-  endPoint: '/api/content/user/USR-FC7376A1/invoices/',
-  statusCode: '200',
-  requestbody: { userId: 'USR-FC7376A1' }
-}

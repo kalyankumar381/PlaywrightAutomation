@@ -1,0 +1,7 @@
+{
+  endPoint: '/api/content/user/organization/basic/details/ORG-9C2D5B74',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 103 - ms
+401

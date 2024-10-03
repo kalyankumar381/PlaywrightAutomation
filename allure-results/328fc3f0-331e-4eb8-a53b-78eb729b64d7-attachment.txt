@@ -1,0 +1,14 @@
+[
+  {
+    endPoint: '/api/content/api/API-B351E477/remotes/securefiles',
+    statusCode: '200',
+    requestbody: {
+      apiId: 'API-B351E477',
+      fileName: 'doc.pem',
+      fileUrl: 'http://storageapi.yappes.local:98/serve/files/doc?format=pem&meta=securitkey&id=d9f472020e9dcbeae9458294db2c42ad&apiId=30824431bef1698b1b1d64ecb3257593'
+    }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 278 - ms
+200

@@ -1,0 +1,10 @@
+{
+  endPoint: '/api/content/provider/policy/POL-41556AF2',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+DELETE - API response time <><><><><><><><><><><><><><><><>   :: 92 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]
+Response data message is <><> :: No data found.

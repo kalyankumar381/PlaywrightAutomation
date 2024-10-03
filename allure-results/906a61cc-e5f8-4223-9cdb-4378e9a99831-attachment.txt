@@ -1,0 +1,7 @@
+{
+  endPoint: '/api/content/get/monitoring/mastervars',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 88 - ms
+401

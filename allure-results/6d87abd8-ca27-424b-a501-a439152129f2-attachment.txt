@@ -1,9 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/provider/apigroups/GRP-3D0C',
-    requestbody: { applicationId: 'APP-39856A8E', environment: 'testing' }
-  }
-]
-Token status code is ***************** - >200
-400

@@ -1,0 +1,17 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/content/provider/dashboards/analytics',
+    requestbody: { dashboardType: 'analytics', kpis: [Array], timePeriod: [Object] }
+  }
+]
+{
+  dashboardType: 'analytics',
+  kpis: [ 'top-api-metric' ],
+  timePeriod: { startDate: '2021-06-01', endDate: '2021-06-30' }
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 117 - ms
+200
+{ code: 200, status: 'OK', data: [] }
+[ 'OK' ]

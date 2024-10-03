@@ -1,8 +1,0 @@
-[
-  {
-    endPoint: '/api/content/reactivate/apiversion',
-    statusCode: '200',
-    requestbody: { apiId: 'API-2ED6C64F', version: '10.0.0' }
-  }
-]
-Token status code is ***************** - >502

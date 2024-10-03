@@ -1,8 +1,0 @@
-[
-  {
-    endPoint: '/api/content/provider/monitor/attachedpolicies',
-    statusCode: '200',
-    requestbody: { groupId: 'GRP-D327' }
-  }
-]
-Token status code is ***************** - >200

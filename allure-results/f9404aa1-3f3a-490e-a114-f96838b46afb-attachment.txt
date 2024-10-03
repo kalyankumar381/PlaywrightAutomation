@@ -1,0 +1,5 @@
+{
+  endPoint: '/api/content/provider/policy/allattachedentity/POL-5E43049B',
+  statusCode: '200'
+}
+Token status code is ***************** - >502

@@ -1,0 +1,9 @@
+{
+  endPoint: '/api/content/api/API-B351E477/remotes/securefiles',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 196 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

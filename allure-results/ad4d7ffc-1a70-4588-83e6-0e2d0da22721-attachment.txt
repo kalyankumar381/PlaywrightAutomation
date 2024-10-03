@@ -1,3 +1,0 @@
-{ statusCode: '200', endPoint: '/api/content/collections' }
-Token status code is ***************** - >200
-500

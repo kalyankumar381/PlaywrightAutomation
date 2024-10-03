@@ -1,5 +1,0 @@
-{
-  endPoint: '/api/content/newapi/logic/RES-B688A553',
-  statusCode: '200'
-}
-Token status code is ***************** - >503

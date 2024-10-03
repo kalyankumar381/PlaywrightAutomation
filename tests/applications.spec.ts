@@ -4,6 +4,8 @@ import {APIUtils} from '../utils/APIUtis'
 import {ReportingApi} from '@reportportal/agent-js-playwright';
 const dataset = JSON.parse(JSON.stringify(require('../data/applications.json')));
 import dotenv from 'dotenv';
+import ApiCommonPage from '../pages/apiCommon.page.';
+import { log } from 'console';
 dotenv.config({
     path:`.env.test`,
     override:true
@@ -68,48 +70,40 @@ test('Get all application After Post', async ({ request,global }) => {
 });
 
 test('Delete Application', async ({ request,global }) => {
-    const requestBodyForPOST= dataset['createApplication']
-    console.log(requestBodyForPOST); 
-    const urlForPOST=`${baseUrl}${requestBodyForPOST[0].endPoint}` 
-    const requestInput = dataset['createApplication'][0]['requestbody']; 
-    requestInput.applicationName = `test App3_${await global.wrapper.generateRandomValue()}`;
-    console.log(requestInput); 
-    const _responseForPOST=await global.apiUtil.POST(request,`${urlForPOST}`,requestInput);
-    console.log(_responseForPOST.status());
-    await global.apiUtil.verifyStatusCode(_responseForPOST,requestBodyForPOST[0].statusCode);
-
-     // deleting record
-    if(_responseForPOST.status()===200){  
-        const responseJson=await _responseForPOST.json();   
-        const appId=responseJson.data.applicationId   
-        const requestBody= dataset['deleteApplication']
-        console.log(requestBody); 
-        const originalUrl=`${baseUrl}${requestBody.endPoint}`     
-        const url = originalUrl.replace(/APP-[0-9A-F]+/i, `${appId}`);
-        const _response=await global.apiUtil.DELETE(request,`${url}`);
-        console.log(_response.status());
-        await global.apiUtil.verifyStatusCode(_response,requestBody.statusCode);  
-    }
+    const apiCommonPage =new ApiCommonPage(request);  
+    const appId=await apiCommonPage.createApplication();
+    const requestBody= dataset['deleteApplication']
+    console.log(requestBody); 
+    const originalUrl=`${baseUrl}${requestBody.endPoint}`     
+    const url = originalUrl.replace(/APP-[0-9A-F]+/i, `${appId}`);
+    // Deleting the application
+    const _response=await global.apiUtil.DELETE(request,`${url}`);
+    console.log(_response.status());
+    const delRes=await _response.json();
+    console.log(delRes);  
+    await global.apiUtil.verifyStatusCode(_response,requestBody.statusCode);  
+    expect(delRes.data.message).toBe("Application deleted successfully.") 
+    expect(delRes.code).toBe(200)
+    // get the deleteion application id details    
+    const _responseForGet=await global.apiUtil.GET(request,`${baseUrl}/api/content/application/${appId}`);
+    console.log(_responseForGet.status()); 
+    const getRes=await _responseForGet.json();
+    console.log(getRes);
+    expect(getRes.message).toBe("Invalid Resource Access.") 
+    expect(getRes.code).toBe(401)   
 });
 
 test('Update Application', async ({ request,global }) => {
-    const requestBodyForPOST= dataset['createApplication']
-    console.log(requestBodyForPOST); 
-    const urlForPOST=`${baseUrl}${requestBodyForPOST[0].endPoint}` 
-    const requestInput = dataset['createApplication'][0]['requestbody']; 
-    requestInput.applicationName = `test App3_${await global.wrapper.generateRandomValue()}`;
-    console.log(requestInput); 
-    const _responseForPOST=await global.apiUtil.POST(request,`${urlForPOST}`,requestInput);
-    console.log(_responseForPOST.status());
-    await global.apiUtil.verifyStatusCode(_responseForPOST,requestBodyForPOST[0].statusCode);
-
-    const responseJson=await _responseForPOST.json();   
-    const appId=responseJson.data.applicationId   
+    const apiCommonPage =new ApiCommonPage(request);   
+    // const responseJson=await _responseForPOST.json();   
+    const appId=await apiCommonPage.createApplication();   
     const requestBody= dataset['updateApplication']
     console.log(requestBody); 
     const originalUrl=`${baseUrl}${requestBody[0].endPoint}`     
     const url = originalUrl.replace(/APP-[0-9A-F]+/i, `${appId}`);
-
+    // const requestInput = dataset['createApplication'][0]['requestbody']; 
+    requestBody[0].requestbody.applicationName = `test App3_${await global.wrapper.generateRandomValue()}`;
+    requestBody[0].requestbody.applicationId = appId;
     const _response=await global.apiUtil.PUT(request,`${url}`,requestBody[0].requestbody);
     console.log(_response.status());
     await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);

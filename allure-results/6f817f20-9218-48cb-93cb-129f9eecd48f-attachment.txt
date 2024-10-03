@@ -1,0 +1,9 @@
+{
+  statusCode: '200',
+  endPoint: '/api/connect/providers/USR-8D602D67/apilists'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 109 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

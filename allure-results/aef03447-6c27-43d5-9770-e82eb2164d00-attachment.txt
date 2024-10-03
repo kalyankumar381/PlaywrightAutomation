@@ -1,0 +1,8 @@
+[
+  {
+    endPoint: '/api/content/apis/API-B351E477/errorinfo/ERR-218593A2',
+    statusCode: '200',
+    requestbody: { logLevel: 'error', userLevel: 'dev' }
+  }
+]
+Token status code is ***************** - >502

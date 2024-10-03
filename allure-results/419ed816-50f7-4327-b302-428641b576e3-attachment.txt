@@ -1,4 +1,0 @@
-{
-  endPoint: '/api/connect/consumers/apidetails/API-02B44EFB',
-  statusCode: '200'
-}

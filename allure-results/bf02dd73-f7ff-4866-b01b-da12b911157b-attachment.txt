@@ -1,0 +1,20 @@
+[
+  {
+    endPoint: '/api/content/providerapi/invoicesearch',
+    statusCode: '200',
+    requestbody: { invoiceStatus: 'not-paid', invoicePeriod: [Object] }
+  }
+]
+{
+  invoiceStatus: 'not-paid',
+  invoicePeriod: {
+    startDate: '2018-12-01T18:30:00.000Z',
+    endDate: '2020-01-24T18:30:00.000Z'
+  }
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 145 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]
+Aplication ID is :: undefined

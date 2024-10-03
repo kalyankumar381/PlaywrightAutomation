@@ -1,1 +1,0 @@
-{ endPoint: '/api/content/followapi/API-AF8FE682', statusCode: '200' }

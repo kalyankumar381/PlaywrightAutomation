@@ -1,0 +1,5 @@
+{
+  endPoint: '/api/connect/providers/USR-83BEAEBE/apilists',
+  statusCode: '200'
+}
+Token status code is ***************** - >503

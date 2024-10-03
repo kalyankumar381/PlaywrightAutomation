@@ -1,9 +1,0 @@
-{ duration: { limit: 58, period: 'hours' } }
-Token status code is ***************** - >200
-200
-{
-  code: 200,
-  status: 'OK',
-  data: { totalNoTransactions: [], totalNoUsers: 0 }
-}
-[ 'OK' ]

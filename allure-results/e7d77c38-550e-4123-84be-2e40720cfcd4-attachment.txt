@@ -1,0 +1,19 @@
+[
+  {
+    endPoint: '/api/content/admin/invoiceready/details',
+    statusCode: '200',
+    requestbody: {
+      emailId: 'rajagopal.s@yappes.com',
+      userId: 'USR-FC7376A1',
+      invoicePeriod: [Object]
+    }
+  }
+]
+{
+  emailId: 'rajagopal.s@yappes.com',
+  userId: 'USR-FC7376A1',
+  invoicePeriod: { startDate: '2018-05-01', endDate: '2018-05-31' }
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 86 - ms
+401

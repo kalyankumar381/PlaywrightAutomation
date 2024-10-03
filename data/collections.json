@@ -19,7 +19,10 @@
     "PostCollections":[{
         "endPoint":"/api/content/collections",
         "statusCode":"200",
-        "requestbody":{}
+        "requestbody":{
+            "collectionName": "testuuu",
+            "collectionDescription": "test_description"
+        }
     }],
     "GetCollectionObjects":{
         "endPoint":"/api/content/collections/CLL-16E5A3F1/objects",

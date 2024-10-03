@@ -1,6 +1,0 @@
-{
-  endPoint: '/api/content/collections/CLL-16E5A3F1/objects',
-  statusCode: '200'
-}
-Token status code is ***************** - >200
-502

@@ -1,0 +1,7 @@
+{
+  statusCode: '200',
+  endPoint: '/api/content/definitions/provider/yappestestmail@gmail.com'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 85 - ms
+401

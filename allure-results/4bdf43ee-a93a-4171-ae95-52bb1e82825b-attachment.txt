@@ -1,0 +1,77 @@
+[
+  {
+    endPoint: '/api/content/useraccess/orglist',
+    statusCode: '200',
+    requestbody: { userId: 'USR-183152C2' }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 64 - ms
+200
+{
+  code: 200,
+  status: 'OK',
+  data: [
+    {
+      organizationId: 'ORG-9C2D5B74',
+      roleId: 'CRLE-0E6AE716',
+      organizationName: 'Yappes Organization',
+      roleName: 'platform-admin'
+    },
+    {
+      organizationId: 'ORG-AF165344',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'NewAPIPartnerOrg',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-5D9A1D46',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'PaymentTech',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-7D5C244C',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'Whatsapp Client',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-C168BDEB',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'GenericExternalUsers',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-DD836BE5',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'LOS',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-22FB8ACF',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'LOS Consumer1',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-CF1F49E2',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'UPW Partner',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-785CFC52',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'upwork vendor',
+      roleName: 'owner'
+    },
+    {
+      organizationId: 'ORG-E78D6DAE',
+      roleId: 'CRLE-346EC166',
+      organizationName: 'org check ',
+      roleName: 'owner'
+    }
+  ]
+}
+[ 'OK' ]

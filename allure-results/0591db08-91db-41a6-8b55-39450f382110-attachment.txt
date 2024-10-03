@@ -1,0 +1,27 @@
+[
+  {
+    endPoint: '/api/content/dashboard/marketplace',
+    statusCode: '200',
+    requestbody: {}
+  }
+]
+{}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 109 - ms
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    apiStats: {
+      TotalAPI: 444,
+      PublishedAPI: 48,
+      UnpublishedAPI: 393,
+      DecommissionedAPI: 3
+    },
+    subscriptionStats: { totalNumbers: 98, activeNumbers: 78 },
+    message: 'successfully retrieved marketplace data.'
+  }
+}
+[ 'OK' ]
+message  is :: successfully retrieved marketplace data.

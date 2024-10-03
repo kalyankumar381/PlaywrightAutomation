@@ -1,5 +1,0 @@
-{
-  endPoint: '/api/content/provider/policy/POL-41556AF2',
-  statusCode: '200'
-}
-Token status code is ***************** - >200

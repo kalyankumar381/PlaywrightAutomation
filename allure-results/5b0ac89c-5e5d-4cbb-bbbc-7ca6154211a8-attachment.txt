@@ -1,3 +1,0 @@
-{ kk: { limit: 'yy', period: 'hours' } }
-Token status code is ***************** - >200
-200

@@ -1,0 +1,10 @@
+[
+  {
+    endPoint: '/api/content/deploy/functions',
+    statusCode: '200',
+    requestbody: { environment: 'production', resourceId: 'RES-B688A553' }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 70 - ms
+200

@@ -1,0 +1,7 @@
+{
+  endPoint: '/api/content/api/API-B351E477/remotes/securefiles/SKF-D0E0912D',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+DELETE - API response time <><><><><><><><><><><><><><><><>   :: 12822 - ms
+401

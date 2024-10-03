@@ -1,9 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/api/API-B351E477/environmentconfig',
-    requestbody: { apiId: 'API-B351E477', environmentName: 'development' }
-  }
-]
-Token status code is ***************** - >200
-502

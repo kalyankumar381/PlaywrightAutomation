@@ -11,7 +11,7 @@
         "statusCode":"200",
         "endPoint":"/api/content/provider/subscriptions/eligibleapis",
         "requestbody":{
-            "organizationId":"ORG-BBED4611C"
+            "organizationId":"ORG-82E1AFDD"
         }      
     }],
     "GetinvoicesofsubscribedAPIsfromfilters":[{
@@ -43,11 +43,15 @@
         "statusCode":"200",
         "requestbody":
         {
-            "emailId":"vivek.pawar@yappes.com",
-            "invoiceId":"INV-43F1177A",
-            "customerName":"Jhon Doe",
-            "startDate":"2019-12-01",
-            "endDate":"2019-12-31"
+            "invoiceId": "INV-D8A2838A",
+            "startDate": "2024-01-08 00:00:00",
+            "endDate": "2024-31-08 00:00:00",
+            "recipient": [
+                {
+                    "emailId": "sachin.kumar@yappes.com",
+                    "customerName": "pritu"
+                }
+            ]
         }
     }],
     "APIInvoicePreview":[{
@@ -63,15 +67,16 @@
         }
     }],
     "CreateAPIInvoice":[{
-        "endPoint":"/api/content/providerapi/API-244B9159/invoice",
+        "endPoint":"/api/content/provider/billing/generate-invoice",
         "statusCode":"200",
         "requestbody":{
-            "apiId":"",
-            "userId":"",
-            "invoicePeriod":{
-                "startDate":"",
-                "endDate":""
-            }
+            "consumerOrganization": "ORG-DF554CBA",
+            "invoicePeriod": {
+                "startDate": "2024-09-01 00:00:00",
+                "endDate": "2024-09-30 00:00:00"
+            },
+            "isInvoiceRegenerate": false,
+            "oldInvoiceId": ""
         }
     }],
     "ProviderEligibleInvoiceList":[{
@@ -109,13 +114,13 @@
         "endPoint":"/api/content/user/billing/USR-FC7376A1",
         "statusCode":"200"
     } ,
-    "CreateUserInvoice":{
+    "CreateUserInvoice":[{
         "endPoint":"/api/content/user/USR-FC7376A1/invoices/",
         "statusCode":"200",
         "requestbody":{
             "userId":"USR-FC7376A1"
         }
-    },
+    }],
     "UserInvoicePreviewDetails":[{
         "endPoint":"/api/content/admin/invoiceready/details",
         "statusCode":"200",

@@ -1,21 +1,13 @@
 {
-    "makeAPI" : [{
+    "makeAPI" : {
         "statusCode":"200",
-        "endPoint":"/api/content/definitions/provider/yappestestmail@gmail.com",
-        "requestbody":{
-            "apiName":"newTest",
-            "apiType":"new",
-            "availability":"public",
-            "baseUrl":"",
-            "description":"newTest",
-            "organizationId":"ORG-9C2D5B74"
-        }
-    }],
+        "endPoint":"/api/content/definitions/provider/yappestestmail@gmail.com"
+    },
     "apiEnvironment":[{
         "statusCode":"200",
-        "endPoint":"/api/content/api/API-B351E477/environmentconfig",
+        "endPoint":"/api/content/api/APP-3B489430/environmentconfig",
         "requestbody":{
-            "apiId":"API-B351E477",
+            "apiId":"APP-3B489430",
             "environmentName":"development"
         }
     }],

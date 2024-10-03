@@ -75,7 +75,10 @@ export default defineConfig({
   // reporter: 'html',
   // reporter: [['ortoni-report', reportConfig],['dot']],
   reporter: process.env.CI ? [['junit',{outputFile:'results.xml'}],['@reportportal/agent-js-playwright', _reportPortalConfig]]:[['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
-            ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig],['./src/custom-report.ts']],
+            ['allure-playwright'],['./src/custom-report.ts']],
+  
+  // reporter: process.env.CI ? [['junit',{outputFile:'results.xml'}],['@reportportal/agent-js-playwright', _reportPortalConfig]]:[['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+  //           ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig],['./src/custom-report.ts']],            
   // reporter: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
   // ['allure-playwright'],['@reportportal/agent-js-playwright', ReportPortalAgent.reporter()]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

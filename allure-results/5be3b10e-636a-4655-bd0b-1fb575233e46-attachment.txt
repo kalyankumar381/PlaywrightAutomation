@@ -1,0 +1,9 @@
+{
+  endPoint: '/api/content/review/ratings/average/API-02B44EFB',
+  statusCode: '200'
+}
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 148 - ms
+200
+{ code: 200, status: 'OK', data: { message: 'No data found.' } }
+[ 'OK' ]

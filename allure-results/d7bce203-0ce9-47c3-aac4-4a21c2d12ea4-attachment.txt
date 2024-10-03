@@ -1,9 +1,0 @@
-[
-  {
-    endPoint: '/api/content/user/USR-FC7376A1/invoices/INV-99D1A4E0',
-    statusCode: '200',
-    requestbody: { status: 'not-paid' }
-  }
-]
-Token status code is ***************** - >200
-401

@@ -1,0 +1,39 @@
+[
+  {
+    endPoint: '/api/content/admin/support/articleindex',
+    statusCode: '200',
+    requestbody: {
+      viewName: 'as',
+      viewPath: 'as/abcd/{param}',
+      relevanceArticleSets: [Array],
+      allArticleSets: [Array]
+    }
+  }
+]
+{
+  viewName: 'as',
+  viewPath: 'as/abcd/{param}',
+  relevanceArticleSets: [
+    {
+      name: 'searchAPI',
+      indexLable: 'Search an API',
+      videoUrl: '',
+      videoTitle: '',
+      paragraph: '',
+      steps: [Array]
+    }
+  ],
+  allArticleSets: [
+    {
+      name: 'searchAPI',
+      indexLable: 'Search an API',
+      videoUrl: '',
+      videoTitle: '',
+      paragraph: '',
+      steps: [Array]
+    }
+  ]
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 112 - ms
+200

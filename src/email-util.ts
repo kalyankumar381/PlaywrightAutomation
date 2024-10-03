@@ -3,17 +3,13 @@ import os from 'os';
 let userName: string;
 // Set up the nodemailer transporter with your email provider's SMTP settings.
 const transporter = nodemailer.createTransport({
-  host: 'smtp-mail.outlook.com',
-  port: 587,
+  host: 'email-smtp.us-west-2.amazonaws.com',
+  port: 465,
   secure:false,
   // service: 'gmail',
-  // auth: {
-  //   user: 'kalyankumar.kun',
-  //   pass: 'dddddd*1234'
-  // }
   auth: {
-    user: 'kalyan.kumar@yappes.com', // your Outlook email
-    pass: 'yappes', // your Outlook email password or app-specific password
+    user: 'AKIAJQHBUE5HNRZ5LXVA', // your Outlook email
+    pass: 'gFBmn+F0C520YlL+W3ptBWMEctvzSAQN5+G4j9dOq5E', // your Outlook email password or app-specific password
   },
   tls: {
     ciphers: 'SSLv3',

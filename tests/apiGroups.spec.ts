@@ -4,6 +4,8 @@ import {APIUtils} from '../utils/APIUtis'
 import {ReportingApi} from '@reportportal/agent-js-playwright';
 const dataset = JSON.parse(JSON.stringify(require('../data/appiGroups.json')));
 import dotenv from 'dotenv';
+import ApiCommonPage from '../pages/apiCommon.page.';
+import { log } from 'console';
 dotenv.config({
     path:`.env.test`,
     override:true
@@ -11,12 +13,39 @@ dotenv.config({
 const baseUrl=process.env.baseUrl;
 
 
+test('create API groups', async ({ request,global }) => {
+    const requestBody= dataset['createAPIgroups']
+    console.log(requestBody); 
+    const url=`${baseUrl}${requestBody[0].endPoint}` 
+    const requestInput = dataset['createAPIgroups'][0]['requestbody'];
+    requestInput.groupName=`test- ${await global.wrapper.generateRandomValue()}`
+    console.log(requestInput); 
+    const _response=await global.apiUtil.POST(request,`${url}`,requestInput);
+    console.log(_response.status());
+    await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
+    console.log(await _response.json());   
+    const responseJson=await _response.json();    
+    console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status')); 
+    console.log("message is :: " + responseJson.data.message);
+    expect(responseJson.data.message).toBe('API Group created Successfully');              
+});
+
 
 test('Update API groups', async ({ request,global }) => {
+    const apiCommonPage =new ApiCommonPage(request); 
+    const groupId=await apiCommonPage.getGroupIDWithName();
     const requestBody= dataset['UpdateAPIgroups']
+    // const grpId=groupId.split(":")[0];
     console.log(requestBody);  
-    const url=`${baseUrl}${requestBody[0].endPoint}`  
-    const _response=await global.apiUtil.PUT(request,`${url}`,requestBody[0].requestbody);
+    let url=`${baseUrl}${requestBody[0].endPoint}`;  
+    url=url.replace('GROUPID',groupId.groupId);
+    let requestbodyForUpdate=requestBody[0].requestbody;
+    requestbodyForUpdate.groupName=groupId.groupName;
+    requestbodyForUpdate.groupId=groupId.groupId;
+    requestbodyForUpdate.logoUrl=groupId.logoUrl;
+    console.log("After update --  " + JSON.stringify(requestBody, null, 2));
+    
+    const _response=await global.apiUtil.PUT(request,`${url}`,requestbodyForUpdate);
     console.log(_response.status());
     await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
     console.log(await _response.json());   
@@ -51,29 +80,16 @@ test('Get All API groups', async ({ request,global }) => {
 });
 
 
-test('create API groups', async ({ request,global }) => {
-    const requestBody= dataset['createAPIgroups']
-    console.log(requestBody); 
-    const url=`${baseUrl}${requestBody[0].endPoint}` 
-    const requestInput = dataset['createAPIgroups'][0]['requestbody'];
-    console.log(requestInput); 
-    const _response=await global.apiUtil.POST(request,`${url}`,requestInput);
-    console.log(_response.status());
-    await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
-    console.log(await _response.json());   
-    const responseJson=await _response.json();    
-    console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status')); 
-    console.log("Aplication ID is :: " + responseJson.data.applicationId);
-    global.webAction.writeEnvVariable("application_ID",responseJson.data.applicationId);
-              
-});
 
 
 test('Get Apis Already Added to the Group', async ({ request,global }) => {
+    const apiCommonPage =new ApiCommonPage(request); 
+    const groupId=await apiCommonPage.getGroupID();
     const requestBody= dataset['GetApisAlreadyAddedtotheGroup']
     console.log(requestBody); 
     const url=`${baseUrl}${requestBody[0].endPoint}` 
-    const requestInput = dataset['GetApisAlreadyAddedtotheGroup'][0]['requestbody']; 
+    let requestInput = dataset['GetApisAlreadyAddedtotheGroup'][0]['requestbody']; 
+    requestInput.apiGroupId=groupId;
     console.log(requestInput); 
     const _response=await global.apiUtil.POST(request,`${url}`,requestInput);
     console.log(_response.status());
@@ -81,8 +97,6 @@ test('Get Apis Already Added to the Group', async ({ request,global }) => {
     console.log(await _response.json());   
     const responseJson=await _response.json();    
     console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status')); 
-    console.log("Aplication ID is :: " + responseJson.data.applicationId);
-    global.webAction.writeEnvVariable("application_ID",responseJson.data.applicationId);
               
 });
 
@@ -101,10 +115,13 @@ test('List API to add to the Group', async ({ request,global }) => {
 
 
 test('Add API to the Group', async ({ request,global }) => {
+    const apiCommonPage =new ApiCommonPage(request); 
+    const groupId=await apiCommonPage.getGroupID();
     const requestBody= dataset['AddAPItotheGroup']
     console.log(requestBody); 
     const url=`${baseUrl}${requestBody[0].endPoint}` 
-    const requestInput = dataset['AddAPItotheGroup'][0]['requestbody']; 
+    let requestInput = dataset['AddAPItotheGroup'][0]['requestbody']; 
+    requestInput.apiGroupId=groupId;
     console.log(requestInput); 
     const _response=await global.apiUtil.POST(request,`${url}`,requestInput);
     console.log(_response.status());
@@ -135,20 +152,6 @@ test('Remove API from the Group', async ({ request,global }) => {
               
 });
 
-
-test('Update Group Logo url', async ({ request,global }) => {
-    const requestBody= dataset['UpdateGroupLogourl']
-    console.log(requestBody);  
-    const url=`${baseUrl}${requestBody[0].endPoint}`  
-    const _response=await global.apiUtil.PUT(request,`${url}`,requestBody[0].requestbody);
-    console.log(_response.status());
-    await global.apiUtil.verifyStatusCode(_response,requestBody[0].statusCode);
-    console.log(await _response.json());   
-    const responseJson=await _response.json();    
-    console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status'));  
-});
-
-
 test('Get Internal Organization List', async ({ request,global }) => {
     const requestBody= dataset['GetInternalOrganizationList']
     console.log(requestBody);    
@@ -160,6 +163,11 @@ test('Get Internal Organization List', async ({ request,global }) => {
     const responseJson=await _response.json();    
     console.log(await global.apiUtil.getStringValueFromResponseUsingJsonPath(responseJson,'status'));    
 });
+
+
+
+
+
 
 
 test('GET Organization Basic Details', async ({ request,global }) => {

@@ -1,0 +1,11 @@
+[
+  {
+    endPoint: '/api/content/providerapi/eligible/invoicelist',
+    statusCode: '200',
+    requestbody: { apiId: '', subscriberId: '', invoicePeriod: '' }
+  }
+]
+{ apiId: '', subscriberId: '', invoicePeriod: '' }
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 83 - ms
+401

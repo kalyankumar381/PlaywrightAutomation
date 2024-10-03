@@ -1,7 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/application/keys/APP-39856A8E',
-    requestbody: { applicationId: 'APP-39856A8E', environment: 'testing' }
-  }
-]

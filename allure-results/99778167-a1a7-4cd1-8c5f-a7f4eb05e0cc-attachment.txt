@@ -1,0 +1,4 @@
+{ statusCode: '200', endPoint: '/api/content/application/' }
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 93 - ms
+401

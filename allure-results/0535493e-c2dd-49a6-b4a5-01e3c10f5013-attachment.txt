@@ -1,0 +1,33 @@
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 116 - ms
+200
+{
+  code: 200,
+  status: 'OK',
+  data: {
+    invoiceId: 'INV-A9618B99',
+    message: 'Invoice Created Successfully and PDF has been generated successfully.'
+  }
+}
+INV-A9618B99
+[
+  {
+    endPoint: '/api/content/providerapi/invoice/notification',
+    statusCode: '200',
+    requestbody: {
+      invoiceId: 'INV-D8A2838A',
+      startDate: '2024-01-08 00:00:00',
+      endDate: '2024-31-08 00:00:00',
+      recipient: [Array]
+    }
+  }
+]
+{
+  invoiceId: 'INV-D8A2838A',
+  startDate: '2024-01-08 00:00:00',
+  endDate: '2024-31-08 00:00:00',
+  recipient: [ { emailId: 'sachin.kumar@yappes.com', customerName: 'pritu' } ]
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 64 - ms
+401

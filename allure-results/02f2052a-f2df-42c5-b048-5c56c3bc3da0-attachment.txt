@@ -1,0 +1,11 @@
+[
+  {
+    statusCode: '200',
+    endPoint: '/api/general/reset/password/',
+    requestbody: { emailId: 'hariinkpta@gmail.com' }
+  }
+]
+{ emailId: 'hariinkpta@gmail.com' }
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 61 - ms
+401

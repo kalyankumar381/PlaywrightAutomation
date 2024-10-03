@@ -1,0 +1,16 @@
+[
+  {
+    endPoint: '/api/content/api/API-6E2AA3F3/remotes',
+    statusCode: '200',
+    requestbody: {
+      name: 'remote_store_test',
+      type: 'store',
+      description: 'Store as remote endpoint data source',
+      logicCodeName: 'abcABC123',
+      configs: [Object]
+    }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 69 - ms
+404

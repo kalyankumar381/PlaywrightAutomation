@@ -1,0 +1,14 @@
+[
+  {
+    endPoint: '/api/content/provider/gateway/policyattach',
+    statusCode: '200',
+    requestbody: {
+      policyId: 'POL-222AF26D',
+      attachId: 'GRP-15C0',
+      provisionType: 'api-groups'
+    }
+  }
+]
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 6144 - ms
+502
