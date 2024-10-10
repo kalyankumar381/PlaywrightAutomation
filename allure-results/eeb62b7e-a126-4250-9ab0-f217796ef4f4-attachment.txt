@@ -1,0 +1,10 @@
+[
+  {
+    endPoint: '/api/content/api/API-C84F3E883/connectors/CTR-05D19400',
+    statusCode: '200',
+    requestbody: { configurationDetails: [Object] }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 85 - ms
+500

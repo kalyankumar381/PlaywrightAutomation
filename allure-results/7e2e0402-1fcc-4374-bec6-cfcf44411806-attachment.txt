@@ -1,0 +1,4 @@
+{ endPoint: '/api/content/connectors/meta', statusCode: '200' }
+Token status code is ***************** - >200
+GET - API response time <><><><><><><><><><><><><><><><>   :: 296 - ms
+500

@@ -1,0 +1,16 @@
+[
+  {
+    endPoint: '/api/content/connectors/CTR-4B37CFA1',
+    statusCode: '200',
+    requestbody: {
+      connectorName: 'MEGA',
+      connectorTags: 'travel entertainment educational',
+      description: 'STORAGE PLATFORM',
+      functions: [Object],
+      configurations: [Object]
+    }
+  }
+]
+Token status code is ***************** - >200
+PUT - API response time <><><><><><><><><><><><><><><><>   :: 83 - ms
+404

@@ -1,0 +1,23 @@
+[
+  {
+    endPoint: '/api/content/connectors/',
+    statusCode: '200',
+    requestbody: {
+      connectorName: 'MEGA',
+      connectorTags: 'travel entertainment',
+      description: 'streaming platform',
+      functions: [Object],
+      configurations: [Object]
+    }
+  }
+]
+{
+  connectorName: 'MEGA',
+  connectorTags: 'travel entertainment',
+  description: 'streaming platform',
+  functions: { clrscr: 1 },
+  configurations: { config: 1 }
+}
+Token status code is ***************** - >200
+POST - API response time <><><><><><><><><><><><><><><><>   :: 79 - ms
+500
