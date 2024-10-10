@@ -1,8 +1,0 @@
-[
-  {
-    statusCode: '200',
-    endPoint: '/api/content/shared/resources/custom-ssl-certificate/64465992e14ec80d959ab578',
-    requestbody: { organizationId: 'ORG-BBED4611C' }
-  }
-]
-Token status code is ***************** - >502

@@ -1,7 +1,0 @@
-{
-  endPoint: '/api/content/definitions/API-6A536A7D',
-  statusCode: '200'
-}
-Token status code is ***************** - >200
-GET - API response time <><><><><><><><><><><><><><><><>   :: 65 - ms
-401

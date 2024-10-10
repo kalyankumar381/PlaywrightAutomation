@@ -1,7 +1,0 @@
-{
-  endPoint: '/api/connect/app/apilink/REL-01FEE412',
-  statusCode: '200'
-}
-Token status code is ***************** - >200
-DELETE - API response time <><><><><><><><><><><><><><><><>   :: 63 - ms
-401

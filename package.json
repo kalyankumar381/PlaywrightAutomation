@@ -39,6 +39,7 @@
     "mySubScr": "npx playwright test mysubscriptions.spec.ts",
     "gateWayPolicy": "npx playwright test gatewayPolicy.spec.ts",
     "mySubGateWay": "npx playwright test gatewayPolicy.spec.ts mysubscriptions.spec.ts",
+    "lighthouse":"npx playwright test lighthouse.spec.ts",
     "report": "npx playwright show-report"
   }
 }

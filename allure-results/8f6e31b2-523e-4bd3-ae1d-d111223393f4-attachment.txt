@@ -1,7 +1,0 @@
-{
-  statusCode: '200',
-  endPoint: '/api/content/shared/resources/custom-ssl-certificate/64465992e14ec80d959ab578'
-}
-Token status code is ***************** - >200
-DELETE - API response time <><><><><><><><><><><><><><><><>   :: 149 - ms
-500

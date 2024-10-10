@@ -1,0 +1,6 @@
+Test started.
+URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/consumer-applications
+Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - Application
+Lighthouse score: 0.87
+Report saved: Lighthouse-report/Lighthouse-report_Yappes - Application_1728545770253.html
+Attaching report: Lighthouse-report_Yappes - Application_1728545770253.html

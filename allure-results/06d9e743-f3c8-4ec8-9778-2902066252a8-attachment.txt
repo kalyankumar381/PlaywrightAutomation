@@ -1,9 +1,0 @@
-{
-  endPoint: '/api/content/user/USR-FC7376A1/invoices',
-  statusCode: '200'
-}
-Token status code is ***************** - >200
-GET - API response time <><><><><><><><><><><><><><><><>   :: 62 - ms
-200
-{ code: 200, status: 'OK', data: { message: 'No data found.' } }
-[ 'OK' ]

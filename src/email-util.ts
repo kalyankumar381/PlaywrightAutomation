@@ -4,15 +4,15 @@ let userName: string;
 // Set up the nodemailer transporter with your email provider's SMTP settings.
 const transporter = nodemailer.createTransport({
   host: 'email-smtp.us-west-2.amazonaws.com',
-  port: 465,
+  port: 587,
   secure:false,
   // service: 'gmail',
   auth: {
     user: 'AKIAJQHBUE5HNRZ5LXVA', // your Outlook email
-    pass: 'gFBmn+F0C520YlL+W3ptBWMEctvzSAQN5+G4j9dOq5E', // your Outlook email password or app-specific password
+    pass: 'AgFBmn+F0C520YlL+W3ptBWMEctvzSAQN5+G4j9dOq5E', // your Outlook email password or app-specific password
   },
   tls: {
-    ciphers: 'SSLv3',
+    rejectUnauthorized: false,
   },
 
 });
@@ -28,7 +28,7 @@ else {
 export async function sendEmailWithReport(reportPath: string, startTime: string, endTime: string, duration: string, totalTests: number, passCount: number, failCount: number, skipCount: number, passRate:string) {
   const mailOptions = {
     from: process.env.PWG_EMAIL_ID,
-    to: process.env.PWG_EMAIL_ID,
+    to: process.env.PWG_EMAIL_TO,
     cc: process.env.PWG_EMAIL_CC,
     subject: process.env.PWG_ENV_PROJECT
       + '- Test Execution Completed. Pass-'

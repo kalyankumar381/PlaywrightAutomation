@@ -1,0 +1,6 @@
+Test started.
+URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/api-groups
+Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - API Groups
+Lighthouse score: 0.9
+Report saved: Lighthouse-report/Lighthouse-report_Yappes - API Groups_1728545787415.html
+Attaching report: Lighthouse-report_Yappes - API Groups_1728545787415.html

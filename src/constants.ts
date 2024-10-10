@@ -79,6 +79,11 @@ export class Constants {
     static readonly GLOBAL_DISABLE_PRINT_LOGS: boolean = (_.isUndefined(process.env.PWG_PRINT_TO_STDIO_DISABLE) || _.isEmpty(process.env.PWG_PRINT_TO_STDIO_DISABLE))
         ? false : Utils.booleanfy(process.env.PWG_PRINT_TO_STDIO_DISABLE);
 
+     //*********************** LIGHTHOUSE *******************/
+     static readonly GLOBAL_LIGHTHOUSE_GENERATE : boolean = (_.isUndefined(process.env.PWG_ENV_LIGHTHOUSE) || _.isEmpty(process.env.PWG_ENV_LIGHTHOUSE))
+     ? false : Utils.booleanfy(process.env.PWG_ENV_LIGHTHOUSE);
+       
+
     /**
    * Return a project string based env var PWG_ENV_PROJECT throws an error if not set.
    * @returns Return a project string based env var PWG_ENV_PROJECT throws an error if not set.

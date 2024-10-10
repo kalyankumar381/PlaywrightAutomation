@@ -63,4 +63,10 @@ export default class LogingPage{
         await this.page.waitForURL("http://rxtesting.yappes-enterprise.com/");
         expect(this.page.url()).toBe("http://rxtesting.yappes-enterprise.com/");
     }
+
+    public async login1(username:string, pass:string){
+        await this.enterUserName(username);
+        await this.enterPassword(pass);
+        await this.clickLogBtn();
+    }
 }

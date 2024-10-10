@@ -1,7 +1,0 @@
-{
-  endPoint: '/api/content/api/API-C84F3E83/connectorslist',
-  statusCode: '200'
-}
-Token status code is ***************** - >200
-GET - API response time <><><><><><><><><><><><><><><><>   :: 70 - ms
-500

@@ -1,5 +1,0 @@
-{
-  statusCode: '200',
-  endPoint: '/api/content/shared/resources/custom-ssl-certificate'
-}
-Token status code is ***************** - >503

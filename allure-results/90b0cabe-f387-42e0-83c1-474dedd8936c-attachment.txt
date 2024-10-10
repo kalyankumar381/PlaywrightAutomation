@@ -1,0 +1,3 @@
+Test started.
+URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/api-groups
+Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - API Groups

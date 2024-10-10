@@ -1,4 +1,0 @@
-{}
-Token status code is ***************** - >200
-POST - API response time <><><><><><><><><><><><><><><><>   :: 62 - ms
-401

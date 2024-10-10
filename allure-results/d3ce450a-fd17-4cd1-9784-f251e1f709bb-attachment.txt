@@ -1,0 +1,6 @@
+Test started.
+URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/api-listings
+Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - My API
+Lighthouse score: 0.9
+Report saved: Lighthouse-report/Lighthouse-report_Yappes - My API_1728545611367.html
+Attaching report: Lighthouse-report_Yappes - My API_1728545611367.html

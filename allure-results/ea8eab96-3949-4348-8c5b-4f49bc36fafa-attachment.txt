@@ -1,7 +1,0 @@
-{
-  statusCode: '200',
-  endPoint: '/api/content/provider/subscriptions/eligibleorganization/'
-}
-Token status code is ***************** - >200
-GET - API response time <><><><><><><><><><><><><><><><>   :: 119 - ms
-401

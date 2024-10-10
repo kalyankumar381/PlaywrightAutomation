@@ -1,4 +1,0 @@
-{ endPoint: '/api/content/user/api/API-43456C8C', statusCode: '200' }
-Token status code is ***************** - >200
-DELETE - API response time <><><><><><><><><><><><><><><><>   :: 683 - ms
-502

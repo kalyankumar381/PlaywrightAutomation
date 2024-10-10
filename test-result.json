@@ -81,18 +81,18 @@
   },
   "suites": [
     {
-      "title": "connectors.spec.ts",
-      "file": "connectors.spec.ts",
+      "title": "lighthouse.spec.ts",
+      "file": "lighthouse.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Create Connector",
-          "ok": false,
+          "title": "Navigate to My APIs",
+          "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 120000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -100,707 +100,158 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 385,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:21:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:21:26\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 9711,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/connectors/CTR-4B37CFA1'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: {\n      connectorName: \u001b[32m'MEGA'\u001b[39m,\n      connectorTags: \u001b[32m'travel entertainment educational'\u001b[39m,\n      description: \u001b[32m'STORAGE PLATFORM'\u001b[39m,\n      functions: \u001b[36m[Object]\u001b[39m,\n      configurations: \u001b[36m[Object]\u001b[39m\n    }\n  }\n]\n"
+                      "text": "Test started.\n"
                     },
                     {
-                      "text": "Token status code is ***************** - >200\n"
+                      "text": "URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/api-listings\n"
                     },
                     {
-                      "text": "PUT - API response time <><><><><><><><><><><><><><><><>   :: 83 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m404\u001b[39m\n"
+                      "text": "Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - My API\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-03T12:37:02.927Z",
-                  "attachments": [
+                  "steps": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Create-Connector-chromium/test-failed-1.png"
+                      "title": "Navihgate to login page",
+                      "duration": 722
                     },
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Create-Connector-chromium/trace.zip"
+                      "title": "Login with valid credentials",
+                      "duration": 3227
+                    },
+                    {
+                      "title": "Navigate to My API page ",
+                      "duration": 5331
                     }
                   ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
+                  "startTime": "2024-10-10T08:04:57.945Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "15e2df881d3af7b5bec7-9ab1439dd3a899069e20",
-          "file": "connectors.spec.ts",
-          "line": 15,
+          "id": "cf859ece42b60ea1c522-85aca954e0d6d5fd53b9",
+          "file": "lighthouse.spec.ts",
+          "line": 18,
           "column": 5
         },
         {
-          "title": "Update A connector relations",
-          "ok": false,
+          "title": "Navigate to Application",
+          "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 120000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 482,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:34:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:34:26\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 9628,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/api/API-C84F3E883/connectors/CTR-05D19400'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { configurationDetails: \u001b[36m[Object]\u001b[39m }\n  }\n]\n"
+                      "text": "Test started.\n"
                     },
                     {
-                      "text": "Token status code is ***************** - >200\n"
+                      "text": "URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/consumer-applications\n"
                     },
                     {
-                      "text": "PUT - API response time <><><><><><><><><><><><><><><><>   :: 85 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
+                      "text": "Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - Application\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-03T12:37:03.912Z",
-                  "attachments": [
+                  "steps": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Update-A-connector-relations-chromium/test-failed-1.png"
+                      "title": "Navihgate to login page",
+                      "duration": 674
                     },
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Update-A-connector-relations-chromium/trace.zip"
+                      "title": "Login with valid credentials",
+                      "duration": 3244
+                    },
+                    {
+                      "title": "Navigate to My API page ",
+                      "duration": 5241
                     }
                   ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
+                  "startTime": "2024-10-10T08:05:07.667Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "15e2df881d3af7b5bec7-d766fc92b03dad02609b",
-          "file": "connectors.spec.ts",
-          "line": 28,
+          "id": "cf859ece42b60ea1c522-147de9414b440fd5db06",
+          "file": "lighthouse.spec.ts",
+          "line": 55,
           "column": 5
         },
         {
-          "title": "Get a Connector relation",
-          "ok": false,
+          "title": "Navigate to API Groups",
+          "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 120000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 622,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:47:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:47:26\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 14548,
+                  "errors": [],
                   "stdout": [
                     {
-                      "text": "{\n  endPoint: \u001b[32m'/api/content/api/API-C84F3E83/connectors/CRL-C348E158'\u001b[39m,\n  statusCode: \u001b[32m'200'\u001b[39m\n}\n"
+                      "text": "Test started.\n"
                     },
                     {
-                      "text": "Token status code is ***************** - >200\n"
+                      "text": "URL is >>>>>>>>>>>>>>>>>>>> :: https://testing.yappes-enterprise.com/api-manager/api-groups\n"
                     },
                     {
-                      "text": "GET - API response time <><><><><><><><><><><><><><><><>   :: 191 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
+                      "text": "Title is >>>>>>>>>>>>>>>>>>>> :: Yappes - API Groups\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-03T12:37:04.996Z",
-                  "attachments": [
+                  "steps": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-a-Connector-relation-chromium/test-failed-1.png"
+                      "title": "Navihgate to login page",
+                      "duration": 799
                     },
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-a-Connector-relation-chromium/trace.zip"
+                      "title": "Login with valid credentials",
+                      "duration": 3220
+                    },
+                    {
+                      "title": "Navigate to My API page ",
+                      "duration": 6705
                     }
                   ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
+                  "startTime": "2024-10-10T08:05:17.299Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "15e2df881d3af7b5bec7-7310a0e89dccb0d1a0ac",
-          "file": "connectors.spec.ts",
-          "line": 41,
-          "column": 5
-        },
-        {
-          "title": "Get A Connector details",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 349,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:60:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 404  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"200\"\u001b[39m\nReceived: \u001b[31m\"404\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:60:26\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/connectors/CTR-05D19400'\u001b[39m, statusCode: \u001b[32m'200'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "GET - API response time <><><><><><><><><><><><><><><><>   :: 71 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m404\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:06.219Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-A-Connector-details-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-A-Connector-details-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-d47ad28e0a3f9a64e2b6",
-          "file": "connectors.spec.ts",
-          "line": 54,
-          "column": 5
-        },
-        {
-          "title": "Get Connectors List for API",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "failed",
-                  "duration": 442,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:73:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:73:26\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "{\n  endPoint: \u001b[32m'/api/content/api/API-C84F3E83/connectorslist'\u001b[39m,\n  statusCode: \u001b[32m'200'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "GET - API response time <><><><><><><><><><><><><><><><>   :: 99 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:07.159Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-Connectors-List-for-API-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-Connectors-List-for-API-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-6d64869ff8e84ba9f4e4",
-          "file": "connectors.spec.ts",
-          "line": 67,
-          "column": 5
-        },
-        {
-          "title": "Get All Connectors",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "failed",
-                  "duration": 700,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:86:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:86:26\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "{ endPoint: \u001b[32m'/api/content/connectors/meta'\u001b[39m, statusCode: \u001b[32m'200'\u001b[39m }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "GET - API response time <><><><><><><><><><><><><><><><>   :: 296 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:08.196Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-All-Connectors-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Get-All-Connectors-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-fffc8d4a156347c8f147",
-          "file": "connectors.spec.ts",
-          "line": 80,
-          "column": 5
-        },
-        {
-          "title": "Create connector relation with API",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "status": "failed",
-                  "duration": 614,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:101:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:101:26\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/api/API-C84F3E883/connectors/CTR-05D19400'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: { configurationDetails: {} }\n  }\n]\n"
-                    },
-                    {
-                      "text": "{ configurationDetails: {} }\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "POST - API response time <><><><><><><><><><><><><><><><>   :: 181 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:09.504Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Create-connector-relation-with-API-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Create-connector-relation-with-API-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-55a6ab279dc07c95ac12",
-          "file": "connectors.spec.ts",
-          "line": 93,
-          "column": 5
-        },
-        {
-          "title": "Update Connector",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 7,
-                  "status": "failed",
-                  "duration": 743,
-                  "error": {
-                    "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m",
-                    "stack": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:117:26",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                      "column": 159,
-                      "line": 27
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                        "column": 159,
-                        "line": 27
-                      },
-                      "message": "Error:  Expected  '200 '  status code diffrent from actual 500  response code  \n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7m2\u001b[27m00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m5\u001b[27m00\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../src/api-util.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m verifyStatusCode(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expectedStatusCode\u001b[33m:\u001b[39mstring)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 26 |\u001b[39m         \u001b[36mconst\u001b[39m _actualStatusCode\u001b[33m=\u001b[39mresponse\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         expect(_actualStatusCode\u001b[33m.\u001b[39mtoString()\u001b[33m,\u001b[39m \u001b[32m` Expected  '${ expectedStatusCode } '  status code diffrent from actual ${_actualStatusCode}  response code  `\u001b[39m)\u001b[33m.\u001b[39mtoBe(expectedStatusCode\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m     \u001b[90m/** Validate the actual and expected response body.\u001b[39m\u001b[0m\n\n\u001b[2m    at ApiUtil.verifyStatusCode (/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts:27:159)\u001b[22m\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:117:26\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "[\n  {\n    endPoint: \u001b[32m'/api/content/connectors/'\u001b[39m,\n    statusCode: \u001b[32m'200'\u001b[39m,\n    requestbody: {\n      connectorName: \u001b[32m'MEGA'\u001b[39m,\n      connectorTags: \u001b[32m'travel entertainment'\u001b[39m,\n      description: \u001b[32m'streaming platform'\u001b[39m,\n      functions: \u001b[36m[Object]\u001b[39m,\n      configurations: \u001b[36m[Object]\u001b[39m\n    }\n  }\n]\n"
-                    },
-                    {
-                      "text": "{\n  connectorName: \u001b[32m'MEGA'\u001b[39m,\n  connectorTags: \u001b[32m'travel entertainment'\u001b[39m,\n  description: \u001b[32m'streaming platform'\u001b[39m,\n  functions: { clrscr: \u001b[33m1\u001b[39m },\n  configurations: { config: \u001b[33m1\u001b[39m }\n}\n"
-                    },
-                    {
-                      "text": "Token status code is ***************** - >200\n"
-                    },
-                    {
-                      "text": "POST - API response time <><><><><><><><><><><><><><><><>   :: 188 - ms\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:10.734Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Update-Connector-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Update-Connector-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/src/api-util.ts",
-                    "column": 159,
-                    "line": 27
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-6c2a954513da656d14d5",
-          "file": "connectors.spec.ts",
-          "line": 109,
-          "column": 5
-        },
-        {
-          "title": "Delete Shared Resources",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 8,
-                  "status": "failed",
-                  "duration": 169,
-                  "error": {
-                    "message": "TypeError: Cannot read properties of undefined (reading 'endPoint')",
-                    "stack": "TypeError: Cannot read properties of undefined (reading 'endPoint')\n    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:128:40",
-                    "location": {
-                      "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts",
-                      "column": 40,
-                      "line": 128
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m     \u001b[36mconst\u001b[39m requestBody\u001b[33m=\u001b[39m dataset[\u001b[32m'DeleteSharedResources'\u001b[39m]\n \u001b[90m 127 |\u001b[39m     console\u001b[33m.\u001b[39mlog(requestBody)\u001b[33m;\u001b[39m    \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m     \u001b[36mconst\u001b[39m url\u001b[33m=\u001b[39m\u001b[32m`${baseUrl}${requestBody.endPoint}`\u001b[39m \n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m     \u001b[36mconst\u001b[39m _response\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m global\u001b[33m.\u001b[39mapiUtil\u001b[33m.\u001b[39m\u001b[33mDELETE\u001b[39m(request\u001b[33m,\u001b[39m\u001b[32m`${url}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m     console\u001b[33m.\u001b[39mlog(_response\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m     \u001b[36mawait\u001b[39m global\u001b[33m.\u001b[39mapiUtil\u001b[33m.\u001b[39mverifyStatusCode(_response\u001b[33m,\u001b[39mrequestBody\u001b[33m.\u001b[39mstatusCode)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts",
-                        "column": 40,
-                        "line": 128
-                      },
-                      "message": "TypeError: Cannot read properties of undefined (reading 'endPoint')\n\n\u001b[0m \u001b[90m 126 |\u001b[39m     \u001b[36mconst\u001b[39m requestBody\u001b[33m=\u001b[39m dataset[\u001b[32m'DeleteSharedResources'\u001b[39m]\n \u001b[90m 127 |\u001b[39m     console\u001b[33m.\u001b[39mlog(requestBody)\u001b[33m;\u001b[39m    \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m     \u001b[36mconst\u001b[39m url\u001b[33m=\u001b[39m\u001b[32m`${baseUrl}${requestBody.endPoint}`\u001b[39m \n \u001b[90m     |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m     \u001b[36mconst\u001b[39m _response\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m global\u001b[33m.\u001b[39mapiUtil\u001b[33m.\u001b[39m\u001b[33mDELETE\u001b[39m(request\u001b[33m,\u001b[39m\u001b[32m`${url}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m     console\u001b[33m.\u001b[39mlog(_response\u001b[33m.\u001b[39mstatus())\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m     \u001b[36mawait\u001b[39m global\u001b[33m.\u001b[39mapiUtil\u001b[33m.\u001b[39mverifyStatusCode(_response\u001b[33m,\u001b[39mrequestBody\u001b[33m.\u001b[39mstatusCode)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts:128:40\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "\u001b[90mundefined\u001b[39m\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-03T12:37:12.078Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Delete-Shared-Resources-chromium/test-failed-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/test-results/connectors-Delete-Shared-Resources-chromium/trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/sachin-singh/Documents/PlaywrightDetails/Git/dev_branch/PlaywrightAutomation/tests/connectors.spec.ts",
-                    "column": 40,
-                    "line": 128
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "15e2df881d3af7b5bec7-ecced74b6e594d234d7e",
-          "file": "connectors.spec.ts",
-          "line": 125,
+          "id": "cf859ece42b60ea1c522-123211ff9f70613c2b30",
+          "file": "lighthouse.spec.ts",
+          "line": 94,
           "column": 5
         }
       ]
@@ -808,11 +259,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-03T12:37:02.234Z",
-    "duration": 10142.320000000002,
-    "expected": 0,
+    "startTime": "2024-10-10T08:04:57.653Z",
+    "duration": 34214.035,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 9,
+    "unexpected": 0,
     "flaky": 0
   }
 }
