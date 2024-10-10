@@ -33,7 +33,7 @@ export class Constants {
     static readonly GLOBAL_RP_DISABLE: boolean = (_.isUndefined(process.env.PWG_ENV_RP_DISABLE) || _.isEmpty(process.env.PWG_ENV_RP_DISABLE))
         ? false : Utils.booleanfy(process.env.PWG_ENV_RP_DISABLE);
     static readonly GLOBAL_RP_ENDPOINT: string = 'https://demo.reportportal.io/api/v1';
-    static readonly GLOBAL_RP_TOKEN: string = 'y_kCBesKMiT0mHRA6A-jtmiETygi4guVRAjTT5xRgPIcIBKNbLYtAHE5JnbpHkCMNu';
+    static readonly GLOBAL_RP_TOKEN: string = 'y_2ez8CBFSTyuTCqURw7FM3b3yfMLMKG1KDUZdJGYJvkTzZKKwWhbD7Jr2zPV_vOiw';
     static readonly GLOBAL_RP_LOCAL_ENABLE: boolean = (_.isUndefined(process.env.PWG_ENV_RP_LOCAL_ENABLE) || _.isEmpty(process.env.PWG_ENV_RP_LOCAL_ENABLE))
         ? false : Utils.booleanfy(process.env.PWG_ENV_RP_LOCAL_ENABLE);
     // eslint-disable-next-line @typescript-eslint/ban-types
