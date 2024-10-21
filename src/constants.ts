@@ -2,10 +2,10 @@ import { Utils } from './utils';
 import * as dotenv from 'dotenv';
 import * as _ from 'lodash';
 import dotenvExpand from 'dotenv-expand';
-import { env } from 'node:process';
+
 import os from 'os';
-let customTags: string | string[];
-let disableRules: string | string[];
+let customTags: string | string[]='';
+let disableRules: string | string[]='';
 
 if (_.isUndefined(process.env.PWG_ENV_FILEPATH)) {
     dotenvExpand.expand(dotenv.config({ path: process.cwd() + '/.env' }));
@@ -14,6 +14,27 @@ if (_.isUndefined(process.env.PWG_ENV_FILEPATH)) {
     dotenv.config({ path: process.cwd() + process.env.PWG_ENV_FILEPATH });
     dotenvExpand.expand(dotenv.config({ path: process.cwd() + '/' + process.env.PWG_ENV_FILEPATH }));
     console.log('Reading environment variables from :' + process.env.PWG_ENV_FILEPATH);
+}
+
+
+//Axe CustomTags
+try {
+    const axeCustomTags = JSON.parse(process.env.PWG_ENV_AXE_CUSTOM_TAGS || '{}');
+    if (typeof axeCustomTags === 'object') {
+        customTags = axeCustomTags;
+    }
+} catch (e) {
+    customTags = process.env.PWG_ENV_AXE_CUSTOM_TAGS || '';
+}
+
+//Axe disableRules
+try {
+    const axedisableRules = JSON.parse(process.env.PWG_ENV_AXE_DISABLE_RULES || '{}');
+    if (typeof axedisableRules === 'object') {
+        disableRules = axedisableRules;
+    }
+} catch (e) {
+    disableRules = process.env.PWG_ENV_AXE_DISABLE_RULES || '';
 }
 
 
@@ -26,7 +47,9 @@ export class Constants {
     static readonly GLOBAL_SUITE_NAME = process.env.PWG_ENV_SUITE_NAME;
     static readonly GLOBAL_SUITE_DESC = (_.isUndefined(process.env.PWG_ENV_SUITE_DESC) || _.isEmpty(process.env.PWG_ENV_SUITE_DESC)) ?
         process.env.PWG_ENV_SUITE_NAME + ' tests' : process.env.PWG_ENV_SUITE_DESC;
-    // static readonly GLOBAL_SUITE_FOLDER_NAME = this.getCurrentSuiteTimeStamp();
+    static readonly GLOBAL_SUITE_FOLDER_NAME = this.getCurrentSuiteTimeStamp(); 
+    static readonly GLOBAL_ES_INDEX = 'axe-violations';
+    static readonly GLOBAL_ES_ENDPOINT = 'https://org-es-dev.10339.elluciancloud.com/';
  
 
     //*****************************Report Portal*****************************
@@ -79,6 +102,11 @@ export class Constants {
     static readonly GLOBAL_DISABLE_PRINT_LOGS: boolean = (_.isUndefined(process.env.PWG_PRINT_TO_STDIO_DISABLE) || _.isEmpty(process.env.PWG_PRINT_TO_STDIO_DISABLE))
         ? false : Utils.booleanfy(process.env.PWG_PRINT_TO_STDIO_DISABLE);
 
+     //*********************** LIGHTHOUSE *******************/
+     static readonly GLOBAL_LIGHTHOUSE_GENERATE : boolean = (_.isUndefined(process.env.PWG_ENV_LIGHTHOUSE) || _.isEmpty(process.env.PWG_ENV_LIGHTHOUSE))
+     ? false : Utils.booleanfy(process.env.PWG_ENV_LIGHTHOUSE);
+
+
     /**
    * Return a project string based env var PWG_ENV_PROJECT throws an error if not set.
    * @returns Return a project string based env var PWG_ENV_PROJECT throws an error if not set.
@@ -92,6 +120,7 @@ export class Constants {
         }
     }
 
+     
 //     /**
 //    * Parse the given env var PWG_ENV_RP_TAGS and return tags in the objet form.
 //    * Format : tag1--val1@@tag2--val2@@tag3--val3

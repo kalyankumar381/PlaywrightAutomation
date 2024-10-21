@@ -63,4 +63,13 @@ export default class LogingPage{
         await this.page.waitForURL("http://rxtesting.yappes-enterprise.com/");
         expect(this.page.url()).toBe("http://rxtesting.yappes-enterprise.com/");
     }
+
+    public async login1(username:string, pass:string){
+        // expect(this.page.url()).toBe("http://rxtesting.yappes-enterprise.com/login/api-manager");
+        await this.enterUserName(username);
+        await this.enterPassword(pass);
+        await this.clickLogBtn();
+        // await this.page.waitForURL("http://rxtesting.yappes-enterprise.com/");
+        // expect(this.page.url()).toBe("http://rxtesting.yappes-enterprise.com/");
+    }
 }

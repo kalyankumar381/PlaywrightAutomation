@@ -1,0 +1,2 @@
+HTML report was saved into the following directory /home/sachin-singh/Documents/PlaywrightDetails/Git/PlaywrightAutomation/axe-reports/default_personalYappes_Automation91152024132547/chromium/accessibility.spec.ts/verify axe scan and files @regression-Chrome/My APIs.html
+Axe folder : default_personalYappes_Automation91142024142457,default_personalYappes_Automation91152024132124,default_personalYappes_Automation91152024132547

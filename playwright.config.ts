@@ -52,7 +52,11 @@ export default defineConfig({
   // reporter: 'html',
   // reporter: [['ortoni-report', reportConfig],['dot']],
   reporter:process.env.CI ? [['junit',{outputFile:"results.xml"}],['@reportportal/agent-js-playwright', _reportPortalConfig]]: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
-            ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig]],
+            ['allure-playwright']],
+
+  // reporter:process.env.CI ? [['junit',{outputFile:"results.xml"}],['@reportportal/agent-js-playwright', _reportPortalConfig]]: [['ortoni-report', reportConfig],['dot'],['html',{open:'never'}],["json",{outputFile:"test-result.json"}],
+  //           ['allure-playwright'],['@reportportal/agent-js-playwright', _reportPortalConfig]],
+  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

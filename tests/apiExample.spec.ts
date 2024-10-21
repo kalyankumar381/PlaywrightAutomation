@@ -5,7 +5,7 @@ import {ReportingApi} from '@reportportal/agent-js-playwright';
 
 const baseUrl:string="https://api.testing.yappes-enterprise.com";
 const header:any={
-        "Authorization":`Bearer a99c3c49487df00690951dfa563e2601e7c7210d749d7e7524ac4c5d8283fdda`,
+        "Authorization":`Bearer 30e799485db7942359094b576ae59d0e7bc22c34ce305ebc9d2b83e99c5f5258`,
         "Accept":"application/json"
     }
 
